@@ -5,7 +5,7 @@
   background-color: $secondary-color;
   color: $white-color;
   padding-top: 63px;
-  height: 346px;
+  min-height: 346px;
 
   &__contents {
     display: grid;

@@ -1639,7 +1639,7 @@
   background-color: #1947ba;
   color: #ffffff;
   padding-top: 63px;
-  height: 346px;
+  min-height: 346px;
 }
 .footer__contents {
   display: grid;
