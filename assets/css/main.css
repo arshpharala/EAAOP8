@@ -322,6 +322,14 @@
   font-weight: lighter;
   color: #666;
 }
+.about-section__right__desc .read-more {
+  color: #0047ab;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 5px;
+  text-decoration: underline;
+}
 
 .conference-section {
   padding-top: 50px;

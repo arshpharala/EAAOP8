@@ -5,9 +5,9 @@
   margin-top: 50px;
   margin-bottom: 50px;
 
-  @include responsive(lg){
-  margin-top: 85px;
-  margin-bottom: 95px;
+  @include responsive(lg) {
+    margin-top: 85px;
+    margin-bottom: 95px;
   }
 
   &__content {
@@ -29,7 +29,7 @@
   &__right {
     &__title {
       font-weight: lighter;
-      font-size: 20px; 
+      font-size: 20px;
 
       @include responsive(sm) {
         font-size: 23px;
@@ -40,11 +40,11 @@
       }
 
       @include responsive(lg) {
-        font-size: 29.17px; 
+        font-size: 29.17px;
       }
     }
     &__sub-title {
-      font-size: 20px; 
+      font-size: 20px;
 
       @include responsive(sm) {
         font-size: 23px;
@@ -55,18 +55,27 @@
       }
 
       @include responsive(lg) {
-        font-size: 29.17px; 
+        font-size: 29.17px;
       }
     }
 
     &__desc {
-      padding: 1rem 0 ;
-            @include responsive(lg) {
-              padding-bottom:3rem ;
-            }
+      padding: 1rem 0;
+      @include responsive(lg) {
+        padding-bottom: 3rem;
+      }
       max-width: 92%;
       font-weight: lighter;
       color: $gray-light-color;
+
+      .read-more {
+        color: $secondary-color;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left: 5px;
+          text-decoration: underline;
+      }
     }
   }
 }

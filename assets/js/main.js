@@ -25,6 +25,24 @@ $(document).ready(function () {
   });
 });
 
+// about secton
+$(document).ready(function () {
+  $(".read-more").click(function () {
+    const $this = $(this);
+    const $parent = $this.closest(".about-section__right__desc");
+
+    $parent.find(".short-text").toggle();
+    $parent.find(".full-text").slideToggle(300);
+
+    if ($this.text() === "read more") {
+      $this.text("read less");
+    } else {
+      $this.text("read more");
+    }
+  });
+});
+
+// speaker
 $(document).ready(function () {
   const speakers = [
     {
@@ -121,7 +139,6 @@ $(document).ready(function () {
     $("#speakerModal").fadeOut();
   });
 });
-
 
 // ================= Carousel Swipe Helper =================
 function enableSwipe(
