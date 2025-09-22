@@ -1,37 +1,44 @@
 [
   {
-    "name": "Yuan Chen",
-    "university": "The University of Sydney, Australia",
-    "topic": "Sustainable Carbon Catalysts for Advanced Oxidation Processes",
-    "image": "assets/images/speaker.png",
-    "bio": "Prof. Chen’s research focuses on sustainable energy materials..."
-  },
-    {
-    "name": "Robert Smith",
-    "university": "University of Cambridge, UK",
-    "topic": "Green Energy Innovations",
-    "image": "assets/images/speaker.png",
-    "bio": "Robert Smith is a leading researcher in renewable energy..."
+    "name": "Regina de Fátima Peralta Muniz Moreira",
+    "university": "Federal University of Santa Catarina, Brazil",
+    "topic": "Application of Advanced Oxidation Processes (AOPs) for Biomass Conversion and Bioenergy Valorization",
+    "image": "assets/images/speakers/regina-de-fatima.png",
+    "bio": "Regina de Fatima Peralta Muniz Moreira is a Full Professor at Federal University of Santa Catarina (UFSC), Brazil. She received her Ph.D. in Chemistry at UFSC, Brazil, in 1994. She was a visiting professor at the Federal University of Minas Gerais (2015, 2016) and at the University of Málaga (2022). She served as a member of the Advisory Committee of CNPq for the Chemical Engineering area CA-EQ (2012-2015) and co-coordinated the CA-EQ during the period of 2016-2018. She is a member of scientific committees of FAPERJ and FAPESP, the Management Committee of INCT MIDAS/CNPq, and is the vice-coordinator of INCT-CAPICUA/CNPq. She received the Green Project Award - GPA Brazil, Women in Science, and the Confap Science, Technology, and Innovation Award Johanna Döbereiner (2022, 2023, 2024). She has experience in Chemical Engineering, focusing on Waste Treatment and Utilization, as well as the application of nanotechnological processes, primarily working on the following topics: effluent treatment, adsorption, advanced oxidation processes, and heterogeneous catalysis. She has also served as Guest Editor for special issues of the following journals: Chemical Engineering Journal, Journal of Environmental Chemical Engineering, Adsorption, and Chemical Engineering and Processing: Process Intensification."
   },
   {
-    "name": "Alice Johnson",
-    "university": "MIT, USA",
-    "topic": "AI and Machine Learning in Chemistry",
-    "image": "assets/images/speaker.png",
-    "bio": "Alice Johnson works on applying AI in chemical engineering..."
-  },  
-  {
-    "name": "Yuan Chen",
-    "university": "The University of Sydney, Australia",
-    "topic": "Sustainable Carbon Catalysts for Advanced Oxidation Processes",
-    "image": "assets/images/speaker.png",
-    "bio": "Prof. Chen’s research focuses on sustainable energy materials..."
+    "name": "Jose Antonio Sanchez Perez",
+    "university": "University of Almeria, Spain",
+    "topic": "Solar-Powered Technologies for Wastewater Treatment and Reuse in Compliance with Recent European Regulations",
+    "image": "assets/images/speakers/jose-antonio.png",
+    "bio": "Full Professor at the Department of Chemical Engineering of the University of Almeria, Spain. His main current research lines are solar photo-Fenton for microcontaminant removal and disinfection for wastewater reuse. Key contributions include kinetic modelling of microcontaminant removal in WWTP secondary effluents by the solar photo-Fenton process, the introduction of a new paradigm of open solar reactor (raceway pond reactor, RPR), and the pioneering implementation of solar photo-Fenton as wastewater tertiary treatment at demonstration scale operating in continuous flow. He has supervised 20 PhD theses and led more than 30 research and contract projects. Scientific indicators (Scopus, April 2025): 202 documents, 12,631 citations, h-index 59."
   },
   {
-    "name": "Robert Smith",
-    "university": "University of Cambridge, UK",
-    "topic": "Green Energy Innovations",
-    "image": "assets/images/speaker.png",
-    "bio": "Robert Smith is a leading researcher in renewable energy..."
+    "name": "Albin Pintar",
+    "university": "National Institute of Chemistry, Slovenia",
+    "topic": "Photocatalysis in Environmental and Energy Applications: Development of Nanoshaped Materials for a Sustainable Future",
+    "image": "assets/images/speakers/albin-pintar.png",
+    "bio": "Dr. Albin Pintar, Research Professor, is head of the research programme group 'Integrated approach to water pollution prevention' at the National Institute of Chemistry, Ljubljana, Slovenia. He obtained his M.Sc. and Ph.D. degrees from the University of Ljubljana in 1992 and 1996, respectively. He was a visiting scientist at the Tokyo Institute of Technology (Japan) and Research Institute of Catalysis and Environment (Villeurbanne, France). His research interests are in heterogeneous catalysis, environmental catalysis, kinetics and mechanisms of catalytic reactions in multiphase reactors, wastewater treatment, production of hydrogen rich mixtures from renewables, and process intensification. He is the author of over 200 peer-reviewed papers, several patents, and has an h-index of 53. He received a prestigious national award for significant scientific achievements in chemical engineering. He is chairman of Catalysis Division at the Slovenian Chemical Society and associate editor of RSC Advances."
+  },
+  {
+    "name": "Luigi Rizzo",
+    "university": "University of Salerno, Italy",
+    "topic": "What are the chances for advanced oxidation processes to be applied in tertiary and quaternary treatment of urban wastewater?",
+    "image": "assets/images/speakers/luigi-rizzo.png",
+    "bio": "Luigi Rizzo is Associate Professor in Sanitary and Environmental Engineering at the Department of Civil Engineering, University of Salerno (Italy). He is coordinator of the 'International PhD School on Advanced Oxidation Processes', Editor of Journal of Environmental Chemical Engineering (Elsevier) since 2022, and co-founder and president of the AOP4Water spin-off. He chaired the EAAOP-7 conference in June 2024. He has been PI in 26 and investigator in 13 research projects (21 national, 18 international). He supervised 6 post-docs, 16 PhD students, 61 MSc students, and 3 undergraduates. His main research interest is water/wastewater treatment and disinfection by advanced oxidation processes. He is co-author of 179 papers (135 peer-reviewed, 101 in Q1 journals), with 12,531 citations and h-index 51 (Scopus, July 2025). He was ranked among the 'Top 100,000 scientists' globally (Stanford’s rank, 2020)."
+  },
+  {
+    "name": "Domenico Santoro",
+    "university": "University of Western Ontario and USP Technologies, Canada",
+    "topic": "Reimagining Water Treatment: CFD-Driven and ML-Based Design and Control of Ozone-Based AOPs for Tackling Micropollutants in Reused Water",
+    "image": "assets/images/speakers/domenico-santoro.png",
+    "bio": "Prof. Domenico Santoro is a Professor in the Department of Chemical and Biochemical Engineering at Western University (Canada) and Director of Research and Innovation at USP Technologies Canada. His research focuses on advanced oxidation processes (AOPs), computational fluid dynamics (CFD), anaerobic digestion, and resource recovery. At USP Technologies, he leads the development and deployment of high-performance chemical treatment systems for municipal and industrial applications. His work bridges science and real-world implementation, emphasizing micropollutant removal, ozonation, and data-driven process control. He is the inventor of multiple patented technologies and collaborates actively with utilities and industry partners."
+  },
+  {
+    "name": "Vitor Vilar",
+    "university": "University of Porto, Portugal",
+    "topic": "Circular Economy in Wastewater Treatment: Unlocking the Potential of Resource Recovery",
+    "image": "assets/images/speakers/vitor-vilar.png",
+    "bio": "Vítor J.P. Vilar is principal researcher in the Laboratory of Separation and Reaction Engineering-Laboratory of Catalysis and Materials (LSRE-LCM), Faculty of Engineering of the University of Porto (FEUP), Portugal. He earned his BSc (2001) and PhD (2006) in Chemical Engineering from FEUP. He is Executive Editor of Journal of Environmental Chemical Engineering (Elsevier), Coordinator Editor of Chemical Engineering Journal (Elsevier), and Coordinator of the Iberoamerican Conference on Advanced Oxidation Technologies (CIPOA). He leads a multidisciplinary research group focused on advanced, safer, and sustainable environmental technologies for a circular and bio-based economy. He has published over 650 scientific papers, 268 in peer-reviewed journals, with h-index 61 and more than 13,000 citations. He is co-inventor of 5 patents and has received 8 research prizes."
   }
 ]
