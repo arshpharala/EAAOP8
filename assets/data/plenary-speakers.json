@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Yuan Chen",
+    "university": "The University of Sydney, Australia",
+    "topic": "Sustainable Carbon Catalysts for Advanced Oxidation Processes",
+    "image": "assets/images/speaker.png",
+    "bio": "Prof. Chen’s research focuses on sustainable energy materials..."
+  },
+    {
+    "name": "Robert Smith",
+    "university": "University of Cambridge, UK",
+    "topic": "Green Energy Innovations",
+    "image": "assets/images/speaker.png",
+    "bio": "Robert Smith is a leading researcher in renewable energy..."
+  },
+  {
+    "name": "Alice Johnson",
+    "university": "MIT, USA",
+    "topic": "AI and Machine Learning in Chemistry",
+    "image": "assets/images/speaker.png",
+    "bio": "Alice Johnson works on applying AI in chemical engineering..."
+  },  
+  {
+    "name": "Yuan Chen",
+    "university": "The University of Sydney, Australia",
+    "topic": "Sustainable Carbon Catalysts for Advanced Oxidation Processes",
+    "image": "assets/images/speaker.png",
+    "bio": "Prof. Chen’s research focuses on sustainable energy materials..."
+  },
+  {
+    "name": "Robert Smith",
+    "university": "University of Cambridge, UK",
+    "topic": "Green Energy Innovations",
+    "image": "assets/images/speaker.png",
+    "bio": "Robert Smith is a leading researcher in renewable energy..."
+  }
+]

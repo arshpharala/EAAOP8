@@ -25,9 +25,11 @@
   &__title {
     color: $primary-color;
     margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 0.8;
 
     @include responsive(lg) {
-      margin-bottom: 0;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -39,8 +41,8 @@
 
   &__item {
     display: flex;
-    align-items: center;
-    padding: 0.5rem 0;
+    align-items: end;
+    padding: 1rem 0;
     border-bottom: 1px solid $border-default;
 
     &:last-child {
@@ -49,12 +51,14 @@
   }
 
   .date {
+
     min-width: 70px;
     text-align: center;
     margin-right: 1.5rem;
 
     &__day {
       display: block;
+
       font-size: 20px;
       @include responsive(sm) {
         font-size: 25px;
@@ -70,8 +74,31 @@
       line-height: 1;
     }
 
+    
+
+    &__from {
+      display: block;
+      line-height: 0.7;
+
+      font-size: 12px; // base
+
+      @include responsive(sm) {
+        font-size: 14px;
+      }
+
+      @include responsive(md) {
+        font-size: 16px;
+      }
+
+      text-transform: uppercase;
+      color: $primary-color;
+      font-weight: normal;
+    }
+
     &__month {
       display: block;
+      line-height: 0.7;
+
       font-size: 14px; // base
 
       @include responsive(sm) {
@@ -92,7 +119,11 @@
   }
 
   .event {
+      line-height: 0.8;
+
     &__year {
+      line-height: 1.5;
+
       display: block;
       font-size: 14px; // base
 
@@ -122,9 +153,11 @@
       @include responsive(lg) {
         font-size: 18px;
       }
-      font-weight: bold;
+      
+      font-weight: 600;
       text-transform: uppercase;
       color: $black-color;
+        letter-spacing: -0.5px; 
     }
   }
 }

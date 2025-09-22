@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khalifa University – IEEE EMBS</title>
 
+    <!-- Owl Carousel CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
     <!-- Our custom SCSS (compiled to CSS) -->
@@ -94,7 +99,12 @@
             <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="#speakers">Speakers</a></li>
             <li><a href="#call-for-abstract">Call for Abstract</a></li>
+              
           </ul>
+         
+         <div>
+            <a href="#" class="button-shape contact-btn button-shape-primary">CONTACT US</a>
+          </div>
         </div>
       </aside>
     </div>
@@ -298,6 +308,7 @@
           <ul class="important-dates__list">
             <li class="important-dates__item">
               <div class="date">
+                <span class="date__from">from</span>
                 <span class="date__day">01</span>
                 <span class="date__month">Oct</span>
               </div>
@@ -309,6 +320,7 @@
 
             <li class="important-dates__item">
               <div class="date">
+                <span class="date__from">from</span>
                 <span class="date__day">01</span>
                 <span class="date__month">Oct</span>
               </div>
@@ -357,21 +369,21 @@
       </div>
     </section>
 
-    <!-- committee section  -->
+    <!-- Committee Section -->
     <section id="committee" class="committee">
       <div class="container">
         <div class="committee__header">
           <h1 class="committee__title">Committee</h1>
 
           <div class="committee__header__buttons">
-            <button class="committee__header__btn">
+            <button class="committee__header__btn committee-prev">
               <img
                 src="assets/images/chevron.png"
                 alt="Previous"
                 class="committee__header__chevron committee__header__chevron--left"
               />
             </button>
-            <button class="committee__header__btn">
+            <button class="committee__header__btn committee-next">
               <img
                 src="assets/images/chevron.png"
                 alt="Next"
@@ -381,7 +393,9 @@
           </div>
         </div>
 
-        <div class="committee__grid">
+        <!-- Owl Carousel -->
+        <div class="committee-carousel owl-carousel">
+          <!-- Member 1 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -390,11 +404,11 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
 
+          <!-- Member 2 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -403,11 +417,11 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
 
+          <!-- Member 3 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -416,11 +430,11 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
 
+          <!-- Member 4 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -429,8 +443,7 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
         </div>
@@ -444,14 +457,14 @@
           <h1 class="committee__title">International Scientific Committee</h1>
 
           <div class="committee__header__buttons">
-            <button class="committee__header__btn">
+            <button class="committee__header__btn int-committee-prev">
               <img
                 src="assets/images/chevron.png"
                 alt="Previous"
                 class="committee__header__chevron committee__header__chevron--left"
               />
             </button>
-            <button class="committee__header__btn">
+            <button class="committee__header__btn int-committee-next">
               <img
                 src="assets/images/chevron.png"
                 alt="Next"
@@ -461,7 +474,8 @@
           </div>
         </div>
 
-        <div class="committee__grid">
+        <div class="int-committee-carousel owl-carousel">
+          <!-- Member 1 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -470,11 +484,11 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
 
+          <!-- Member 2 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -483,11 +497,11 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
 
+          <!-- Member 3 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -496,11 +510,11 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
 
+          <!-- Member 4 -->
           <div class="committee__member">
             <img
               src="assets/images/member-1.png"
@@ -509,15 +523,13 @@
             />
             <h3 class="committee__name">Giovanni Palmisano</h3>
             <p class="committee__affiliation">
-              Khalifa University, Abu Dhabi,<br />
-              United Arab Emirates
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
             </p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- speaker section -->
+    <!-- Speaker Section -->
     <section id="speakers" class="speakers">
       <div class="container speakers__contents">
         <div class="speakers__header">
@@ -528,20 +540,20 @@
               <img
                 src="assets/images/chevron.png"
                 alt="Previous"
-                class="speakers__header__chevron speakers__header__chevron--left"
-              />
+                class="speakers__header__chevron speakers__header__chevron--left" />
             </button>
             <button id="nextBtn" class="speakers__header__btn">
               <img
                 src="assets/images/chevron.png"
                 alt="Next"
-                class="speakers__header__chevron speakers__header__chevron--right"
-              />
+                class="speakers__header__chevron speakers__header__chevron--right" />
             </button>
           </div>
         </div>
 
-        <div class="speakers__carousel" id="speakersCarousel"></div>
+        <!-- Owl Carousel -->
+        <div class="speakers__carousel owl-carousel"
+          id="speakersCarousel"></div>
 
         <!-- Speaker details -->
         <div class="speaker-details">
@@ -576,54 +588,33 @@
     <!-- Keynote Speakers Section -->
     <section class="speakers keynote-speakers">
       <div class="container speakers__contents">
-        <!-- Header -->
         <div class="speakers__header">
           <h1 class="speakers__title">Keynote Speakers</h1>
-
-          <!-- Navigation buttons -->
           <div class="speakers__header__buttons">
-            <button
-              id="prev"
-              class="speakers__header__btn speakers__header__btn"
-            >
-              <img
-                src="assets/images/chevron.png"
-                alt="Previous"
-                class="speakers__header__chevron speakers__header__chevron--left"
-              />
+            <button id="prev" class="speakers__header__btn">
+              <img src="assets/images/chevron.png" alt="Previous"
+                class="speakers__header__chevron speakers__header__chevron--left" />
             </button>
-            <button
-              id="next"
-              class="speakers__header__btn speakers__header__btn"
-            >
-              <img
-                src="assets/images/chevron.png"
-                alt="Next"
-                class="speakers__header__chevron speakers__header__chevron--right"
-              />
+            <button id="next" class="speakers__header__btn">
+              <img src="assets/images/chevron.png" alt="Next"
+                class="speakers__header__chevron speakers__header__chevron--right" />
             </button>
           </div>
         </div>
 
         <!-- Keynote Speakers Carousel -->
-        <div
-          class="speakers__carousel keynote-speakers__carousel"
-          id="keynotespeakersCarousel"
-        ></div>
+        <div class="speakers__carousel owl-carousel"
+          id="keynotespeakersCarousel"></div>
 
-        <!--  Keynote Speaker details -->
+        <!-- Keynote Speaker details -->
         <div class="speaker-details">
           <div class="speaker-details__name" id="keynotespeakerName"></div>
-          <div
-            class="speaker-details__university"
-            id="keynotespeakerUniversity"
-          ></div>
+          <div class="speaker-details__university"
+            id="keynotespeakerUniversity"></div>
           <div class="speaker-details__topic" id="keynotespeakerTopic"></div>
           <div class="speaker-details__btn">
-            <button
-              id="keynoteviewBioBtn"
-              class="button-shape button-shape-primary"
-            >
+            <button id="keynoteviewBioBtn"
+              class="button-shape button-shape-primary">
               View Bio
             </button>
           </div>
@@ -674,17 +665,6 @@
 
             <div class="program__item">
               <img
-                src="assets/images/oral-presentation.png"
-                alt="Oral presentation"
-              />
-              <div>
-                <h4>Oral presentation</h4>
-                <p>12 min (+3 min Q/A)</p>
-              </div>
-            </div>
-
-            <div class="program__item">
-              <img
                 src="assets/images/keynote-lecture.png"
                 alt="Keynote lecture"
               />
@@ -696,23 +676,34 @@
 
             <div class="program__item">
               <img
-                src="assets/images/flash-presentation.png"
-                alt="Flash presentation"
-              />
-              <div>
-                <h4>Flash presentation</h4>
-                <p>5 min</p>
-              </div>
-            </div>
-
-            <div class="program__item">
-              <img
                 src="assets/images/invited-presentation.png"
                 alt="Invited presentation"
               />
               <div>
                 <h4>Invited presentation</h4>
                 <p>16 min (+4 min Q/A)</p>
+              </div>
+            </div>
+
+            <div class="program__item">
+              <img
+                src="assets/images/oral-presentation.png"
+                alt="Oral presentation"
+              />
+              <div>
+                <h4>Oral presentation</h4>
+                <p>12 min (+3 min Q/A)</p>
+              </div>
+            </div>
+
+            <div class="program__item">
+              <img
+                src="assets/images/flash-presentation.png"
+                alt="Flash presentation"
+              />
+              <div>
+                <h4>Flash presentation</h4>
+                <p>5 min</p>
               </div>
             </div>
 
@@ -729,7 +720,7 @@
     </section>
 
     <!-- registration section  -->
-    <section  id="register" class="registration-section">
+    <section id="registration" class="registration-section">
       <div class="container">
         <h1 class="registration-title">Registration Categories and Fees</h1>
 
@@ -801,7 +792,7 @@
     </section>
 
     <!-- abstract-call section  -->
-    <section class="abstract-call">
+    <section id="call-for-abstract" class="abstract-call">
       <div class="container abstract-call__content">
         <div class="abstract-content">
           <h1 class="abstract-title">Call for Abstract</h1>
@@ -837,7 +828,7 @@
     </section>
 
     <!-- sponsor section  -->
-    <section class="sponsors-section">
+    <section id="sponsorship" class="sponsors-section">
       <div class="container">
         <h1 class="sponsors-title">Sponsors & Exhibitors</h1>
 
@@ -1075,8 +1066,9 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
   </body>
 </html>
