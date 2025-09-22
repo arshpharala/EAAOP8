@@ -1,95 +1,39 @@
 @use "../../mixins" as *;
 @use "../../variables" as *;
 
-// .footer {
-//   background-color: $secondary-color;
-//   color: $white-color;
-//   padding-bottom: 40px;
-//   padding-top: 65px;
-
-//   &__contents {
-//     display: flex;
-//     align-items: start;
-//     gap: 40px;
-//   }
-
-//   &__left {
-//     flex: 2;
-//     .footer__logo {
-//       object-fit: contain;
-//       display: block;
-//       margin-bottom: 10px;
-//       @include white-filter;
-//     }
-
-//     .footer__email {
-//       font-size: 18.75px;
-//       display: flex;
-//       align-items: center;
-//       gap: 0.5rem;
-//       &__icon {
-//         width: 20px;
-//         height: 20px;
-//         object-fit: contain;
-//       }
-//     }
-//   }
-
-//   &__lists {
-//     flex: 2.8;
-//     width: 100%;
-//     list-style: none;
-//     padding: 0;
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     place-items: start;
-
-//     li {
-//       margin: 0 0 50px;
-
-//       a {
-//         color: $white-color;
-//         font-size: 16.67px;
-//         &:hover {
-//           text-decoration: underline;
-//         }
-//       }
-//     }
-//   }
-
-//   &__bottom {
-//     margin-top: 20px;
-//     text-align: center;
-//     padding-top: 10px;
-//   }
-// }
-
 .footer {
   background-color: $secondary-color;
   color: $white-color;
-  padding: 65px 20px 40px;
+  padding-top: 63px;
+  min-height: 346px;
 
   &__contents {
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr;
     align-items: flex-start;
     gap: 40px;
-    flex-direction: column;
 
     @include responsive(md) {
-      flex-direction: row;
+    grid-template-columns: 2fr 2.8fr;
       gap: 25px;
     }
   }
 
   &__left {
-    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
 
     .footer__logo {
-      object-fit: contain;
-      display: block;
-      margin-bottom: 10px;
-      @include white-filter;
-      max-width: 150px;
+      @include responsive(xl) {
+        width: 350px;
+        height: 100px;
+      }
+       width: 300px;
+        height: 50px;
     }
 
     .footer__email {
@@ -120,27 +64,32 @@
   }
 
   &__lists {
-    flex: 2.8;
     width: 100%;
     list-style: none;
     padding: 0;
     display: grid;
 
     place-items: start;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 
     @include responsive(sm) {
-      gap: 20px;
+      gap: 0;
 
       grid-template-columns: repeat(3, 1fr);
     }
 
     li {
-      @include responsive(lg) {
-        margin-bottom: 50px;
-      }
+        margin-bottom: 20px;
 
+      @include responsive(lg) {
+        margin-bottom: 49px;
+
+        &:nth-child(7),
+        &:nth-child(8) {
+          margin-bottom: 0;
+        }
+      }
       a {
         color: $white-color;
         font-size: 14px;
@@ -161,10 +110,10 @@
   }
 
   &__bottom {
-    margin-top: 20px;
+    padding-top: 73px;
     text-align: center;
-    padding-top: 10px;
-    font-size: 12px;
+    font-size: 16.67px;
+    padding-bottom: 40px;
 
     @include responsive(sm) {
       font-size: normal;

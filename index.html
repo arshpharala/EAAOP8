@@ -572,21 +572,29 @@
       </div>
     </div>
 
-    <!-- Keynote  speaker section -->
+    <!-- Keynote Speakers Section -->
     <section class="speakers keynote-speakers">
       <div class="container speakers__contents">
+        <!-- Header -->
         <div class="speakers__header">
           <h1 class="speakers__title">Keynote Speakers</h1>
 
+          <!-- Navigation buttons -->
           <div class="speakers__header__buttons">
-            <button class="speakers__header__btn">
+            <button
+              id="prev"
+              class="speakers__header__btn speakers__header__btn"
+            >
               <img
                 src="assets/images/chevron.png"
                 alt="Previous"
                 class="speakers__header__chevron speakers__header__chevron--left"
               />
             </button>
-            <button class="speakers__header__btn">
+            <button
+              id="next"
+              class="speakers__header__btn speakers__header__btn"
+            >
               <img
                 src="assets/images/chevron.png"
                 alt="Next"
@@ -596,39 +604,26 @@
           </div>
         </div>
 
-        <div class="speakers__carousel">
-          <!-- Speaker item -->
-          <div class="speaker speaker--faded">
-            <img src="assets/images/speaker.png" alt="Speaker 1" />
-          </div>
-          <div class="speaker speaker--faded">
-            <img src="assets/images/speaker.png" alt="Speaker 2" />
-          </div>
-          <div class="speaker speaker--active">
-            <img src="assets/images/speaker.png" alt="Speaker 3" />
-          </div>
-          <div class="speaker speaker--faded">
-            <img src="assets/images/speaker.png" alt="Speaker 4" />
-          </div>
-          <div class="speaker speaker--faded">
-            <img src="assets/images/speaker.png" alt="Speaker 5" />
-          </div>
-        </div>
+        <!-- Keynote Speakers Carousel -->
+        <div
+          class="speakers__carousel keynote-speakers__carousel"
+          id="keynotespeakersCarousel"
+        ></div>
 
-        <!--Keynote  Speaker details -->
+        <!--  Keynote Speaker details -->
         <div class="speaker-details">
-          <div class="speaker-details__name">Yuan Chen</div>
-          <div class="speaker-details__university">
-            The University of Sydney, Australia
-          </div>
-          <div class="speaker-details__topic">
-            Sustainable Carbon Catalysts for Advanced Oxidation Processes
-          </div>
+          <div class="speaker-details__name" id="keynotespeakerName"></div>
+          <div
+            class="speaker-details__university"
+            id="keynotespeakerUniversity"
+          ></div>
+          <div class="speaker-details__topic" id="keynotespeakerTopic"></div>
           <div class="speaker-details__btn">
-            <button>
-              <a href="#registration" class="button-shape button-shape-primary"
-                >view bio</a
-              >
+            <button
+              id="keynoteviewBioBtn"
+              class="button-shape button-shape-primary"
+            >
+              View Bio
             </button>
           </div>
         </div>
@@ -1033,7 +1028,7 @@
         <!-- Left section -->
         <div class="footer__left">
           <img
-            src="assets/images/logo2.png"
+            src="assets/images/logo3.png"
             alt="Conference Logo"
             class="footer__logo"
           />

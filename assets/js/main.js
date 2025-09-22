@@ -135,8 +135,131 @@ $(document).ready(function () {
   });
 
   // Close modal
-  $("#closeModal,#speakerModal").click(function () {
+  $("#speakerModal").on("click", function (e) {
+    if (e.target === this) {
+      $(this).fadeOut();
+    }
+  });
+
+  // close by clicking the close button (works even if you click img inside it)
+  $("#closeModal").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
     $("#speakerModal").fadeOut();
+  });
+
+  // prevent clicks inside modal content from closing the modal (safety)
+  $("#speakerModal .modal-content").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  // optional: allow ESC to close
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape") {
+      $("#speakerModal").fadeOut();
+    }
+  });
+});
+
+// Keynote speakers
+$(document).ready(function () {
+  const keynoteSpeakers = [
+    {
+      name: "Yuan Chen",
+      university: "The University of Sydney, Australia",
+      topic: "Sustainable Carbon Catalysts for Advanced Oxidation Processes",
+      image: "assets/images/speaker.png",
+    },
+    {
+      name: "Alice Johnson",
+      university: "MIT, USA",
+      topic: "AI and Machine Learning in Chemistry",
+      image: "assets/images/speaker.png",
+    },
+    {
+      name: "Robert Smith",
+      university: "University of Cambridge, UK",
+      topic: "Green Energy Innovations",
+      image: "assets/images/speaker.png",
+    },
+    {
+      name: "Maria Gonzalez",
+      university: "Stanford University, USA",
+      topic: "Nanotechnology in Environmental Science",
+      image: "assets/images/speaker.png",
+    },
+    {
+      name: "Lee Wong",
+      university: "National University of Singapore",
+      topic: "Advanced Materials for Clean Water",
+      image: "assets/images/speaker.png",
+    },
+  ];
+
+  let currentIndex = 0;
+
+  // Render keynote speakers
+  function renderKeynoteSpeakers() {
+    const carousel = $("#keynotespeakersCarousel");
+    carousel.empty();
+
+    $.each(keynoteSpeakers, function (index, speaker) {
+      const activeClass =
+        index === currentIndex ? "speaker--active" : "speaker--faded";
+      carousel.append(`
+        <div class="speaker ${activeClass}" data-index="${index}">
+          <img src="${speaker.image}" alt="${speaker.name}" />
+        </div>
+      `);
+    });
+
+    // Update speaker details
+    $("#keynotespeakerName").text(keynoteSpeakers[currentIndex].name);
+    $("#keynotespeakerUniversity").text(
+      keynoteSpeakers[currentIndex].university
+    );
+    $("#keynotespeakerTopic").text(keynoteSpeakers[currentIndex].topic);
+  }
+
+  // Navigation buttons
+  $("#prev").click(function () {
+    currentIndex =
+      (currentIndex - 1 + keynoteSpeakers.length) % keynoteSpeakers.length;
+    renderKeynoteSpeakers();
+  });
+
+  $("#next").click(function () {
+    currentIndex = (currentIndex + 1) % keynoteSpeakers.length;
+    renderKeynoteSpeakers();
+  });
+
+  // Click on keynote speaker image
+  $(document).on(
+    "click",
+    "#keynotespeakersCarousel .speaker",
+    function () {
+      const index = $(this).data("index");
+      if (index !== undefined) {
+        currentIndex = index;
+        renderKeynoteSpeakers();
+      }
+    }
+  );
+
+  // Initial render
+  renderKeynoteSpeakers();
+
+  // View Bio button
+  $("#keynoteviewBioBtn").click(function () {
+    const speaker = keynoteSpeakers[currentIndex];
+    $("#modalSpeakerImage").html(
+      `<img src="${speaker.image}" alt="${speaker.name}" style="max-width:100%;height:250px;object-fit:cover">`
+    );
+    $("#modalSpeakerName").text(speaker.name);
+    $("#modalSpeakerUniversity").text(speaker.university);
+    $("#modalSpeakerTopic").text(speaker.topic);
+    $("#modalSpeakerBio").text(speaker.bio || "");
+    $("#speakerModal").fadeIn();
   });
 });
 

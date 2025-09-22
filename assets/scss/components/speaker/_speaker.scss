@@ -174,9 +174,8 @@
     border-radius: 8px;
     width: 500px;
     max-width: 90%;
-    @include responsive(md){
-    max-width: 30%;
-
+    @include responsive(md) {
+      max-width: 30%;
     }
     z-index: 1001;
     position: relative;

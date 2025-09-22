@@ -1531,29 +1531,38 @@
 .footer {
   background-color: #0047ab;
   color: #ffffff;
-  padding: 65px 20px 40px;
+  padding-top: 63px;
+  min-height: 346px;
 }
 .footer__contents {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: flex-start;
   gap: 40px;
-  flex-direction: column;
 }
 @media (min-width: 45rem) {
   .footer__contents {
-    flex-direction: row;
+    grid-template-columns: 2fr 2.8fr;
     gap: 25px;
   }
 }
 .footer__left {
-  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+@media (min-width: 71.25rem) {
+  .footer__left .footer__logo {
+    width: 350px;
+    height: 100px;
+  }
 }
 .footer__left .footer__logo {
-  object-fit: contain;
-  display: block;
-  margin-bottom: 10px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(64%) saturate(7%) hue-rotate(175deg) brightness(115%) contrast(100%);
-  max-width: 150px;
+  width: 300px;
+  height: 50px;
 }
 @media (min-width: 60rem) {
   .footer__left .footer__email {
@@ -1585,7 +1594,6 @@
   font-size: 14px;
 }
 .footer__lists {
-  flex: 2.8;
   width: 100%;
   list-style: none;
   padding: 0;
@@ -1596,13 +1604,19 @@
 }
 @media (min-width: 33.75rem) {
   .footer__lists {
-    gap: 20px;
+    gap: 0;
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.footer__lists li {
+  margin-bottom: 20px;
+}
 @media (min-width: 60rem) {
   .footer__lists li {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
+  }
+  .footer__lists li:nth-child(7), .footer__lists li:nth-child(8) {
+    margin-bottom: 0;
   }
 }
 .footer__lists li a {
@@ -1623,10 +1637,10 @@
   }
 }
 .footer__bottom {
-  margin-top: 20px;
+  padding-top: 73px;
   text-align: center;
-  padding-top: 10px;
-  font-size: 12px;
+  font-size: 16.67px;
+  padding-bottom: 40px;
 }
 @media (min-width: 33.75rem) {
   .footer__bottom {
@@ -1636,11 +1650,12 @@
 
 .button-shape {
   display: inline-block;
-  padding: 0.6rem;
-  font-weight: 600;
+  padding: 14px;
+  font-weight: 500;
   text-transform: uppercase;
   transition: all 0.5s ease;
   cursor: pointer;
+  font-size: 11.17px;
 }
 
 .button-shape-primary {
