@@ -25,9 +25,7 @@ $(document).ready(function () {
   });
 });
 
-// speaker section
 $(document).ready(function () {
-  // Array of speakers
   const speakers = [
     {
       name: "Yuan Chen",
@@ -63,17 +61,17 @@ $(document).ready(function () {
 
   let currentIndex = 0;
 
-  // Function to render speakers
+  // Render speakers in carousel
   function renderSpeakers() {
     $("#speakersCarousel").empty();
     $.each(speakers, function (index, speaker) {
       const activeClass =
         index === currentIndex ? "speaker--active" : "speaker--faded";
       $("#speakersCarousel").append(`
-          <div class="speaker ${activeClass}">
-            <img src="${speaker.image}" alt="${speaker.name}" />
-          </div>
-        `);
+        <div class="speaker ${activeClass}" data-index="${index}">
+          <img src="${speaker.image}" alt="${speaker.name}" />
+        </div>
+      `);
     });
 
     // Update details
@@ -93,6 +91,15 @@ $(document).ready(function () {
     renderSpeakers();
   });
 
+  // Click on a speaker image to make active
+  $(document).on("click", "#speakersCarousel .speaker", function () {
+    const index = $(this).data("index");
+    if (index !== undefined) {
+      currentIndex = index;
+      renderSpeakers();
+    }
+  });
+
   // Initial render
   renderSpeakers();
 
@@ -100,20 +107,21 @@ $(document).ready(function () {
   $("#viewBioBtn").click(function () {
     const speaker = speakers[currentIndex];
     $("#modalSpeakerImage").html(
-      `<img src="${speaker.image}" alt="${speaker.name}" style="max-width:100%; border-radius:8px;">`
+      `<img src="${speaker.image}" alt="${speaker.name}" style="max-width:100%;height:250px; object-fit:cover">`
     );
     $("#modalSpeakerName").text(speaker.name);
     $("#modalSpeakerUniversity").text(speaker.university);
     $("#modalSpeakerTopic").text(speaker.topic);
-    $("#modalSpeakerBio").text(speaker.bio);
+    $("#modalSpeakerBio").text(speaker.bio || "");
     $("#speakerModal").fadeIn();
   });
 
   // Close modal
-  $("#closeModal,#speakerModal ").click(function () {
+  $("#closeModal,#speakerModal").click(function () {
     $("#speakerModal").fadeOut();
   });
 });
+
 
 // ================= Carousel Swipe Helper =================
 function enableSwipe(

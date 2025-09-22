@@ -68,7 +68,12 @@
         object-fit: cover;
         filter: grayscale(100%);
         opacity: 0.4;
-        transition: all 0.3s ease;
+        transition: $transition;
+        cursor: pointer;
+        &:hover {
+          filter: none;
+          opacity: 1;
+        }
       }
 
       &--active img {
@@ -81,11 +86,11 @@
 
   .speaker-details {
     display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     @include responsive(sm) {
       grid-template-columns: repeat(3, 1fr);
-    align-items: start;
+      align-items: start;
     }
     @include responsive(md) {
       grid-template-columns: 0.6fr 0.6fr 1.4fr 0.6fr;
@@ -169,6 +174,10 @@
     border-radius: 8px;
     width: 500px;
     max-width: 90%;
+    @include responsive(md){
+    max-width: 30%;
+
+    }
     z-index: 1001;
     position: relative;
 

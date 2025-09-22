@@ -268,7 +268,11 @@
     <section class="important-dates">
       <div class="container important-dates__content">
         <div class="important-dates__grid__left">
-          <img src="assets/images/important.png" alt="important-dates" class="important-dates__grid__left__img" />
+          <img
+            src="assets/images/important.png"
+            alt="important-dates"
+            class="important-dates__grid__left__img"
+          />
         </div>
         <div class="important-dates__grid__right">
           <h1 class="important-dates__title">Important Dates</h1>
@@ -494,67 +498,61 @@
       </div>
     </section>
 
-<!-- speaker section -->
-<section class="speakers">
-  <div class="container speakers__contents">
-    <div class="speakers__header">
-      <h1 class="speakers__title">Plenary Speakers</h1>
+    <!-- speaker section -->
+    <section class="speakers">
+      <div class="container speakers__contents">
+        <div class="speakers__header">
+          <h1 class="speakers__title">Plenary Speakers</h1>
 
-      <div class="speakers__header__buttons">
-        <button id="prevBtn" class="speakers__header__btn">
-          <img
-            src="assets/images/chevron.png"
-            alt="Previous"
-            class="speakers__header__chevron speakers__header__chevron--left"
-          />
-        </button>
-        <button id="nextBtn" class="speakers__header__btn">
-          <img
-            src="assets/images/chevron.png"
-            alt="Next"
-            class="speakers__header__chevron speakers__header__chevron--right"
-          />
-        </button>
+          <div class="speakers__header__buttons">
+            <button id="prevBtn" class="speakers__header__btn">
+              <img
+                src="assets/images/chevron.png"
+                alt="Previous"
+                class="speakers__header__chevron speakers__header__chevron--left"
+              />
+            </button>
+            <button id="nextBtn" class="speakers__header__btn">
+              <img
+                src="assets/images/chevron.png"
+                alt="Next"
+                class="speakers__header__chevron speakers__header__chevron--right"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="speakers__carousel" id="speakersCarousel"></div>
+
+        <!-- Speaker details -->
+        <div class="speaker-details">
+          <div class="speaker-details__name" id="speakerName"></div>
+          <div class="speaker-details__university" id="speakerUniversity"></div>
+          <div class="speaker-details__topic" id="speakerTopic"></div>
+          <div class="speaker-details__btn">
+            <button id="viewBioBtn" class="button-shape button-shape-primary">
+              view bio
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="speakerModal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <span id="closeModal">
+          <img src="assets/images/close.png" alt="close" />
+        </span>
+
+        <div id="modalSpeakerImage"></div>
+        <h2 id="modalSpeakerName"></h2>
+        <h4 id="modalSpeakerUniversity"></h4>
+        <p id="modalSpeakerTopic"></p>
+        <p id="modalSpeakerBio"></p>
       </div>
     </div>
-
-    <div class="speakers__carousel" id="speakersCarousel"></div>
-
-    <!-- Speaker details -->
-    <div class="speaker-details">
-      <div class="speaker-details__name" id="speakerName"></div>
-      <div class="speaker-details__university" id="speakerUniversity"></div>
-      <div class="speaker-details__topic" id="speakerTopic"></div>
-      <div class="speaker-details__btn">
-        <button id="viewBioBtn"
-        class="button-shape button-shape-primary"
-            >view bio</a
-          >
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Modal -->
-<div id="speakerModal">
-
-  <!-- Modal Content -->
-  <div class="modal-content">
-   <span id="closeModal" >
-  <img src="assets/images/close.png" alt="close">
-</span>
-
-    <div id="modalSpeakerImage"></div>
-    <h2 id="modalSpeakerName"></h2>
-    <h4 id="modalSpeakerUniversity"></h4>
-    <p id="modalSpeakerTopic"></p>
-    <p id="modalSpeakerBio"></p>
-  </div>
-</div>
-
-
 
     <!-- Keynote  speaker section -->
     <section class="speakers keynote-speakers">
@@ -648,7 +646,7 @@
           <h3 class="program__presentations__title">Types of presentation</h3>
           <div class="program__grid">
             <div class="program__item">
-              <img src="assets/images/lecture.png" alt="Plenary lecture" />
+              <img src="assets/images/plenary-lecture.png" alt="Plenary lecture" />
               <div>
                 <h4>Plenary lecture</h4>
                 <p>40 min (+ 5 min Q/A)</p>
@@ -656,7 +654,7 @@
             </div>
 
             <div class="program__item">
-              <img src="assets/images/lecture.png" alt="Oral presentation" />
+              <img src="assets/images/oral-presentation.png" alt="Oral presentation" />
               <div>
                 <h4>Oral presentation</h4>
                 <p>12 min (+3 min Q/A)</p>
@@ -664,7 +662,7 @@
             </div>
 
             <div class="program__item">
-              <img src="assets/images/lecture.png" alt="Keynote lecture" />
+              <img src="assets/images/keynote-lecture.png" alt="Keynote lecture" />
               <div>
                 <h4>Keynote lecture</h4>
                 <p>20 min (+ 5 min Q/A)</p>
@@ -672,7 +670,7 @@
             </div>
 
             <div class="program__item">
-              <img src="assets/images/lecture.png" alt="Flash presentation" />
+              <img src="assets/images/flash-presentation.png" alt="Flash presentation" />
               <div>
                 <h4>Flash presentation</h4>
                 <p>5 min</p>
@@ -680,7 +678,7 @@
             </div>
 
             <div class="program__item">
-              <img src="assets/images/lecture.png" alt="Invited presentation" />
+              <img src="assets/images/invited-presentation.png" alt="Invited presentation" />
               <div>
                 <h4>Invited presentation</h4>
                 <p>16 min (+4 min Q/A)</p>
@@ -688,7 +686,7 @@
             </div>
 
             <div class="program__item">
-              <img src="assets/images/lecture.png" alt="Poster presentation" />
+              <img src="assets/images/poster.png" alt="Poster presentation" />
               <div>
                 <h4>Poster size</h4>
                 <p>A0</p>
@@ -924,8 +922,9 @@
         </div>
 
         <div class="travel-section__image-wrapper">
+          <div class="travel-section__image-wrapper__bg-overlay"></div>
           <img
-            src="assets/images/person-with-laptop.png"
+            src="assets/images/travel.png"
             alt="Traveler pulling luggage"
             class="travel-section__image"
           />
