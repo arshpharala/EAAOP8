@@ -1,0 +1,58 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.venue-section {
+  margin-bottom: 50px;
+  @include responsive(lg) {
+    margin-bottom: 105px;
+  }
+  &__contents {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include responsive(md) {
+      grid-template-columns: 1.2fr 2.8fr;
+    }
+    @include responsive(lg) {
+      grid-template-columns: 0.9fr 3.1fr;
+    }
+    background-color: $secondary-color;
+  }
+
+  &__content {
+    color: $white-color;
+    display: grid;
+    place-items: center;
+
+    &__info {
+      padding: 1rem;
+
+      @include responsive(lg) {
+        padding: 2rem;
+      }
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 14px;
+
+    @include responsive(lg) {
+      font-size: 18.75px;
+    }
+    @include responsive(md) {
+      font-size: 16px;
+    }
+  }
+
+  &__map-wrapper {
+    max-height: 300px;
+    width: 100%;
+  }
+}

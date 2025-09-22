@@ -1,0 +1,55 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.abstract-call {
+    margin-bottom: 50px;
+
+  @include responsive(lg) {
+  margin-bottom: 188px;
+
+  }
+  &__content {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include responsive(lg) {
+      grid-template-columns: 0.85fr 1.2fr;
+    }
+    gap: 1rem;
+  }
+
+  .abstract-content {
+    .abstract-title {
+      margin-bottom: 1rem;
+    }
+
+    .abstract-description {
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      transition: $transition;
+
+      &__img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .abstract-image {
+    text-align: right;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

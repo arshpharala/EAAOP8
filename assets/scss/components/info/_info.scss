@@ -1,0 +1,53 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.info-section {
+  margin-bottom: 50px;
+  @include responsive(lg){
+  margin-bottom: 67px;
+
+  }
+
+  &__content {
+    display: grid;
+     grid-template-columns: 1fr;
+
+    @include responsive(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    gap: 2rem;
+  }
+
+  .info-card {
+    background: $white-color;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    &__content {
+      min-width: 530px;
+      padding-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+
+    &__text {
+      color: $gray-light-color;
+      margin-bottom: 1rem;
+    }
+
+   
+  }
+}

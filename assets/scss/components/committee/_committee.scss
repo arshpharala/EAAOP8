@@ -1,0 +1,126 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.committee {
+  margin-bottom: 50px;
+  @include responsive(lg) {
+    margin-bottom: 70px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    &__buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $primary-color;
+      background: $white-color;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    &__chevron {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+
+      &--left {
+        transform: rotate(180deg);
+      }
+
+      &--right {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1rem;
+    @include responsive(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+     @include responsive(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive(lg) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  &__member {
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    // &:hover {
+    //   // transform: translateY(-5px);
+    //   // box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    // }
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee;
+  }
+
+  &__name {
+    font-size: 16px;
+
+    @include responsive(lg) {
+      font-size: 18px; // max
+    }
+
+    font-weight: bold;
+    margin: 0.8rem 0 0.3rem;
+    text-transform: uppercase;
+    color: $black-color;
+  }
+
+  &__affiliation {
+    @include responsive(lg) {
+      font-size: 14px;
+    }
+    font-size: 12px;
+    font-weight: normal;
+    color: $gray-light-color;
+    margin-bottom: 1rem;
+  }
+}
+
+.scientific-committee {
+  background-color: #fff5ea;
+  padding-top: 96px;
+  padding-bottom: 130px;
+
+  @include responsive(lg) {
+    margin-bottom: 110px;
+  }
+  margin-bottom: 50px;
+}

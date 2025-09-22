@@ -1,0 +1,272 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.speakers {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    &__buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $primary-color;
+      background: $white-color;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    &__chevron {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+
+      &--left {
+        transform: rotate(180deg);
+      }
+
+      &--right {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+  }
+
+  &__carousel {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    .speaker {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+        opacity: 0.4;
+        transition: all 0.3s ease;
+      }
+
+      &--active img {
+        filter: none;
+        opacity: 1;
+        transform: scale(1.085) translateY(16px);
+      }
+    }
+  }
+
+  .speaker-details {
+    display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+    @include responsive(sm) {
+      grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    }
+    @include responsive(md) {
+      grid-template-columns: 0.6fr 0.6fr 1.4fr 0.6fr;
+    }
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    border-top: 2px solid $border-default;
+    border-bottom: 2px solid $border-default;
+    padding: 1rem 0;
+
+    &__name {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__university {
+      display: none;
+
+      @include responsive(sm) {
+        display: block;
+      }
+      font-size: 12px;
+      @include responsive(lg) {
+        font-size: 15.16px;
+      }
+      color: #444;
+      text-align: left;
+    }
+
+    &__topic {
+      display: none;
+      @include responsive(md) {
+        display: block;
+      }
+      font-size: 15.16px;
+
+      @include responsive(lg) {
+        font-size: 19.49px;
+      }
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &__btn {
+      width: 100%;
+      display: grid;
+      place-items: end;
+    }
+  }
+}
+
+.keynote-speakers {
+  background-color: #fff5ea;
+  padding-top: 96px;
+  padding-bottom: 130px;
+  margin-top: 50px;
+
+  @include responsive(lg) {
+    margin-top: 110px;
+  }
+}
+
+// Modal Styles
+#speakerModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    z-index: 1001;
+    position: relative;
+
+    #closeModal {
+      cursor: pointer;
+      background-color: red;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      transition: background-color 0.3s, transform 0.2s;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+
+      &:hover {
+        background-color: darkred;
+        transform: scale(1.1);
+      }
+    }
+
+    #modalSpeakerImage {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      margin-bottom: 15px;
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    // Responsive adjustments
+    @include responsive(md) {
+      width: 90%;
+      padding: 20px;
+
+      h2 {
+        font-size: 1.25rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+
+      #closeModal {
+        width: 25px;
+        height: 25px;
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    @include responsive(sm) {
+      padding: 15px;
+
+      h2 {
+        font-size: 1.1rem;
+      }
+      h4 {
+        font-size: 0.95rem;
+      }
+      p {
+        font-size: 0.85rem;
+      }
+
+      #closeModal {
+        width: 20px;
+        height: 20px;
+
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}

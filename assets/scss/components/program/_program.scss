@@ -1,0 +1,102 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.program {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @include responsive(lg) {
+    margin-top: 140px;
+    margin-bottom: 150px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include responsive(md) {
+      grid-template-columns: 1.2fr 2.8fr;
+    }
+    @include responsive(lg) {
+      grid-template-columns: 0.8fr 3.2fr;
+    }
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    @include responsive(lg) {
+      font-size: 15.17px;
+    }
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__banner {
+    img {
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__presentations {
+    &__title {
+      font-size: 18px;
+      @include responsive(md) {
+        font-size: 20px;
+      }
+      @include responsive(lg) {
+        font-size: 24px;
+      }
+
+      font-weight: bold;
+      color: $primary-color;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+
+    @include responsive(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include responsive(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    h4 {
+      font-size: 16.67px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      font-size: normal;
+      color: $gray-light-color;
+      margin: 0;
+    }
+  }
+}

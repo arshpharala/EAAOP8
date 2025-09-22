@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@mixin gold-filter{
+  filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(3049%) hue-rotate(325deg) brightness(87%) contrast(88%);
+}
+
+@mixin black-filter{
+  filter: brightness(0) saturate(100%) invert(7%) sepia(31%) saturate(1125%) hue-rotate(182deg) brightness(95%) contrast(94%);
+}
+@mixin white-filter{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(64%) saturate(7%) hue-rotate(175deg) brightness(115%) contrast(100%);
+}
+
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin responsive($breakpoint, $type: max) {
+  $size: null;
+
+  @if $breakpoint == sm {
+    $size: 33.75rem; // 540px
+  } @else if $breakpoint == md {
+    $size: 45rem; // 720px
+  } @else if $breakpoint == lg {
+    $size: 60rem; // 960px
+  } @else if $breakpoint == xl {
+    $size: 71.25rem; // 1140px
+  } @else if $breakpoint == 2xl {
+    $size: 82.5rem; // 1536px
+  }
+
+  @if $size != null {
+    @if $type == max {
+      @media (min-width: #{$size}) {
+        @content;
+      }
+    }
+  }
+}

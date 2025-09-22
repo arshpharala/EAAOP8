@@ -1,0 +1,113 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.registration-section {
+  padding-top: 130px;
+  padding-bottom: 85px;
+  margin-bottom: 50px;
+
+  @include responsive(lg) {
+    margin-bottom: 100px;
+  }
+
+  background-color: $secondary-color;
+  color: $white-color;
+  text-align: center;
+
+  .registration-title {
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+  }
+
+.registration-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+    border: 1px solid $border-default;
+
+  th,
+  td {
+    border-top: 1px solid $border-default;
+    border-bottom: 1px solid $border-default;
+    border-left: none;
+    border-right: none;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  thead {
+    background-color: $primary-color;
+    font-size: 12px;
+
+    @include responsive(lg) {
+      font-size: 17.92px;
+    }
+    @include responsive(md) {
+      font-size: 16px;
+    }
+    @include responsive(sm) {
+      font-size: 14px;
+    }
+
+    th {
+      color: $white-color;
+      font-weight: bold;
+      text-align: left;
+
+      .date-note {
+        font-size: 12px;
+        @include responsive(lg) {
+          font-size: 17.92px;
+        }
+        @include responsive(md) {
+          font-size: 16px;
+        }
+        @include responsive(sm) {
+          font-size: 14px;
+        }
+        font-weight: lighter;
+        display: block;
+        color: #eee;
+      }
+    }
+  }
+
+  tbody {
+    background-color: $secondary-color;
+
+    td {
+      color: $white-color;
+      text-align: left;
+      font-size: 12px;
+
+      @include responsive(lg) {
+        font-size: 17.92px;
+      }
+      @include responsive(md) {
+        font-size: 16px;
+      }
+      @include responsive(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+  .note {
+    text-align: start;
+    @include responsive(lg) {
+      font-size: 16.8px;
+    }
+    margin: 1rem 0;
+    color: $light-color;
+  }
+
+  .registration-buttons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: start;
+  }
+}

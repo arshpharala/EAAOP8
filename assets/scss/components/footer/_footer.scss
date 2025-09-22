@@ -1,0 +1,173 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+// .footer {
+//   background-color: $secondary-color;
+//   color: $white-color;
+//   padding-bottom: 40px;
+//   padding-top: 65px;
+
+//   &__contents {
+//     display: flex;
+//     align-items: start;
+//     gap: 40px;
+//   }
+
+//   &__left {
+//     flex: 2;
+//     .footer__logo {
+//       object-fit: contain;
+//       display: block;
+//       margin-bottom: 10px;
+//       @include white-filter;
+//     }
+
+//     .footer__email {
+//       font-size: 18.75px;
+//       display: flex;
+//       align-items: center;
+//       gap: 0.5rem;
+//       &__icon {
+//         width: 20px;
+//         height: 20px;
+//         object-fit: contain;
+//       }
+//     }
+//   }
+
+//   &__lists {
+//     flex: 2.8;
+//     width: 100%;
+//     list-style: none;
+//     padding: 0;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     place-items: start;
+
+//     li {
+//       margin: 0 0 50px;
+
+//       a {
+//         color: $white-color;
+//         font-size: 16.67px;
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
+
+//   &__bottom {
+//     margin-top: 20px;
+//     text-align: center;
+//     padding-top: 10px;
+//   }
+// }
+
+.footer {
+  background-color: $secondary-color;
+  color: $white-color;
+  padding: 65px 20px 40px;
+
+  &__contents {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-direction: column;
+
+    @include responsive(md) {
+      flex-direction: row;
+      gap: 25px;
+    }
+  }
+
+  &__left {
+    flex: 2;
+
+    .footer__logo {
+      object-fit: contain;
+      display: block;
+      margin-bottom: 10px;
+      @include white-filter;
+      max-width: 150px;
+    }
+
+    .footer__email {
+      @include responsive(lg) {
+        font-size: 18.75px;
+      }
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &__icon {
+        @include responsive(lg) {
+          width: 20px;
+          height: 20px;
+        }
+        object-fit: contain;
+
+        width: 16px;
+        height: 16px;
+      }
+
+      @include responsive(md) {
+        font-size: 16px;
+      }
+
+      font-size: 14px;
+    }
+  }
+
+  &__lists {
+    flex: 2.8;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: grid;
+
+    place-items: start;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
+    @include responsive(sm) {
+      gap: 20px;
+
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    li {
+      @include responsive(lg) {
+        margin-bottom: 50px;
+      }
+
+      a {
+        color: $white-color;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        @include responsive(md) {
+          font-size: 15px;
+        }
+
+        @include responsive(lg) {
+          font-size: 16.67px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+
+    @include responsive(sm) {
+      font-size: normal;
+    }
+  }
+}

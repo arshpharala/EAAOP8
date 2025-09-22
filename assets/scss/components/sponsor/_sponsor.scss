@@ -1,0 +1,26 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.sponsors-section {
+  text-align: center;
+  margin-bottom: 50px;
+  @include responsive(lg) {
+    margin-bottom: 150px;
+  }
+  .sponsors-title {
+    margin-bottom: 2rem;
+  }
+
+  .sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .sponsor-logo {
+      max-width: 120px;
+      height: auto;
+    }
+  }
+}

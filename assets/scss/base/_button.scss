@@ -1,0 +1,33 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.button-shape {
+  display: inline-block;
+  padding: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.button-shape-primary {
+  background: $primary-color;
+  color: $white-color;
+
+  &:hover {
+    background: $black-color;
+    color: $white-color;
+  }
+}
+
+.button-shape-dark {
+  background: transparent;
+  color: $black-color;
+  border: 1px solid $black-color;
+  &:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+
+    color: $white-color;
+  }
+}
