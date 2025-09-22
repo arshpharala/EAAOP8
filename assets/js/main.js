@@ -77,7 +77,7 @@ $(document).ready(function () {
     },
   ];
 
-  let currentIndex = 0;
+  let currentIndex = 2;
 
   // Render speakers in carousel
   function renderSpeakers() {
@@ -196,7 +196,7 @@ $(document).ready(function () {
     },
   ];
 
-  let currentIndex = 0;
+  let currentIndex =2;
 
   // Render keynote speakers
   function renderKeynoteSpeakers() {
