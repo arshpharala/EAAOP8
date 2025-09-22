@@ -518,7 +518,7 @@
     </section>
 
     <!-- speaker section -->
-    <section class="speakers">
+    <section id="speakers" class="speakers">
       <div class="container speakers__contents">
         <div class="speakers__header">
           <h1 class="speakers__title">Plenary Speakers</h1>
@@ -638,12 +638,14 @@
           <!-- Left: Header -->
           <div class="program__header">
             <h1 class="program__title">Program</h1>
-            <h2 class="program__subtitle">Preliminary Scientific Program</h2>
-            <a
-              href="assets/docs/program.pdf"
-              class="button-shape button-shape-primary"
-              >Download</a
-            >
+            <div>
+              <h2 class="program__subtitle">Preliminary Scientific Program</h2>
+              <a
+                href="assets/docs/program.pdf"
+                class="button-shape button-shape-primary"
+                >Download</a
+              >
+            </div>
           </div>
 
           <!-- Right: Banner -->
@@ -727,7 +729,7 @@
     </section>
 
     <!-- registration section  -->
-    <section class="registration-section">
+    <section  id="register" class="registration-section">
       <div class="container">
         <h1 class="registration-title">Registration Categories and Fees</h1>
 
@@ -780,7 +782,17 @@
         </p>
 
         <div class="registration-buttons">
-          <button class="button-shape button-shape-primary">Download</button>
+          <button class="btn button-shape button-shape-primary">
+            Download
+            <span>
+              <img
+                src="assets/images/arrow-down.png"
+                alt="arrow-down"
+                class="btn__img"
+              />
+            </span>
+          </button>
+
           <button class="button-shape button-shape-primary">
             Register Now
           </button>

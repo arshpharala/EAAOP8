@@ -19,65 +19,24 @@
     color: $primary-color;
   }
 
-.registration-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1.5rem;
+  .registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
     border: 1px solid $border-default;
 
-  th,
-  td {
-    border-top: 1px solid $border-default;
-    border-bottom: 1px solid $border-default;
-    border-left: none;
-    border-right: none;
-    padding: 0.8rem;
-    text-align: center;
-  }
-
-  thead {
-    background-color: $primary-color;
-    font-size: 12px;
-
-    @include responsive(lg) {
-      font-size: 17.92px;
-    }
-    @include responsive(md) {
-      font-size: 16px;
-    }
-    @include responsive(sm) {
-      font-size: 14px;
-    }
-
-    th {
-      color: $white-color;
-      font-weight: bold;
-      text-align: left;
-
-      .date-note {
-        font-size: 12px;
-        @include responsive(lg) {
-          font-size: 17.92px;
-        }
-        @include responsive(md) {
-          font-size: 16px;
-        }
-        @include responsive(sm) {
-          font-size: 14px;
-        }
-        font-weight: lighter;
-        display: block;
-        color: #eee;
-      }
-    }
-  }
-
-  tbody {
-    background-color: $secondary-color;
-
+    th,
     td {
-      color: $white-color;
-      text-align: left;
+      border-top: 1px solid $border-default;
+      border-bottom: 1px solid $border-default;
+      border-left: none;
+      border-right: none;
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    thead {
+      background-color: $primary-color;
       font-size: 12px;
 
       @include responsive(lg) {
@@ -89,10 +48,50 @@
       @include responsive(sm) {
         font-size: 14px;
       }
+
+      th {
+        color: $white-color;
+        font-weight: bold;
+        text-align: left;
+
+        .date-note {
+          font-size: 12px;
+          @include responsive(lg) {
+            font-size: 17.92px;
+          }
+          @include responsive(md) {
+            font-size: 16px;
+          }
+          @include responsive(sm) {
+            font-size: 14px;
+          }
+          font-weight: lighter;
+          display: block;
+          color: #eee;
+        }
+      }
+    }
+
+    tbody {
+      background-color: $secondary-color;
+
+      td {
+        color: $white-color;
+        text-align: left;
+        font-size: 12px;
+
+        @include responsive(lg) {
+          font-size: 17.92px;
+        }
+        @include responsive(md) {
+          font-size: 16px;
+        }
+        @include responsive(sm) {
+          font-size: 14px;
+        }
+      }
     }
   }
-}
-
 
   .note {
     text-align: start;
@@ -109,5 +108,19 @@
     align-items: center;
     gap: 1rem;
     justify-content: start;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      transition: $transition;
+
+      &__img {
+        width: 12px;
+        height: 12px;
+        object-fit: contain;
+      }
+    }
   }
 }
