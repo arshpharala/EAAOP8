@@ -27,7 +27,11 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 2.5rem;
+    gap:1rem;
+
+    @include responsive(md) {
+      gap: 2.5rem;
+    }
   }
 
   &__title {

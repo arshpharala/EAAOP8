@@ -2,13 +2,13 @@
 @use "../../variables" as *;
 
 .registration-section {
-  padding-top: 85x;
-  padding-bottom: 85px;
+  padding: 50px 0;
   margin-bottom: 50px;
 
   @include responsive(lg) {
     margin-bottom: 100px;
     padding-top: 130px;
+    padding-bottom: 85px;
   }
 
   background-color: $secondary-color;

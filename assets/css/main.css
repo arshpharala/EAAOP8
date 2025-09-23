@@ -1165,7 +1165,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1rem;
+}
+@media (min-width: 45rem) {
+  .program__header {
+    gap: 2.5rem;
+  }
 }
 .program__title {
   color: #c59c6c;
@@ -1242,14 +1247,14 @@
 }
 
 .registration-section {
-  padding-top: 85x;
-  padding-bottom: 85px;
+  padding: 50px 0;
   margin-bottom: 50px;
 }
 @media (min-width: 60rem) {
   .registration-section {
     margin-bottom: 100px;
     padding-top: 130px;
+    padding-bottom: 85px;
   }
 }
 .registration-section {
