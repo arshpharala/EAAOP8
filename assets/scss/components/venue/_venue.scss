@@ -27,10 +27,10 @@
     place-items: center;
 
     &__info {
-      padding: 1rem;
+      padding: 1.5rem;
 
       @include responsive(lg) {
-        padding: 3rem;
+        padding: 3.5rem;
       }
       width: 100%;
       margin: 0 auto;

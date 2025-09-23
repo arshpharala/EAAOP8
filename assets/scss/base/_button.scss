@@ -3,7 +3,7 @@
 
 .button-shape {
   display: inline-block;
-  padding: 14px;
+  padding: 15px 30px;
   font-weight: 500;
   text-transform: uppercase;
   transition: $transition;
@@ -16,7 +16,9 @@
   color: $white-color;
 
   &:hover {
-    background: $black-color;
+    // background: $black-color;
+    background: $secondary-color;
+
     color: $white-color;
   }
 }
@@ -26,8 +28,11 @@
   color: $black-color;
   border: 1px solid $black-color;
   &:hover {
-    background: $primary-color;
-    border-color: $primary-color;
+    // background: $primary-color;
+    background: $secondary-color;
+    border-color: $secondary-color;
+
+    // border-color: $primary-color;
 
     color: $white-color;
   }

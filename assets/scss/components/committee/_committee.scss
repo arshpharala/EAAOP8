@@ -63,7 +63,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-     @include responsive(md) {
+    @include responsive(md) {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -104,10 +104,10 @@
   }
 
   &__affiliation {
+    font-size: 12px;
     @include responsive(lg) {
       font-size: 14px;
     }
-    font-size: 12px;
     font-weight: normal;
     color: $gray-light-color;
     margin-bottom: 1rem;
@@ -116,11 +116,12 @@
 
 .scientific-committee {
   background-color: #fff5ea;
-  padding-top: 96px;
-  padding-bottom: 130px;
+  margin-bottom: 50px;
+  padding: 50px 0;
 
   @include responsive(lg) {
     margin-bottom: 110px;
+    padding-top: 96px;
+    padding-bottom: 130px;
   }
-  margin-bottom: 50px;
 }

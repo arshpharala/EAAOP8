@@ -51,9 +51,8 @@
   }
 
   .date {
-
     min-width: 70px;
-    text-align: center;
+    text-align: start;
     margin-right: 1.5rem;
 
     &__day {
@@ -74,20 +73,16 @@
       line-height: 1;
     }
 
-    
-
     &__from {
       display: block;
       line-height: 0.7;
+      letter-spacing: -0.5px;
+
 
       font-size: 12px; // base
 
-      @include responsive(sm) {
-        font-size: 14px;
-      }
-
       @include responsive(md) {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       text-transform: uppercase;
@@ -119,7 +114,7 @@
   }
 
   .event {
-      line-height: 0.8;
+    line-height: 0.8;
 
     &__year {
       line-height: 1.5;
@@ -143,6 +138,8 @@
     }
     &__title {
       font-size: 13px;
+      line-height: 1.09;
+      
 
       @include responsive(sm) {
         font-size: 15px;
@@ -153,11 +150,11 @@
       @include responsive(lg) {
         font-size: 18px;
       }
-      
+
       font-weight: 600;
       text-transform: uppercase;
       color: $black-color;
-        letter-spacing: -0.5px; 
+      letter-spacing: -0.5px;
     }
   }
 }

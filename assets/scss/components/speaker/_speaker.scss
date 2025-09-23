@@ -57,34 +57,63 @@
     gap: 1rem;
     // margin-bottom: 2rem;
 
-    .owl-stage-outer{
+    .owl-stage-outer {
       padding-bottom: 37px;
     }
 
-
     .speaker {
       width: 100%;
-      height: 100%;
+      cursor: pointer;
       position: relative;
+      aspect-ratio: 3 / 4;
+
+      @include responsive(sm) {
+        aspect-ratio: 1.47 / 4;
+      }
+      background: rgba(#808080, 0.2);
+
+      overflow: hidden;
+      transition: $transition;
+      &:hover {
+        background: $primary-color;
+        transform: scale(1.085) translateY(16px);
+      }
+
+      &--active {
+        background: $primary-color;
+        transform: scale(1.085) translateY(16px);
+      }
 
       img {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        bottom: 0;
+
+        aspect-ratio: 4/4;
+        @include responsive(sm) {
+          aspect-ratio: 2.5/4;
+          transform: scale(1.085);
+        }
+
         object-fit: cover;
+        object-position: top;
         filter: grayscale(100%);
-        opacity: 0.4;
+        opacity: 0.2;
         transition: $transition;
-        cursor: pointer;
         &:hover {
           filter: none;
           opacity: 1;
         }
       }
-
       &--active img {
         filter: none;
         opacity: 1;
-        transform: scale(1.085) translateY(16px);
+        @include responsive(sm) {
+          bottom: 0;
+          transform: scale(1.05);
+        }
+        @include responsive(md) {
+          bottom: 5px;
+        }
       }
     }
   }
@@ -114,6 +143,7 @@
 
     &__university {
       display: none;
+      text-transform: uppercase;
 
       @include responsive(sm) {
         display: block;
@@ -149,12 +179,13 @@
 
 .keynote-speakers {
   background-color: #fff5ea;
-  padding-top: 96px;
-  padding-bottom: 130px;
+  padding: 50px 0;
   margin-top: 50px;
 
   @include responsive(lg) {
     margin-top: 110px;
+    padding-top: 96px;
+    padding-bottom: 130px;
   }
 }
 
@@ -177,11 +208,9 @@
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    width: 500px;
-    max-width: 90%;
-    @include responsive(md) {
-      max-width: 30%;
-    }
+    height: 70%;
+    overflow-y: scroll;
+    width: 90%;
     z-index: 1001;
     position: relative;
 
@@ -205,7 +234,7 @@
       }
 
       &:hover {
-        background-color: darkred;
+        background-color: rgba($color: $primary-color, $alpha: 0.7);
         transform: scale(1.1);
       }
     }
@@ -217,19 +246,18 @@
 
     h2 {
       margin-bottom: 10px;
-      font-size: 1.5rem;
+        font-size: 1.1rem;
+
     }
 
     h4 {
       margin-bottom: 15px;
-      color: #666;
-      font-size: 1.1rem;
-    }
+      color: $gray-light-color;
+        font-size: 0.9rem;
 
+    }
     p {
       margin-bottom: 10px;
-      line-height: 1.5;
-      font-size: 1rem;
     }
 
     // Responsive adjustments
@@ -238,10 +266,10 @@
       padding: 20px;
 
       h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
       }
       h4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       p {
         font-size: 0.9rem;
@@ -262,10 +290,10 @@
       padding: 15px;
 
       h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
       h4 {
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
       p {
         font-size: 0.85rem;
@@ -280,6 +308,10 @@
           height: 10px;
         }
       }
+    }
+
+    @include responsive(lg) {
+      max-width: 50%;
     }
   }
 }
