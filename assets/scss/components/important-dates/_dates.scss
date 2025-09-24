@@ -9,7 +9,7 @@
   }
   &__content {
     display: grid;
-    gap: 1rem;
+    gap: 40px;
     grid-template-columns: 1fr;
 
     @include responsive(lg) {
