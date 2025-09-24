@@ -9,31 +9,21 @@
   transition: $transition;
   cursor: pointer;
   font-size: 11.17px;
+  // box-shadow: $shadow-xl;
 }
 
 .button-shape-primary {
   background: $primary-color;
   color: $white-color;
-
   &:hover {
-    // background: $black-color;
     background: $secondary-color;
-
-    color: $white-color;
   }
 }
 
 .button-shape-dark {
-  background: transparent;
-  color: $black-color;
-  border: 1px solid $black-color;
+  background: $primary-color;
+  color: $white-color;
   &:hover {
-    // background: $primary-color;
-    background: $secondary-color;
-    border-color: $secondary-color;
-
-    // border-color: $primary-color;
-
-    color: $white-color;
+    background: $black-color;
   }
 }
