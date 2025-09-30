@@ -8,7 +8,7 @@
     margin-bottom: 188px;
   }
   &__content {
-    align-items: center;
+    align-items: start;
     display: grid;
     grid-template-columns: 1fr;
 
@@ -19,14 +19,15 @@
   }
 
   .abstract-content {
+      margin-bottom: 0;
+
     .abstract-title {
       margin-bottom: 1rem;
       font-weight: 400;
+      line-height: 0.8;
     }
 
-    .abstract-description {
-      margin-bottom: 1rem;
-    }
+   
 
     .btn {
       margin-top: 2rem;
@@ -49,7 +50,8 @@
 
     img {
       width: 100%;
-      height: auto;
+      height: 220px;
+      object-fit: cover;
     }
   }
 
@@ -113,6 +115,7 @@
       flex-direction: column;
 
       gap: 1.5rem;
+
     }
 
     &__section-title {
@@ -134,6 +137,8 @@
       gap: 1.5rem;
       border: 0;
       flex-direction: column;
+
+      margin-bottom: 1rem;
 
       @include responsive(sm) {
         flex-direction: row;
@@ -183,7 +188,7 @@
             font-size: 16.67px;
           }
           color: $black-color;
-          font-weight: normal;
+          font-weight: 300;
         }
       }
 
