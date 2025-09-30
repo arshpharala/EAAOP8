@@ -227,12 +227,20 @@
     gap: 1.5rem;
   }
 }
+.hero-section__title {
+  padding-top: 0;
+  line-height: 1;
+}
+@media (min-width: 60rem) {
+  .hero-section__title {
+    padding-top: 1rem;
+  }
+}
 .hero-section__subtitle {
   font-size: clamp(16px, 2vw, 22.92px);
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: normal;
-  padding: 10px 0;
 }
 @media (min-width: 45rem) {
   .hero-section__subtitle {
