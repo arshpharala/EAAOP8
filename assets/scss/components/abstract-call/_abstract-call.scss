@@ -19,15 +19,13 @@
   }
 
   .abstract-content {
-      margin-bottom: 0;
+    margin-bottom: 0;
 
     .abstract-title {
       margin-bottom: 1rem;
       font-weight: 400;
       line-height: 0.8;
     }
-
-   
 
     .btn {
       margin-top: 2rem;
@@ -98,12 +96,13 @@
         li {
           display: flex;
           align-items: start;
-          gap: 1rem;
+          gap: 20px;
 
           img {
-            width: 30px;
+            width: 35px;
             height: 37px;
             object-fit: contain;
+            object-position: top;
           }
         }
       }
@@ -115,7 +114,6 @@
       flex-direction: column;
 
       gap: 1.5rem;
-
     }
 
     &__section-title {
@@ -172,7 +170,7 @@
         padding: 0.6rem 0;
         font-size: 0.95rem;
         border: none;
-        border-bottom: 1px solid $border-default;
+        border-bottom: 1px solid $black-color;
 
         &:focus {
           outline: none;
@@ -196,8 +194,9 @@
         width: 100%;
         resize: vertical;
         padding: 0.6rem;
-        border: 1px solid $border-default;
+        margin-bottom: 1rem;
 
+        border: 1px solid $black-color;
         &:focus {
           border-color: $primary-color;
         }

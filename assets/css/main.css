@@ -450,7 +450,7 @@
   display: flex;
   align-items: start;
   gap: 30px;
-  padding: 60px 40px 50px 20px;
+  padding: 60px 20px 50px 40px;
   border: 1px solid #c59c6c;
   border-radius: 12px;
   max-height: 290px;
@@ -1704,12 +1704,13 @@
 .abstract-call .abstract-form__details ul li {
   display: flex;
   align-items: start;
-  gap: 1rem;
+  gap: 20px;
 }
 .abstract-call .abstract-form__details ul li img {
-  width: 30px;
+  width: 35px;
   height: 37px;
   object-fit: contain;
+  object-position: top;
 }
 .abstract-call .abstract-form__fields {
   margin-top: 60px;
@@ -1778,7 +1779,7 @@
   padding: 0.6rem 0;
   font-size: 0.95rem;
   border: none;
-  border-bottom: 1px solid #d1d5db;
+  border-bottom: 1px solid #000;
 }
 .abstract-call .abstract-form__field input:focus,
 .abstract-call .abstract-form__field textarea:focus {
@@ -1810,7 +1811,8 @@
   width: 100%;
   resize: vertical;
   padding: 0.6rem;
-  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+  border: 1px solid #000;
 }
 .abstract-call .abstract-form__field textarea:focus {
   border-color: #c59c6c;
@@ -1826,7 +1828,7 @@
   }
 }
 .sponsors-section .sponsors-title {
-  margin-bottom: 2rem;
+  margin-bottom: 59px;
   font-weight: 400;
 }
 .sponsors-section .sponsor-logos {
