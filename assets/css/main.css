@@ -1895,17 +1895,17 @@
   flex-direction: column;
   flex: 1;
 }
-@media (min-width: 45rem) {
-  .info-section .info-card__text-contents {
-    min-height: 410px;
-  }
-}
 .info-section .info-card__text-contents {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
   height: 100%;
+}
+@media (min-width: 45rem) {
+  .info-section .info-card__text-contents {
+    min-height: 410px;
+  }
 }
 .info-section .info-card__title {
   margin-bottom: 30px;

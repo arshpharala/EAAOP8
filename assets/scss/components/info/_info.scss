@@ -38,14 +38,15 @@
     }
 
     &__text-contents {
-      @include responsive(md) {
-        min-height: 410px;
-      }
+    
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 2rem;
       height: 100%;
+        @include responsive(md) {
+        min-height: 410px;
+      }
     }
 
     &__title {
