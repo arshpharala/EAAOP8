@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Yuan Chen",
+		"university": "The University of Sydney, Australia",
+		"topic": "Sustainable carbon catalysts for advanced oxidation processes",
+		"image": "assets/images/speakers/yuan-chen.png",
+		"bio": "Dr. Yuan Chen is a Professor at The University of Sydney and has been the director of the Advanced Carbon Research Lab since 2016. His research focuses on carbon materials and their applications in sustainable energy and environmental fields, including batteries, supercapacitors, catalysts, membranes, and antibacterial coatings. He received the Singapore Young Scientist Award from the Singapore National Academy of Science in 2011, an Australian Research Council Professorial Future Fellowship in 2017, and an Australian Research Council Industry Fellowship in 2024. He is a Fellow of the Royal Society of Chemistry (UK), Royal Australian Chemical Institute, and Institution of Chemical Engineers (UK). He is currently an editor for Carbon and Journal of Alloys and Compounds. Website: https://yuanchenlab.org/"
+	},
+	{
+		"name": "Jelena Radjenovic",
+		"university": "ICREA Research Center, Spain",
+		"topic": "Nanotechnology-enabled electrochemical systems for water treatment and resource recovery",
+		"image": "assets/images/speakers/jelena-radjenovic.png",
+		"bio": "Jelena Radjenovic graduated in Biochemical Engineering at the University of Belgrade, Serbia, in 2004. She obtained a PhD from the University of Barcelona, Spain, in 2009. From 2009 to 2014 she was a research fellow at the University of Queensland, Australia. In 2014, Jelena relocated to the Catalan Institute for Water Research (ICRA) in Girona, Spain, with a Marie-Curie fellowship. At ICRA, Jelena leads a group focused on the development of nanostructured electrodes for electrochemical water treatment and resource recovery. She was awarded several European Research Council (ERC) projects: Starting Grant ELECTRON4WATER (2017-2023), Proof of Concept grant GRAPHEC (2023-2024), and Consolidator Grant ELECTROmonoLITH (2024-2029). Currently, she is also leading a European Innovation Council (EIC) Transition Grant FOREVER WATER (2025-2028), focused on the upscaling and commercialization of graphene-enabled electrochemical systems for the destruction of PFAS in water."
+	},
+	{
+		"name": "Tierui Zhang",
+		"university": "Technical Institute of Physics and Chemistry, Chinese Academy of Sciences, China",
+		"topic": "Defective Layered Double Hydroxide Based Nanostructured Photocatalysts for Nitrogen Fixation",
+		"image": "assets/images/speakers/tierui-zhang.png",
+		"bio": "Dr. Tierui Zhang is a full Professor in the Technical Institute of Physics and Chemistry (TIPC), Chinese Academy of Sciences (CAS). His research activity focuses on catalyst nanomaterials for energy conversion such as photocatalytic solar fuels and value-added chemicals. He has published more than 380 peer reviewed SCI journal articles in international famous journals such as Nat. Catal. These publications have earned him to date over 50,000 citations with H-index 122. He was named in the annual Highly Cited Researchers 2018-2024 List by Clarivate Analytics. He was granted 60 national invention patents in China. Dr. Zhang is the associate editor of Science Bulletin, Industrial Chemistry & Materials, Nano Research Energy and Transactions of Tianjin University, and also serves as an editorial board member for journals including Advanced Energy Materials, Advanced Science, and Chemical Science. He was named a Fellow of the Royal Society of Chemistry (FRSC) in 2017 and a Fellow of the Chinese Chemical Society (FCCS) in 2023. Website: http://zhanglab.ipc.ac.cn"
+	},
+	{
+		"name": "Yuan Chen",
+		"university": "The University of Sydney, Australia",
+		"topic": "Sustainable carbon catalysts for advanced oxidation processes",
+		"image": "assets/images/speakers/yuan-chen.png",
+		"bio": "Dr. Yuan Chen is a Professor at The University of Sydney and has been the director of the Advanced Carbon Research Lab since 2016. His research focuses on carbon materials and their applications in sustainable energy and environmental fields, including batteries, supercapacitors, catalysts, membranes, and antibacterial coatings. He received the Singapore Young Scientist Award from the Singapore National Academy of Science in 2011, an Australian Research Council Professorial Future Fellowship in 2017, and an Australian Research Council Industry Fellowship in 2024. He is a Fellow of the Royal Society of Chemistry (UK), Royal Australian Chemical Institute, and Institution of Chemical Engineers (UK). He is currently an editor for Carbon and Journal of Alloys and Compounds. Website: https://yuanchenlab.org/"
+	},
+	{
+		"name": "Jelena Radjenovic",
+		"university": "ICREA Research Center, Spain",
+		"topic": "Nanotechnology-enabled electrochemical systems for water treatment and resource recovery",
+		"image": "assets/images/speakers/jelena-radjenovic.png",
+		"bio": "Jelena Radjenovic graduated in Biochemical Engineering at the University of Belgrade, Serbia, in 2004. She obtained a PhD from the University of Barcelona, Spain, in 2009. From 2009 to 2014 she was a research fellow at the University of Queensland, Australia. In 2014, Jelena relocated to the Catalan Institute for Water Research (ICRA) in Girona, Spain, with a Marie-Curie fellowship. At ICRA, Jelena leads a group focused on the development of nanostructured electrodes for electrochemical water treatment and resource recovery. She was awarded several European Research Council (ERC) projects: Starting Grant ELECTRON4WATER (2017-2023), Proof of Concept grant GRAPHEC (2023-2024), and Consolidator Grant ELECTROmonoLITH (2024-2029). Currently, she is also leading a European Innovation Council (EIC) Transition Grant FOREVER WATER (2025-2028), focused on the upscaling and commercialization of graphene-enabled electrochemical systems for the destruction of PFAS in water."
+	},
+	{
+		"name": "Tierui Zhang",
+		"university": "Technical Institute of Physics and Chemistry, Chinese Academy of Sciences, China",
+		"topic": "Defective Layered Double Hydroxide Based Nanostructured Photocatalysts for Nitrogen Fixation",
+		"image": "assets/images/speakers/tierui-zhang.png",
+		"bio": "Dr. Tierui Zhang is a full Professor in the Technical Institute of Physics and Chemistry (TIPC), Chinese Academy of Sciences (CAS). His research activity focuses on catalyst nanomaterials for energy conversion such as photocatalytic solar fuels and value-added chemicals. He has published more than 380 peer reviewed SCI journal articles in international famous journals such as Nat. Catal. These publications have earned him to date over 50,000 citations with H-index 122. He was named in the annual Highly Cited Researchers 2018-2024 List by Clarivate Analytics. He was granted 60 national invention patents in China. Dr. Zhang is the associate editor of Science Bulletin, Industrial Chemistry & Materials, Nano Research Energy and Transactions of Tianjin University, and also serves as an editorial board member for journals including Advanced Energy Materials, Advanced Science, and Chemical Science. He was named a Fellow of the Royal Society of Chemistry (FRSC) in 2017 and a Fellow of the Chinese Chemical Society (FCCS) in 2023. Website: http://zhanglab.ipc.ac.cn"
+	}
+]

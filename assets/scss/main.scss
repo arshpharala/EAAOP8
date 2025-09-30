@@ -39,6 +39,7 @@ h1 {
 p {
   line-height: 1.5;
   font-size: 12px;
+  font-weight: 400;
   @include responsive(md) {
     font-size: 14px;
   }

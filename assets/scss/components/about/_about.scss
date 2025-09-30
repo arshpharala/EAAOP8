@@ -20,14 +20,61 @@
     }
   }
 
-  &__left {
-    max-height: 343.5px;
+  &__content2 {
+    margin-top: 50px;
+    // & > :nth-child(1) {
+    //   order: 2;
+    // }
 
+    // & > :nth-child(2) {
+    //   order: 1;
+    // }
+
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+
+    @include responsive(lg) {
+      margin-top: 90px;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      & > :nth-child(1) {
+        order: 1;
+      }
+
+      & > :nth-child(2) {
+        order: 2;
+      }
+    }
+  }
+
+  &__left {
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
     }
   }
+
+  &__left2 {
+    &__title {
+      font-weight: normal;
+      font-size: clamp(18px, 2vw, 31.25px);
+      margin-bottom: 35px;
+      line-height: 1.3;
+      margin-top: -8px;
+
+    }
+
+    &__desc {
+      font-weight: lighter;
+      color: $gray-light-color;
+      max-width: 95%;
+    }
+  }
+
   &__right {
     &__title {
       line-height: 0.8;
@@ -65,22 +112,66 @@
     }
 
     &__desc {
-      padding: 1rem 0;
-      @include responsive(lg) {
-        padding-bottom: 3rem;
-      }
-      max-width: 92%;
       font-weight: lighter;
-      color: $gray-light-color;
+      margin-top: -5px;
 
-      .read-more {
-        color: $secondary-color;
-        font-weight: 500;
-        cursor: pointer;
-        text-decoration: none;
-        margin-left: 5px;
-        text-decoration: underline;
-      }
+      color: $gray-light-color;
     }
   }
+
+  &__right2{
+    height: 100%;
+  }
+
+.speaker-card {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  padding: 60px 40px 50px 20px ;
+  border: 1px solid $primary-color;
+  border-radius: 12px;
+  max-height: 290px;
+  margin-bottom: 50px;
+
+  &__image {
+    flex-shrink: 0;
+
+    img {
+      height: 180px;
+      width: 165px;
+      object-fit: cover;
+      border-radius: 20px;
+      display: block;
+    }
+  }
+
+  &__content {
+    color: #000;
+
+    .speaker-card__message {
+      font-size: clamp(16px, 2vw, 20.83px);   
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .speaker-card__name {
+      font-size: clamp(16px, 2vw, 20.83px);   
+      line-height: 1.1;
+
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .speaker-card__role {
+      font-size: clamp(16px, 2vw, 20.83px);   
+
+      font-weight: 400;
+      color: #444;
+      margin: 0;
+      
+    }
+  }
+}
+
 }

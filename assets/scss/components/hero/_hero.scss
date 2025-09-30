@@ -20,10 +20,21 @@
     }
   }
 
-  &__title {
-    margin-bottom: 1rem;
-    @include responsive(lg) {
-      margin-bottom: 0;
+  // &__title {
+  //   margin-bottom: 1rem;
+  //   @include responsive(lg) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  &__subtitle{
+    font-size: clamp(16px, 2vw, 22.92px);
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 10px 0;
+    @include responsive(md){
+    max-width: 75%;
     }
   }
 

@@ -1,3 +1,4 @@
+// committee-carousel
 $(document).ready(function () {
   var committeeCarousel = $(".committee-carousel").owlCarousel({
     loop: true,
@@ -144,22 +145,21 @@ $(document).ready(function () {
     //   updateDetails(realIndex);
     // });
 
-	if (nextBtn) {
-  $(nextBtn).click(() => {
-    currentIndex = (currentIndex + 1) % data.length; // go forward
-    updateDetails(currentIndex);
-    owl.trigger("to.owl.carousel", [currentIndex, 300, true]); // jump to that index
-  });
-}
+    if (nextBtn) {
+      $(nextBtn).click(() => {
+        currentIndex = (currentIndex + 1) % data.length; // go forward
+        updateDetails(currentIndex);
+        owl.trigger("to.owl.carousel", [currentIndex, 300, true]); // jump to that index
+      });
+    }
 
-if (prevBtn) {
-  $(prevBtn).click(() => {
-    currentIndex = (currentIndex - 1 + data.length) % data.length; // go back
-    updateDetails(currentIndex);
-    owl.trigger("to.owl.carousel", [currentIndex, 300, true]); // jump to that index
-  });
-}
-
+    if (prevBtn) {
+      $(prevBtn).click(() => {
+        currentIndex = (currentIndex - 1 + data.length) % data.length; // go back
+        updateDetails(currentIndex);
+        owl.trigger("to.owl.carousel", [currentIndex, 300, true]); // jump to that index
+      });
+    }
 
     updateDetails(currentIndex);
 
@@ -202,6 +202,16 @@ if (prevBtn) {
     topicEl: "#keynotespeakerTopic",
     viewBioBtn: "#keynoteviewBioBtn",
   });
+    loadSpeakers("assets/data/invited-speakers.json", {
+    carouselSelector: "#invitedspeakersCarousel",
+    nextBtn: "#next",
+    prevBtn: "#prev",
+    nameEl: "#invitedspeakerName",
+    universityEl: "#invitedspeakerUniversity",
+    topicEl: "#invitedspeakerTopic",
+    viewBioBtn: "#invitedviewBioBtn",
+  });
+
 
   // Close when clicking the close button
   $("#closeModal").on("click", function () {

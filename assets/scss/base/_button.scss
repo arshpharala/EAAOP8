@@ -3,8 +3,8 @@
 
 .button-shape {
   display: inline-block;
-  padding: 15px 30px;
-  font-weight: 500;
+  padding: 12px 19px;
+  font-weight: 400;
   text-transform: uppercase;
   transition: $transition;
   cursor: pointer;
@@ -17,6 +17,33 @@
   color: $white-color;
   &:hover {
     background: $secondary-color;
+  }
+}
+
+.button-shape-contact {
+  background: $primary-color;
+  color: $white-color;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 9px 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: $transition;
+  cursor: pointer;
+  font-size: 10.42px;
+  &:hover {
+    background: $secondary-color;
+  }
+}
+
+.button-shape-black {
+  background: transparent;
+  color: $black-color;
+  border: 1px solid $black-color;
+  &:hover {
+    color: $white-color;
+    background: $secondary-color;
+    border: 1px solid $secondary-color;
   }
 }
 

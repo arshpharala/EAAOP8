@@ -9,19 +9,25 @@
   }
   .sponsors-title {
     margin-bottom: 2rem;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .sponsor-logos {
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
     gap: 2rem;
+    @include responsive(lg){
+    max-width: 70%;
+
+    }
+    margin: 0 auto;
 
     .sponsor-logo {
       max-width: 120px;
       height: auto;
+      object-fit: contain;
     }
   }
 }

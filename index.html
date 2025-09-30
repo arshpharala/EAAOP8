@@ -53,17 +53,32 @@
 
         <div class="ku-header__navs">
           <nav class="ku-header__nav">
-            <ul class="ku-nav__list">
-              <li><a href="#home" class="ku-nav__link">HOME</a></li>
-              <li><a href="#about" class="ku-nav__link">ABOUT</a></li>
-              <li><a href="#committee" class="ku-nav__link">COMMITTEE</a></li>
-              <li><a href="#speakers" class="ku-nav__link">SPEAKERS</a></li>
-              <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
-            </ul>
+            <div>
+              <ul class="ku-nav__list">
+                <li><a href="#home" class="ku-nav__link">HOME</a></li>
+                <li><a href="#about" class="ku-nav__link">ABOUT</a></li>
+                <li>
+                  <a href="#committee" class="ku-nav__link">COMMITTEEs</a>
+                </li>
+                <li><a href="#speakers" class="ku-nav__link">SPEAKERS</a></li>
+                <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
+                <li>
+                  <a href="#registration" class="ku-nav__link">registration</a>
+                </li>
+              </ul>
+              <ul class="ku-nav__list" style="margin-top: 0.3rem">
+                <li><a href="#call-for-abstract">submit Abstract</a></li>
+                <li><a href="#special-issues">special issues</a></li>
+
+                <li><a href="#venue" class="ku-nav__link">venue</a></li>
+                <li>
+                  <a href="#sponsorship" class="ku-nav__link">sponsors</a>
+                </li>
+              </ul>
+            </div>
+
             <button>
-              <a href="#" class="button-shape button-shape-primary"
-                >CONTACT US</a
-              >
+              <a href="#" class="button-shape-contact">CONTACT US</a>
             </button>
           </nav>
 
@@ -105,8 +120,9 @@
             <li><a href="#sponsorship">Sponsorship</a></li>
             <li><a href="#committee">Committee</a></li>
             <li><a href="#registration">Registration</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#venue" class="ku-nav__link">venue</a></li>
+
             <li><a href="#call-for-abstract">Call for Abstract</a></li>
           </ul>
         </div>
@@ -125,8 +141,11 @@
           <div class="empty"></div>
           <h1 class="hero-section__title">
             o8th International Conference on Environmental Applications of
-            Advanced Oxidation Processes
+            Advanced Oxidation Processes (EAAOP-8)
           </h1>
+          <h2 class="hero-section__subtitle">
+            Abu Dhabi, United Arab Emirates, 31st March 2027 – 2nd April 2027
+          </h2>
           <div>
             <button>
               <a href="#" class="button-shape button-shape-primary">
@@ -164,32 +183,13 @@
 
     <!-- about section  -->
     <section id="about" class="about-section">
-      <div class="container about-section__content">
-        <div class="about-section__left">
-          <img src="assets/images/about.png" alt="about" />
-        </div>
-        <div class="about-section__right">
-          <h1 class="about-section__right__title">
-            31st March – 2nd April 2027
-          </h1>
-          <h1 class="about-section__right__sub-title">Abu Dhabi, UAE</h1>
-          <p class="about-section__right__desc">
-            <span class="short-text">
-              The conference will be followed by the International PhD School of
-              Advanced Oxidation Processes taking place on 5th-6th April 2027.
-              On behalf of the Organizing Committee, it is our great pleasure to
-              welcome you to the 8th International Conference on Environmental
-              Applications of Advanced Oxidation Processes (EAAOP-8), which will
-              take place ...
-            </span>
-            <span class="full-text" style="display: none">
-              The conference will be followed by the International PhD School of
-              Advanced Oxidation Processes taking place on 5th-6th April 2027 On
-              behalf of the Organizing Committee, it is our great pleasure to
-              welcome you to the 8th International Conference on Environmental
-              Applications of Advanced Oxidation Processes (EAAOP-8), which will
-              take place in Abu Dhabi, United Arab Emirates, 31st March 2027 –
-              2nd April 2027. <br />
+      <div class="container">
+        <div class="about-section__content">
+          <div class="about-section__left">
+            <img src="assets/images/about.png" alt="about" />
+          </div>
+          <div class="about-section__right">
+            <p class="about-section__right__desc">
               The conference is organised by Khalifa University and stands as a
               relevant event and network opportunity for sharing knowledge and
               expertise among scientists, academia, environmental professionals
@@ -197,29 +197,61 @@
               recent high impact investigations and technological developments
               on environmental applications of advanced oxidation processes
               (AOPs) and related areas. <br />
+              <br />
+
               Scientific and technological progress of AOPs in air, water,
               wastewater and soil treatment, as well as valorisation and
               recovery of aqueous matrices, biomass and wastes, are welcome.
+              <br />
               <br />
               In a constantly evolving regulatory context, AOPs are expected to
               play an increasingly important role in successfully addressing new
               environmental challenges. Therefore, we are sure that the EAAOP-8
               conference will be an important opportunity to demonstrate how
               AOPs can significantly contribute to this aim, as well as of
-              discussion among all the stakeholders. <br />
-              <strong> Looking forward to meeting you in Abu Dhabi, </strong>
-              <br />
-              <i> Giovanni Palmisano, Chair</i><br />
-              Lianxi Zheng, <i>Co-Chair</i>
-            </span>
-            <a href="javascript:void(0);" class="read-more">read more</a>
-          </p>
+              discussion among all the stakeholders.
+            </p>
+          </div>
+        </div>
+        <div class="about-section__content2">
+          <div class="about-section__left2">
+            <h1 class="about-section__left2__title">
+              The conference will be followed by the International PhD School of
+              Advanced Oxidation Processes taking place on
+              <strong>5th-6th April 2027</strong>
+            </h1>
+            <p class="about-section__left2__desc">
+              On behalf of the Organizing Committee, it is our great pleasure to
+              welcome you to the 8th International Conference on Environmental
+              Applications of Advanced Oxidation Processes (EAAOP-8), which will
+              take place in Abu Dhabi, United Arab Emirates, 31st March 2027 –
+              2nd April 2027.
+            </p>
+          </div>
+          <div class="about-section__right2">
+            <figure class="speaker-card" aria-label="Event Speaker">
+              <div class="speaker-card__image">
+                <img
+                  src="assets/images/member-1.png"
+                  alt="Portrait of Giovanni Palmisano"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="speaker-card__content">
+                <p class="speaker-card__message">
+                  Looking forward to meeting you in Abu Dhabi,
+                </p>
+                <h3 class="speaker-card__name">Giovanni Palmisano,</h3>
+                <p class="speaker-card__role">Chair, Lianxi Zheng, Co-Chair</p>
+              </figcaption>
+            </figure>
 
-          <button>
-            <a href="#" class="button-shape button-shape-primary">
-              register now
-            </a>
-          </button>
+            <button>
+              <a href="#" class="button-shape button-shape-black">
+                register now
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -313,85 +345,6 @@
               policy advising.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- important-dates -->
-    <section class="important-dates">
-      <div class="container important-dates__content">
-        <div class="important-dates__grid__left">
-          <img
-            src="assets/images/important.png"
-            alt="important-dates"
-            class="important-dates__grid__left__img"
-          />
-        </div>
-        <div class="important-dates__grid__right">
-          <h1 class="important-dates__title">Important Dates</h1>
-          <ul class="important-dates__list">
-            <li class="important-dates__item">
-              <div class="date">
-                <span class="date__from">From</span>
-                <span class="date__day">01</span>
-                <span class="date__month">Oct</span>
-              </div>
-              <div class="event">
-                <span class="event__year">2025</span>
-                <span class="event__title">Abstract Submission Opens</span>
-              </div>
-            </li>
-
-            <li class="important-dates__item">
-              <div class="date">
-                <span class="date__from">From</span>
-                <span class="date__day">01</span>
-                <span class="date__month">Jun</span>
-              </div>
-              <div class="event">
-                <span class="event__year">2026</span>
-                <span class="event__title"
-                  >Communication of Abstract Acceptance (Oral/Flash
-                  Oral/Poster)</span
-                >
-              </div>
-            </li>
-
-            <li class="important-dates__item">
-              <div class="date">
-                <span class="date__day">15</span>
-                <span class="date__month">Dec</span>
-              </div>
-              <div class="event">
-                <span class="event__year">2026</span>
-                <span class="event__title">Abstract Submission Deadline</span>
-              </div>
-            </li>
-
-            <li class="important-dates__item">
-              <div class="date">
-                <span class="date__day">01</span>
-                <span class="date__month">Nov</span>
-              </div>
-              <div class="event">
-                <span class="event__year">2026</span>
-                <span class="event__title"
-                  >Early Bird Registration Deadline</span
-                >
-              </div>
-            </li>
-
-            <li class="important-dates__item">
-              <div class="date">
-                <span class="date__day">15</span>
-                <span class="date__month">Feb</span>
-              </div>
-              <div class="event">
-                <span class="event__year">2027</span>
-                <span class="event__title">Regular Registration Deadline</span>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
@@ -1217,6 +1170,386 @@
       </div>
     </section>
 
+    <!-- conference secretariat Section -->
+    <section id="committee" class="committee conference-secretariat">
+      <div class="container">
+        <div class="committee__header">
+          <h1 class="committee__title">conference secretariat</h1>
+
+          <div class="committee__header__buttons">
+            <button class="committee__header__btn committee-prev">
+              <img
+                src="assets/images/chevron.png"
+                alt="Previous"
+                class="committee__header__chevron committee__header__chevron--left"
+              />
+            </button>
+            <button class="committee__header__btn committee-next">
+              <img
+                src="assets/images/chevron.png"
+                alt="Next"
+                class="committee__header__chevron committee__header__chevron--right"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Owl Carousel -->
+        <div class="committee-carousel owl-carousel">
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Giovanni Palmisano"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Giovanni Palmisano</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+          <!-- Giovanni Palmisano -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Giovanni Palmisano"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Giovanni Palmisano</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Lianxi Zheng -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Lianxi Zheng"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Lianxi Zheng</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Lourdes Vega -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Lourdes Vega"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Lourdes Vega</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Shadi Hasan -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Shadi Hasan"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Shadi Hasan</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Jorge Rodriguez -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Jorge Rodriguez"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Jorge Rodriguez</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Shamarke Mohamed -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Shamarke Mohamed"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Shamarke Mohamed</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Dinesh Shetty -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Dinesh Shetty"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Dinesh Shetty</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Mohammad Abu Haija -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Mohammad Abu Haija"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Mohammad Abu Haija</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Moh'd Rezeq -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Moh'd Rezeq"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Moh'd Rezeq</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Matteo Chiesa -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Matteo Chiesa"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Matteo Chiesa</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Nirpendra Singh -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Nirpendra Singh"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Nirpendra Singh</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Haider Butt -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Haider Butt"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Haider Butt</h3>
+            <p class="committee__affiliation">
+              Khalifa University, Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Raed Hashaikeh -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Raed Hashaikeh"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Raed Hashaikeh</h3>
+            <p class="committee__affiliation">
+              New York University Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Panče Naumov -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Panče Naumov"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Panče Naumov</h3>
+            <p class="committee__affiliation">
+              New York University Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Ali Trabolsi -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Ali Trabolsi"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Ali Trabolsi</h3>
+            <p class="committee__affiliation">
+              New York University Abu Dhabi,<br />United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Mehmet Orhan -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Mehmet Orhan"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Mehmet Orhan</h3>
+            <p class="committee__affiliation">
+              American University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Md. Maruf Mortula -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Md. Maruf Mortula"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Md. Maruf Mortula</h3>
+            <p class="committee__affiliation">
+              American University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Mauro Pravettoni -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Mauro Pravettoni"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Mauro Pravettoni</h3>
+            <p class="committee__affiliation">
+              Technology Innovation Institute,<br />Abu Dhabi, United Arab
+              Emirates
+            </p>
+          </div>
+
+          <!-- Musthafa Mavukkandy -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Musthafa Mavukkandy"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Musthafa Mavukkandy</h3>
+            <p class="committee__affiliation">
+              Technology Innovation Institute,<br />Abu Dhabi, United Arab
+              Emirates
+            </p>
+          </div>
+
+          <!-- Abrar Inayat -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Abrar Inayat"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Abrar Inayat</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Adewale Giwa -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Adewale Giwa"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Adewale Giwa</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Sourjya Bhattacharjee -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Sourjya Bhattacharjee"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Sourjya Bhattacharjee</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Mamdouh El Haj Assad -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Mamdouh El Haj Assad"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Mamdouh El Haj Assad</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Mohammad Ali Abdelkareem -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Mohammad Ali Abdelkareem"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Mohammad Ali Abdelkareem</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Di Zhang -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Di Zhang"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Di Zhang</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+
+          <!-- Muhammad Tawalbeh -->
+          <div class="committee__member">
+            <img
+              src="assets/images/member-1.png"
+              alt="Muhammad Tawalbeh"
+              class="committee__photo"
+            />
+            <h3 class="committee__name">Muhammad Tawalbeh</h3>
+            <p class="committee__affiliation">
+              University of Sharjah,<br />Sharjah, United Arab Emirates
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Speaker Section -->
     <section id="speakers" class="speakers">
       <div class="container speakers__contents">
@@ -1326,6 +1659,55 @@
       </div>
     </section>
 
+    <!-- invited Speakers Section -->
+    <section class="speakers invited-speakers">
+      <div class="container speakers__contents">
+        <div class="speakers__header">
+          <h1 class="speakers__title">invited Speakers</h1>
+          <div class="speakers__header__buttons">
+            <button id="prev" class="speakers__header__btn">
+              <img
+                src="assets/images/chevron.png"
+                alt="Previous"
+                class="speakers__header__chevron speakers__header__chevron--left"
+              />
+            </button>
+            <button id="next" class="speakers__header__btn">
+              <img
+                src="assets/images/chevron.png"
+                alt="Next"
+                class="speakers__header__chevron speakers__header__chevron--right"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- invited Speakers Carousel -->
+        <div
+          class="speakers__carousel owl-carousel"
+          id="invitedspeakersCarousel"
+        ></div>
+
+        <!-- invited Speaker details -->
+        <div class="speaker-details">
+          <div class="speaker-details__name" id="invitedspeakerName"></div>
+          <div
+            class="speaker-details__university"
+            id="invitedspeakerUniversity"
+          ></div>
+          <div class="speaker-details__topic" id="invitedspeakerTopic"></div>
+          <div class="speaker-details__btn">
+            <button
+              id="invitedviewBioBtn"
+              class="button-shape button-shape-primary"
+            >
+              View Bio
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Program Section -->
     <section id="program" class="program">
       <div class="container">
@@ -1420,6 +1802,98 @@
             </div>
           </div>
         </div>
+
+        <!-- Schedule Component -->
+        <div class="schedule">
+          <!-- Date Tabs -->
+          <div style="text-align: center">
+            <div class="schedule__tabs">
+              <button
+                class="schedule__tab schedule__tab--active"
+                data-date="2027-03-31"
+              >
+                31st March 2027
+              </button>
+              <button class="schedule__tab" data-date="2027-04-01">
+                1st April 2027
+              </button>
+            </div>
+          </div>
+
+          <!-- Schedule Body -->
+          <div class="schedule__body">
+            <!-- Room Selector -->
+            <div class="schedule__rooms">
+              <button
+                class="schedule__room-btn schedule__room-btn--active"
+                data-room="auditorium"
+              >
+                Auditorium <br />
+                <span> C00068-C01066 </span>
+              </button>
+              <button class="schedule__room-btn" data-room="b00055">
+                Lecture room <br />
+                <span>B00055</span>
+              </button>
+              <button class="schedule__room-btn" data-room="b00107">
+                Lecture room <br />
+                <span>B00107</span>
+              </button>
+            </div>
+
+            <!-- Room Schedules -->
+            <div class="schedule__content">
+              <div
+                class="schedule__room-content schedule__room-content--active"
+                id="auditorium"
+              >
+                <div class="schedule__slot">
+                  08:30 - 09:00 | Opening Ceremony
+                </div>
+                <div class="schedule__slot">09:00 - 09:45 | PL1</div>
+                <div class="schedule__slot">09:45 - 10:30 | KN1, IS1</div>
+                <div class="schedule__slot">
+                  10:30 - 10:50 | Coffee Break (Multi-Purpose Hall D00073)
+                </div>
+                <div class="schedule__slot">10:50 - 12:30 | OP1-6, FP1-2</div>
+                <div class="schedule__slot">
+                  12:30 - 13:30 | Lunch Break (Multi-Purpose Hall D00073)
+                </div>
+                <div class="schedule__slot">13:30 - 15:00 | OP7-12</div>
+                <div class="schedule__slot">
+                  15:00 - 16:00 | Coffee Break and Poster Presentations
+                </div>
+                <div class="schedule__slot">16:00 - 18:00 | OP13-19, FP3-5</div>
+                <div class="schedule__slot">
+                  18:00 - 19:00 | Welcome reception
+                </div>
+              </div>
+
+              <div class="schedule__room-content" id="b00055">
+                <div class="schedule__slot">09:00 - 09:45 | PL1</div>
+                <div class="schedule__slot">09:45 - 10:30 | KN1, IS1</div>
+              </div>
+
+              <div class="schedule__room-content" id="b00107">
+                <div class="schedule__slot">
+                  10:30 - 10:50 | Coffee Break (Multi-Purpose Hall D00073)
+                </div>
+                <div class="schedule__slot">10:50 - 12:30 | OP1-6, FP1-2</div>
+                <div class="schedule__slot">
+                  12:30 - 13:30 | Lunch Break (Multi-Purpose Hall D00073)
+                </div>
+                <div class="schedule__slot">13:30 - 15:00 | OP7-12</div>
+                <div class="schedule__slot">
+                  15:00 - 16:00 | Coffee Break and Poster Presentations
+                </div>
+                <div class="schedule__slot">16:00 - 18:00 | OP13-19, FP3-5</div>
+                <div class="schedule__slot">
+                  18:00 - 19:00 | Welcome reception
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1495,36 +1969,190 @@
 
     <!-- abstract-call section  -->
     <section id="call-for-abstract" class="abstract-call">
-      <div class="container abstract-call__content">
-        <div class="abstract-content">
-          <h1 class="abstract-title">Call for Abstract</h1>
-          <p class="abstract-description">
-            The Scientific Program will include poster, oral and flash oral
-            communications. Flash oral communications will be complemented by a
-            poster.
-          </p>
-          <p class="abstract-description">
-            Each participant can submit up to two abstracts as presenting
-            author, but only one abstract can be selected for oral
-            communication.
-          </p>
-          <button class="btn button-shape button-shape-primary">
-            Submit Abstract
-            <span>
-              <img
-                src="assets/images/arrow-down.png"
-                alt="arrow-down"
-                class="btn__img"
-              />
-            </span>
-          </button>
+      <div class="container">
+        <div class="abstract-call__content">
+          <div class="abstract-content">
+            <h1 class="abstract-title">ABSTRACT SUBMISSION</h1>
+            <p class="abstract-description">
+              The Scientific Program will include poster, oral and flash oral
+              communications. Flash oral communications will be complemented by
+              a poster.
+            </p>
+            <p class="abstract-description">
+              Each participant can submit up to two abstracts as presenting
+              author, but only one abstract can be selected for oral
+              communication.
+            </p>
+          </div>
+
+          <div class="abstract-image">
+            <img
+              src="assets/images/person-with-laptop.png"
+              alt="Person writing near laptop"
+            />
+          </div>
         </div>
 
-        <div class="abstract-image">
-          <img
-            src="assets/images/person-with-laptop.png"
-            alt="Person writing near laptop"
-          />
+        <div class="abstract-form">
+          <!-- Instructions -->
+          <section class="abstract-form__note">
+            <h2 class="abstract-form__title">
+              Before Abstract Submission, please take into account the
+              following:
+            </h2>
+            <div class="abstract-form__details">
+              <ul>
+                <li>
+                  <img
+                    src="assets/images/abstract-language.png"
+                    alt="Language icon"
+                  />
+                  <span
+                    ><strong>Abstract language <br /></strong> English</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="assets/images/abstract-pages.png"
+                    alt="Pages icon"
+                  />
+                  <span
+                    ><strong>Abstract must be two pages maximum</strong></span
+                  >
+                </li>
+              </ul>
+              <p style="max-width: 85%">
+                Authors must use the abstract template (<a href="#">download</a
+                >) and strictly follow the instructions reported in the template
+                file.
+                <span style="font-weight: 600"
+                  >ONLY WORD DOCUMENTS WILL BE ACCEPTED.</span
+                >
+              </p>
+              <p>
+                Name the abstract as
+                <span style="font-weight: 600"
+                  >"EAO9-R_abstract_author surname"</span
+                >
+                or, if the author submits more than one abstract, also number it
+                <br />
+                <span style="font-weight: 600"
+                  >"EAO9-R_abstract_author surname_1"</span
+                >
+              </p>
+              <p>
+                Abstracts not complying with the template <br />
+                <span style="font-weight: 600"
+                  >WILL BE SENT BACK FOR CORRECTION.</span
+                >
+              </p>
+            </div>
+          </section>
+
+          <!-- Form Fields -->
+          <form class="abstract-form__fields">
+            <fieldset class="abstract-form__row">
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="abstract-form__row">
+              <div class="abstract-form__field">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="department"
+                  name="department"
+                  placeholder="Department"
+                />
+              </div>
+            </fieldset>
+
+            <h2 class="abstract-form__section-title">Abstract Information</h2>
+
+            <fieldset class="abstract-form__row">
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="authors"
+                  name="authors"
+                  placeholder="Author(s)"
+                  required
+                />
+              </div>
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="affiliations"
+                  name="affiliations"
+                  placeholder="Affiliations"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="abstract-form__row">
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Title of your Paper"
+                  required
+                />
+              </div>
+              <div class="abstract-form__field">
+                <input
+                  type="text"
+                  id="length"
+                  name="length"
+                  placeholder="Abstract Length"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="abstract-form__row--full">
+              <div class="abstract-form__field abstract-form__field--full">
+                <label>Full Abstract</label>
+                <textarea
+                  id="full-abstract"
+                  name="full-abstract"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <div class="abstract-form__submit">
+              <button class="button-shape button-shape-primary">
+                Submit Abstract
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -1536,33 +2164,21 @@
 
         <div class="sponsor-logos">
           <img
-            src="assets/images/sponsor.png"
+            src="assets/images/elsevier.png"
             class="sponsor-logos__img"
             alt="Elsevier"
             class="sponsor-logo"
           />
           <img
-            src="assets/images/sponsor.png"
+            src="assets/images/rich.png"
             class="sponsor-logos__img"
-            alt="Elsevier"
+            alt="Rich"
             class="sponsor-logo"
           />
           <img
-            src="assets/images/sponsor.png"
+            src="assets/images/cmat.png"
             class="sponsor-logos__img"
-            alt="Elsevier"
-            class="sponsor-logo"
-          />
-          <img
-            src="assets/images/sponsor.png"
-            class="sponsor-logos__img"
-            alt="Elsevier"
-            class="sponsor-logo"
-          />
-          <img
-            src="assets/images/sponsor.png"
-            class="sponsor-logos__img"
-            alt="Elsevier"
+            alt="Cmat"
             class="sponsor-logo"
           />
         </div>
@@ -1679,7 +2295,7 @@
     </section>
 
     <!-- venue-section -->
-    <section class="venue-section">
+    <section id="venue" class="venue-section">
       <div class="container venue-section__contents">
         <div class="venue-section__content">
           <div class="venue-section__content__info">

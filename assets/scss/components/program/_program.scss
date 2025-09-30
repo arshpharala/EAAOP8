@@ -6,7 +6,7 @@
   margin-bottom: 50px;
   @include responsive(lg) {
     margin-top: 140px;
-    margin-bottom: 150px;
+    margin-bottom: 43px;
   }
 
   &__content {
@@ -106,7 +106,13 @@
     }
 
     h4 {
-      font-size: 16.67px;
+      font-size: 12px;
+      @include responsive(md) {
+        font-size: 14px;
+      }
+      @include responsive(lg) {
+        font-size: 16.67px;
+      }
       font-weight: 700;
       margin: 0;
     }
@@ -115,6 +121,119 @@
       font-size: normal;
       color: $gray-light-color;
       margin: 0;
+    }
+  }
+
+  .schedule {
+    margin: 4rem auto 0;
+
+    &__body {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      @include responsive(md) {
+        grid-template-columns: 0.7fr 3fr;
+      }
+      width: 100%;
+    }
+
+    &__tabs {
+      display: inline-flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom:35px;
+      background-color: #eee;
+      border-radius: 20px;
+    }
+
+    &__tab {
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 12px;
+      @include responsive(md) {
+        font-size: 14px;
+      }
+      @include responsive(lg) {
+        font-size: 16.67px;
+      }
+
+      transition: all 0.3s ease;
+      color: $primary-color;
+
+      &--active {
+        background: $primary-color;
+        color: $white-color;
+        border-radius: 20px;
+      }
+    }
+
+    &__rooms {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid $border-default;
+      padding-bottom: 1rem;
+      @include responsive(md) {
+        flex-direction: column;
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      justify-content: start;
+      gap: 28px;
+
+      .schedule__room-btn {
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-size: 12px;
+        @include responsive(md) {
+          font-size: 14px;
+        }
+        @include responsive(lg) {
+          font-size: 16.67px;
+        }
+
+        font-weight: 700;
+        color: #606060;
+        &--active {
+          color: $primary-color;
+        }
+
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+
+    &__room-content {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+
+    &__slot {
+      padding: 8px;
+
+      font-size: 12px;
+      @include responsive(md) {
+        font-size: 14px;
+      }
+      @include responsive(lg) {
+        font-size: 16.67px;
+      }
+
+      font-weight: normal;
+      border-bottom: 1px solid $border-default;
+
+        &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }
   }
 }

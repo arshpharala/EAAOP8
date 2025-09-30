@@ -54,3 +54,31 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const roomButtons = document.querySelectorAll(".schedule__room-btn");
+  const roomContents = document.querySelectorAll(".schedule__room-content");
+
+  roomButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const roomId = button.getAttribute("data-room");
+
+      // Toggle active class on buttons
+      roomButtons.forEach((btn) =>
+        btn.classList.remove("schedule__room-btn--active")
+      );
+      button.classList.add("schedule__room-btn--active");
+
+      // Toggle visible room content
+      roomContents.forEach((content) =>
+        content.classList.remove("schedule__room-content--active")
+      );
+      document
+        .getElementById(roomId)
+        .classList.add("schedule__room-content--active");
+    });
+  });
+});
+

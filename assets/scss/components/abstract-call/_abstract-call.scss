@@ -2,11 +2,10 @@
 @use "../../variables" as *;
 
 .abstract-call {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 
   @include responsive(lg) {
-  margin-bottom: 188px;
-
+    margin-bottom: 188px;
   }
   &__content {
     align-items: center;
@@ -14,7 +13,7 @@
     grid-template-columns: 1fr;
 
     @include responsive(lg) {
-      grid-template-columns: 0.85fr 1.2fr;
+      grid-template-columns: 0.9fr 1.1fr;
     }
     gap: 1rem;
   }
@@ -22,8 +21,7 @@
   .abstract-content {
     .abstract-title {
       margin-bottom: 1rem;
-    font-weight: 500;
-
+      font-weight: 400;
     }
 
     .abstract-description {
@@ -52,6 +50,153 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  .abstract-form {
+    margin-top: 2rem;
+
+    &__title {
+      font-size: 12px;
+      @include responsive(md) {
+        font-size: 14px;
+      }
+      @include responsive(lg) {
+        font-size: 16.67px;
+      }
+      font-weight: bold;
+
+      color: $primary-color;
+      margin-bottom: 1.5rem;
+    }
+
+    &__details {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      @include responsive(md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      place-items: start;
+      gap: 2rem;
+      ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        font-size: 12px;
+        @include responsive(md) {
+          font-size: 14px;
+        }
+        @include responsive(lg) {
+          font-size: 16.67px;
+        }
+
+        li {
+          display: flex;
+          align-items: start;
+          gap: 1rem;
+
+          img {
+            width: 30px;
+            height: 37px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    &__fields {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+
+      gap: 1.5rem;
+    }
+
+    &__section-title {
+      font-size: 12px;
+      @include responsive(md) {
+        font-size: 14px;
+      }
+      @include responsive(lg) {
+        font-size: 16.67px;
+      }
+      font-weight: bold;
+
+      color: $primary-color;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    &__row {
+      display: flex;
+      gap: 1.5rem;
+      border: 0;
+      flex-direction: column;
+
+      @include responsive(sm) {
+        flex-direction: row;
+      }
+
+      &--full {
+        flex-direction: column;
+        border: 0;
+      }
+    }
+
+    &__field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 12px;
+        @include responsive(md) {
+          font-size: 14px;
+        }
+        @include responsive(lg) {
+          font-size: 16.67px;
+        }
+        font-weight: normal;
+        margin-bottom: 1rem;
+      }
+
+      input,
+      textarea {
+        padding: 0.6rem 0;
+        font-size: 0.95rem;
+        border: none;
+        border-bottom: 1px solid $border-default;
+
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+        }
+
+        &::placeholder {
+          font-size: 12px;
+          @include responsive(md) {
+            font-size: 14px;
+          }
+          @include responsive(lg) {
+            font-size: 16.67px;
+          }
+          color: $black-color;
+          font-weight: normal;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        resize: vertical;
+        padding: 0.6rem;
+        border: 1px solid $border-default;
+
+        &:focus {
+          border-color: $primary-color;
+        }
+      }
     }
   }
 }
