@@ -214,6 +214,9 @@
   display: grid;
   place-items: end;
 }
+.hero-section .power {
+  font-size: clamp(12px, 2vw, 21px);
+}
 .hero-section__content {
   display: grid;
   gap: 2rem;
@@ -241,10 +244,12 @@
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: normal;
+  padding: 1rem 0;
 }
 @media (min-width: 45rem) {
   .hero-section__subtitle {
     max-width: 75%;
+    padding: 0;
   }
 }
 .hero-section__content > *:first-child {

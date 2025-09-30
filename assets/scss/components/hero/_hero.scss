@@ -7,6 +7,12 @@
   display: grid;
   place-items: end;
 
+
+  .power{
+      font-size: clamp(12px, 2vw, 21px);
+
+  }
+
   &__content {
     display: grid;
     gap: 2rem;
@@ -24,18 +30,20 @@
     padding-top: 0;
     line-height: 1;
     @include responsive(lg) {
-    padding-top: 1rem;
-
+      padding-top: 1rem;
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     font-size: clamp(16px, 2vw, 22.92px);
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: normal;
-    @include responsive(md){
-    max-width: 75%;
+    padding: 1rem 0;
+
+    @include responsive(md) {
+      max-width: 75%;
+      padding: 0;
     }
   }
 
