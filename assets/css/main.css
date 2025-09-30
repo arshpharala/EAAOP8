@@ -1895,8 +1895,12 @@
   flex-direction: column;
   flex: 1;
 }
+@media (min-width: 45rem) {
+  .info-section .info-card__text-contents {
+    min-height: 410px;
+  }
+}
 .info-section .info-card__text-contents {
-  min-height: 410px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

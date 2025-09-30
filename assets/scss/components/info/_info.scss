@@ -38,7 +38,9 @@
     }
 
     &__text-contents {
-      min-height: 410px;
+      @include responsive(md) {
+        min-height: 410px;
+      }
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -56,9 +58,8 @@
       font-weight: 300;
       width: 98%;
 
-      &:last-child{
-      padding-bottom: 0;
-
+      &:last-child {
+        padding-bottom: 0;
       }
     }
   }
