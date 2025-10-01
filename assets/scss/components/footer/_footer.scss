@@ -28,6 +28,7 @@
     gap: 10px;
 
     .footer__logo {
+      @include white-filter;
       width: 300px;
       height: 50px;
       @include responsive(xl) {
@@ -47,7 +48,6 @@
 
       &__icon {
         object-fit: contain;
-
         width: 16px;
         height: 16px;
         @include responsive(lg) {
