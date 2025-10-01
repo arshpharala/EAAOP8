@@ -80,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 const tabs = document.querySelectorAll(".schedule__tab");
 const roomButtons = document.querySelectorAll(".schedule__room-btn");
 const contentSections = document.querySelectorAll(".schedule__room-content");

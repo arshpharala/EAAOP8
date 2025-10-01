@@ -494,13 +494,11 @@
 }
 
 .conference-section {
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding: 50px 0;
 }
 @media (min-width: 60rem) {
   .conference-section {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding: 70px 0;
   }
 }
 .conference-section {
@@ -857,9 +855,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .committee__photo {
-  width: 100%;
-  height: auto;
-  border-bottom: 2px solid #eee;
+  aspect-ratio: 1/1;
 }
 .committee__name {
   font-size: 16px;
@@ -897,8 +893,7 @@
 @media (min-width: 60rem) {
   .scientific-committee {
     margin-bottom: 110px;
-    padding-top: 96px;
-    padding-bottom: 130px;
+    padding: 96px 0 25px;
   }
 }
 
@@ -1094,7 +1089,6 @@
 @media (min-width: 60rem) {
   .keynote-speakers {
     margin-top: 110px;
-    padding-top: 96px;
     padding-bottom: 130px;
   }
 }
@@ -1474,8 +1468,7 @@
 @media (min-width: 60rem) {
   .registration-section {
     margin-bottom: 100px;
-    padding-top: 130px;
-    padding-bottom: 85px;
+    padding: 85px 0;
   }
 }
 .registration-section {

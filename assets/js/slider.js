@@ -1,50 +1,68 @@
-// committee-carousel
+const DEFAULT_IMAGE = "assets/images/user.png";
+
+// Attach a fallback handler to an <img>
+function setImageFallback(img) {
+  img.onerror = function () {
+    if (this.src !== DEFAULT_IMAGE) {
+      this.src = DEFAULT_IMAGE;
+    }
+  };
+}
+
+// Apply fallback to all committee__photo images
+function applyImageFallback(context = document) {
+  $(context)
+    .find(".committee__photo")
+    .each(function () {
+      setImageFallback(this);
+    });
+}
+
+// Initialize a reusable carousel
+function initCarousel(selector, nextBtn, prevBtn) {
+  const carousel = $(selector).owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 4000,
+    responsive: {
+      0: { items: 1 },
+      548: { items: 2 },
+      768: { items: 3 },
+      1024: { items: 4 },
+    },
+    onInitialized: function (event) {
+      // applyImageFallback(event.target); // apply only inside carousel
+    },
+    onRefreshed: function (event) {
+      // applyImageFallback(event.target);
+    },
+  });
+
+  // Custom nav buttons
+  if (nextBtn) $(nextBtn).click(() => carousel.trigger("next.owl.carousel"));
+  if (prevBtn) $(prevBtn).click(() => carousel.trigger("prev.owl.carousel"));
+
+  return carousel;
+}
+
 $(document).ready(function () {
-  var committeeCarousel = $(".committee-carousel").owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false, // we’ll use custom buttons
-    dots: false,
-    autoplay: false, // change to true if you want auto-slide
-    autoplayTimeout: 4000,
-    responsive: {
-      0: { items: 1 },
-      548: { items: 2 },
-      768: { items: 3 },
-      1024: { items: 4 },
-    },
-  });
+  initCarousel(".committee-carousel", ".committee-next", ".committee-prev");
+  initCarousel(
+    ".int-committee-carousel",
+    ".int-committee-next",
+    ".int-committee-prev"
+  );
+  initCarousel(
+    ".confer-committee-carousel",
+    ".confer-committee-next",
+    ".confer-committee-prev"
+  );
 
-  // Custom navigation
-  $(".committee-next").click(function () {
-    committeeCarousel.trigger("next.owl.carousel");
-  });
-  $(".committee-prev").click(function () {
-    committeeCarousel.trigger("prev.owl.carousel");
-  });
-
-  var intCommitteeCarousel = $(".int-committee-carousel").owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false, // we’ll use custom buttons
-    dots: false,
-    autoplay: false, // change to true if you want auto-slide
-    autoplayTimeout: 4000,
-    responsive: {
-      0: { items: 1 },
-      548: { items: 2 },
-      768: { items: 3 },
-      1024: { items: 4 },
-    },
-  });
-
-  // Custom navigation
-  $(".int-committee-next").click(function () {
-    intCommitteeCarousel.trigger("next.owl.carousel");
-  });
-  $(".int-committee-prev").click(function () {
-    intCommitteeCarousel.trigger("prev.owl.carousel");
-  });
+  // Run fallback globally once in case images are outside carousels
+  // applyImageFallback();
 });
 
 $(document).ready(function () {
@@ -96,10 +114,11 @@ $(document).ready(function () {
 
     // Render speakers
     data.forEach((s, i) => {
+      const imgSrc = s.image ? s.image : DEFAULT_IMAGE;
+
       $(carouselSelector).append(
         `<div class="speaker" data-index="${i}">
-           <img src="${s.image}" alt="${s.name}" />
-
+           <img src="${imgSrc}" alt="${s.name || "Speaker"}" />
          </div>`
       );
     });
@@ -202,16 +221,16 @@ $(document).ready(function () {
     topicEl: "#keynotespeakerTopic",
     viewBioBtn: "#keynoteviewBioBtn",
   });
-    loadSpeakers("assets/data/invited-speakers.json", {
+
+  loadSpeakers("assets/data/invited-speakers.json", {
     carouselSelector: "#invitedspeakersCarousel",
-    nextBtn: "#next",
-    prevBtn: "#prev",
+    nextBtn: "#invited-next",
+    prevBtn: "#invited-prev",
     nameEl: "#invitedspeakerName",
     universityEl: "#invitedspeakerUniversity",
     topicEl: "#invitedspeakerTopic",
     viewBioBtn: "#invitedviewBioBtn",
   });
-
 
   // Close when clicking the close button
   $("#closeModal").on("click", function () {

@@ -7,8 +7,7 @@
 
   @include responsive(lg) {
     margin-bottom: 100px;
-    padding-top: 130px;
-    padding-bottom: 85px;
+    padding: 85px 0;
   }
 
   background-color: $secondary-color;

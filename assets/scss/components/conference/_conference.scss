@@ -2,12 +2,10 @@
 @use "../../variables" as *;
 
 .conference-section {
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding: 50px 0;
 
   @include responsive(lg) {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding: 70px 0;
   }
   background-color: $primary-color;
   color: $white-color;
