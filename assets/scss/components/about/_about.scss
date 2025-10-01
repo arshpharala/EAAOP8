@@ -20,38 +20,19 @@
     }
   }
 
-  &__content2 {
-    margin-top: 50px;
-    // & > :nth-child(1) {
-    //   order: 2;
-    // }
-
-    // & > :nth-child(2) {
-    //   order: 1;
-    // }
-
+  &__info {
+    gap: 50px;
     display: grid;
-    gap: 1.5rem;
     grid-template-columns: 1fr;
-
-    @include responsive(lg) {
-      margin-top: 90px;
-
-      grid-template-columns: repeat(2, 1fr);
-
-      & > :nth-child(1) {
-        order: 1;
-      }
-
-      & > :nth-child(2) {
-        order: 2;
-      }
-    }
+    // @include responsive(lg) {
+    //   gap: 90px;
+    // }
   }
 
   &__left {
     img {
       width: 100%;
+      min-height: 395px;
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
