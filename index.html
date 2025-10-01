@@ -1799,14 +1799,21 @@
         <div class="schedule">
           <!-- Date Tabs -->
           <div style="text-align: center">
-            <div class="schedule__tabs">
+            <div class="schedule__tabs" role="tablist">
               <button
+                role="tab"
+                aria-selected="true"
                 class="schedule__tab schedule__tab--active"
                 data-date="2027-03-31"
               >
                 31st March 2027
               </button>
-              <button class="schedule__tab" data-date="2027-04-01">
+              <button
+                role="tab"
+                aria-selected="false"
+                class="schedule__tab"
+                data-date="2027-04-01"
+              >
                 1st April 2027
               </button>
             </div>
@@ -1838,6 +1845,8 @@
               <div
                 class="schedule__room-content schedule__room-content--active"
                 id="auditorium"
+                data-date="2027-03-31"
+                data-room="auditorium"
               >
                 <div class="schedule__slot">
                   08:30 - 09:00 | Opening Ceremony
@@ -1861,12 +1870,24 @@
                 </div>
               </div>
 
-              <div class="schedule__room-content" id="b00055">
+              <!-- Auditorium Content for 1st April -->
+              <div
+                class="schedule__room-content"
+                data-date="2027-04-01"
+                data-room="auditorium"
+              >
+                <div class="schedule__slot">09:00 - 10:00 | Keynote 2</div>
+                <div class="schedule__slot">10:00 - 12:00 | Session A</div>
+              </div>
+
+              <div class="schedule__room-content" id="b00055"  data-date="2027-03-31"
+                data-room="b00055" >
                 <div class="schedule__slot">09:00 - 09:45 | PL1</div>
                 <div class="schedule__slot">09:45 - 10:30 | KN1, IS1</div>
               </div>
 
-              <div class="schedule__room-content" id="b00107">
+              <div class="schedule__room-content" id="b00107"  data-date="2027-03-31"
+                data-room="b00107">
                 <div class="schedule__slot">
                   10:30 - 10:50 | Coffee Break (Multi-Purpose Hall D00073)
                 </div>

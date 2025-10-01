@@ -55,8 +55,6 @@ $(document).ready(function () {
   });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const roomButtons = document.querySelectorAll(".schedule__room-btn");
   const roomContents = document.querySelectorAll(".schedule__room-content");
@@ -82,3 +80,53 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+const tabs = document.querySelectorAll(".schedule__tab");
+const roomButtons = document.querySelectorAll(".schedule__room-btn");
+const contentSections = document.querySelectorAll(".schedule__room-content");
+
+let activeDate = "2027-03-31";
+let activeRoom = "auditorium";
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Reset active states
+    tabs.forEach((t) => {
+      t.classList.remove("schedule__tab--active");
+      t.setAttribute("aria-selected", "false");
+    });
+
+    // Set new active tab
+    tab.classList.add("schedule__tab--active");
+    tab.setAttribute("aria-selected", "true");
+
+    activeDate = tab.getAttribute("data-date");
+    updateContent();
+  });
+});
+
+roomButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Reset active room buttons
+    roomButtons.forEach((b) =>
+      b.classList.remove("schedule__room-btn--active")
+    );
+    btn.classList.add("schedule__room-btn--active");
+
+    activeRoom = btn.getAttribute("data-room");
+    updateContent();
+  });
+});
+
+function updateContent() {
+  contentSections.forEach((section) => {
+    const date = section.getAttribute("data-date");
+    const room = section.getAttribute("data-room");
+
+    if (date === activeDate && room === activeRoom) {
+      section.classList.add("schedule__room-content--active");
+    } else {
+      section.classList.remove("schedule__room-content--active");
+    }
+  });
+}
