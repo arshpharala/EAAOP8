@@ -1,4 +1,4 @@
-// ================= HERO MENU TOGGLE =================
+// hero menu toggle
 $(document).ready(function () {
   const $mobileMenu = $("#mobileMenu");
   const $menuToggle = $("#menuToggle");
