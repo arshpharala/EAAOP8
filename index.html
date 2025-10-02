@@ -1806,7 +1806,7 @@
                 data-room="auditorium"
               >
                 Auditorium <br />
-                <span> C00068-C01066 </span>
+                <span>C00068-C01066</span>
               </button>
               <button class="schedule__room-btn" data-room="b00055">
                 Lecture room <br />
@@ -1820,76 +1820,260 @@
 
             <!-- Room Schedules -->
             <div class="schedule__content">
-              <div
-                class="schedule__room-content schedule__room-content--active"
-                id="auditorium"
-                data-date="2027-03-31"
-                data-room="auditorium"
-              >
-                <div class="schedule__slot">
-                  08:30 - 09:00 | Opening Ceremony
+              <!-- Auditorium Content for 31st March -->
+              <section>
+                <div
+                  class="schedule__room-content schedule__room-content--active"
+                  data-date="2027-03-31"
+                  data-room="auditorium"
+                >
+                  <ul class="schedule__list">
+                    <li class="schedule__slot">
+                      08:30 – 09:00 | Opening Ceremony
+                    </li>
+                    <li class="schedule__slot">09:00 – 09:45 | PL1</li>
+                    <li class="schedule__slot">09:45 – 10:30 | KN1, IS1</li>
+                    <li class="schedule__slot">
+                      10:30 – 10:50 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">10:50 – 12:30 | OP1-6, FP1-2</li>
+                    <li class="schedule__slot">
+                      12:30 – 13:30 | Lunch Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">13:30 – 15:00 | OP7-12</li>
+                    <li class="schedule__slot">
+                      15:00 – 16:00 | Coffee Break and Poster Presentations
+                    </li>
+                    <li class="schedule__slot">
+                      16:00 – 18:00 | OP13-19, FP3-5
+                    </li>
+                    <li class="schedule__slot">
+                      18:00 – 19:00 | Welcome Reception
+                    </li>
+                  </ul>
                 </div>
-                <div class="schedule__slot">09:00 - 09:45 | PL1</div>
-                <div class="schedule__slot">09:45 - 10:30 | KN1, IS1</div>
-                <div class="schedule__slot">
-                  10:30 - 10:50 | Coffee Break (Multi-Purpose Hall D00073)
-                </div>
-                <div class="schedule__slot">10:50 - 12:30 | OP1-6, FP1-2</div>
-                <div class="schedule__slot">
-                  12:30 - 13:30 | Lunch Break (Multi-Purpose Hall D00073)
-                </div>
-                <div class="schedule__slot">13:30 - 15:00 | OP7-12</div>
-                <div class="schedule__slot">
-                  15:00 - 16:00 | Coffee Break and Poster Presentations
-                </div>
-                <div class="schedule__slot">16:00 - 18:00 | OP13-19, FP3-5</div>
-                <div class="schedule__slot">
-                  18:00 - 19:00 | Welcome reception
-                </div>
-              </div>
 
-              <!-- Auditorium Content for 1st April -->
-              <div
-                class="schedule__room-content"
-                data-date="2027-04-01"
-                data-room="auditorium"
-              >
-                <div class="schedule__slot">09:00 - 10:00 | Keynote 2</div>
-                <div class="schedule__slot">10:00 - 12:00 | Session A</div>
-              </div>
+                <!-- Auditorium Content for 1st April -->
+                <div
+                  class="schedule__room-content"
+                  data-date="2027-04-01"
+                  data-room="auditorium"
+                >
+                  <ul class="schedule__list">
+                    <li class="schedule__slot">09:00 – 09:45 | PL2</li>
+                    <li class="schedule__slot">09:45 – 10:30 | KN3, IS3</li>
+                    <li class="schedule__slot">
+                      10:30 – 10:50 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      10:50 – 12:30 | OP60-65, FP16-17
+                    </li>
+                    <li class="schedule__slot">
+                      12:30 – 13:30 | Lunch Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">13:30 – 15:00 | OP66-71</li>
+                    <li class="schedule__slot">
+                      15:00 – 15:20 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      15:20 – 17:00 | Round table – Meet the Editors
+                    </li>
+                    <li class="schedule__slot">
+                      17:00 – 19:30 | Abu Dhabi bus tour
+                    </li>
+                    <li class="schedule__slot">
+                      19:30 – 22:00 | Conference Dinner
+                    </li>
+                  </ul>
+                </div>
+              </section>
 
-              <div
-                class="schedule__room-content"
-                id="b00055"
-                data-date="2027-03-31"
-                data-room="b00055"
-              >
-                <div class="schedule__slot">09:00 - 09:45 | PL1</div>
-                <div class="schedule__slot">09:45 - 10:30 | KN1, IS1</div>
-              </div>
+              <!-- Room b00055 -->
+              <section>
+                <!-- 31st March -->
+                <div
+                  class="schedule__room-content"
+                  data-date="2027-03-31"
+                  data-room="b00055"
+                >
+                  <ul class="schedule__list">
+                    <li class="schedule__slot">09:45 – 10:30 | KN2, IS2</li>
+                    <li class="schedule__slot">
+                      10:30 – 10:50 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      10:50 – 12:30 | OP20-25, FP6-7
+                    </li>
+                    <li class="schedule__slot">
+                      12:30 – 13:30 | Lunch Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">13:30 – 15:00 | OP26-31</li>
+                    <li class="schedule__slot">
+                      15:00 – 16:00 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                      and Poster Presentations
+                      <span class="schedule__location">(Spine Area)</span>
+                    </li>
+                    <li class="schedule__slot">
+                      16:00 – 18:00 | OP32-38, FP8-10
+                    </li>
+                    <li class="schedule__slot">
+                      18:00 – 19:00 | Welcome Reception
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
 
-              <div
-                class="schedule__room-content"
-                id="b00107"
-                data-date="2027-03-31"
-                data-room="b00107"
-              >
-                <div class="schedule__slot">
-                  10:30 - 10:50 | Coffee Break (Multi-Purpose Hall D00073)
+                <!-- 1st April -->
+                <div
+                  class="schedule__room-content"
+                  data-date="2027-04-01"
+                  data-room="b00055"
+                >
+                  <ul class="schedule__list">
+                    <li class="schedule__slot">09:45 – 10:30 | KN4, IS4</li>
+                    <li class="schedule__slot">
+                      10:30 – 10:50 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      10:50 – 12:30 | OP72-77, FP18-19
+                    </li>
+                    <li class="schedule__slot">
+                      12:30 – 13:30 | Lunch Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">13:30 – 15:00 | OP78-83</li>
+                    <li class="schedule__slot">
+                      15:00 – 15:20 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      17:00 – 19:30 | Abu Dhabi bus tour
+                    </li>
+                    <li class="schedule__slot">
+                      19:30 – 22:00 | Conference Dinner
+                    </li>
+                  </ul>
                 </div>
-                <div class="schedule__slot">10:50 - 12:30 | OP1-6, FP1-2</div>
-                <div class="schedule__slot">
-                  12:30 - 13:30 | Lunch Break (Multi-Purpose Hall D00073)
+              </section>
+
+              <!-- Room b00107 -->
+              <section>
+                <!-- 31st March -->
+                <div
+                  class="schedule__room-content"
+                  data-date="2027-03-31"
+                  data-room="b00107"
+                >
+                  <ul class="schedule__list">
+                    <li class="schedule__slot">09:45 – 10:30 | IP1, OP39-40</li>
+                    <li class="schedule__slot">
+                      10:30 – 10:50 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      10:50 – 12:30 | OP41-46, FP11-12
+                    </li>
+                    <li class="schedule__slot">
+                      12:30 – 13:30 | Lunch Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">13:30 – 15:00 | OP47-52</li>
+                    <li class="schedule__slot">
+                      15:00 – 16:00 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                      and Poster Presentations
+                      <span class="schedule__location">(Spine Area)</span>
+                    </li>
+                    <li class="schedule__slot">
+                      16:00 – 18:00 | OP53-59, FP13-15
+                    </li>
+                    <li class="schedule__slot">
+                      18:00 – 19:00 | Welcome reception
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <div class="schedule__slot">13:30 - 15:00 | OP7-12</div>
-                <div class="schedule__slot">
-                  15:00 - 16:00 | Coffee Break and Poster Presentations
+                <!-- 1st April -->
+
+                <div
+                  class="schedule__room-content"
+                  data-date="2027-04-01"
+                  data-room="b00107"
+                >
+                  <ul class="schedule__list">
+                    <li class="schedule__slot">09:45 – 10:30 | IP2, OP84-85</li>
+                    <li class="schedule__slot">
+                      10:30 – 10:50 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      10:50 – 12:30 | OP86-91, FP20-21
+                    </li>
+                    <li class="schedule__slot">
+                      12:30 – 13:30 | Lunch Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">13:30 – 15:00 | OP92-97</li>
+                    <li class="schedule__slot">
+                      15:00 – 15:20 | Coffee Break
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
+                    </li>
+                    <li class="schedule__slot">
+                      17:00 – 19:30 | Abu Dhabi bus tour
+                    </li>
+                    <li class="schedule__slot">
+                      19:30 – 22:00 | Conference Dinner
+                    </li>
+                  </ul>
                 </div>
-                <div class="schedule__slot">16:00 - 18:00 | OP13-19, FP3-5</div>
-                <div class="schedule__slot">
-                  18:00 - 19:00 | Welcome reception
-                </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>

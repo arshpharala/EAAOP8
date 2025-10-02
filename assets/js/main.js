@@ -55,77 +55,58 @@ $(document).ready(function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const roomButtons = document.querySelectorAll(".schedule__room-btn");
-  const roomContents = document.querySelectorAll(".schedule__room-content");
-
-  roomButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const roomId = button.getAttribute("data-room");
-
-      // Toggle active class on buttons
-      roomButtons.forEach((btn) =>
-        btn.classList.remove("schedule__room-btn--active")
-      );
-      button.classList.add("schedule__room-btn--active");
-
-      // Toggle visible room content
-      roomContents.forEach((content) =>
-        content.classList.remove("schedule__room-content--active")
-      );
-      document
-        .getElementById(roomId)
-        .classList.add("schedule__room-content--active");
-    });
-  });
-});
-
+// tabs in program section
 const tabs = document.querySelectorAll(".schedule__tab");
-const roomButtons = document.querySelectorAll(".schedule__room-btn");
-const contentSections = document.querySelectorAll(".schedule__room-content");
+const rooms = document.querySelectorAll(".schedule__room-btn");
+const contents = document.querySelectorAll(".schedule__room-content");
 
-let activeDate = "2027-03-31";
-let activeRoom = "auditorium";
-
+// Handle date tab switching
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    // Reset active states
+    // Update active tab
     tabs.forEach((t) => {
       t.classList.remove("schedule__tab--active");
       t.setAttribute("aria-selected", "false");
     });
-
-    // Set new active tab
     tab.classList.add("schedule__tab--active");
     tab.setAttribute("aria-selected", "true");
 
-    activeDate = tab.getAttribute("data-date");
-    updateContent();
+    const activeDate = tab.dataset.date;
+    const activeRoom = document.querySelector(".schedule__room-btn--active")
+      ?.dataset.room;
+
+    // Show content only for active date + room
+    contents.forEach((c) => {
+      c.classList.remove("schedule__room-content--active");
+      if (c.dataset.date === activeDate && c.dataset.room === activeRoom) {
+        c.classList.add("schedule__room-content--active");
+      }
+    });
   });
 });
 
-roomButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    // Reset active room buttons
-    roomButtons.forEach((b) =>
-      b.classList.remove("schedule__room-btn--active")
-    );
-    btn.classList.add("schedule__room-btn--active");
+// Handle room switching
+rooms.forEach((room) => {
+  room.addEventListener("click", () => {
+    // Update active room button
+    rooms.forEach((r) => r.classList.remove("schedule__room-btn--active"));
+    room.classList.add("schedule__room-btn--active");
 
-    activeRoom = btn.getAttribute("data-room");
-    updateContent();
+    const activeRoom = room.dataset.room;
+    const activeDate = document.querySelector(".schedule__tab--active")?.dataset
+      .date;
+
+    // Show content only for active date + room
+    contents.forEach((c) => {
+      c.classList.remove("schedule__room-content--active");
+      if (c.dataset.room === activeRoom && c.dataset.date === activeDate) {
+        c.classList.add("schedule__room-content--active");
+      }
+    });
   });
 });
 
-function updateContent() {
-  contentSections.forEach((section) => {
-    const date = section.getAttribute("data-date");
-    const room = section.getAttribute("data-room");
-
-    if (date === activeDate && room === activeRoom) {
-      section.classList.add("schedule__room-content--active");
-    } else {
-      section.classList.remove("schedule__room-content--active");
-    }
-  });
+// Helper function: Get active schedule content
+function getActiveSchedule() {
+  return document.querySelector(".schedule__room-content--active")?.innerHTML;
 }

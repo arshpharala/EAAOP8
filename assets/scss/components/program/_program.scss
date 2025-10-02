@@ -215,7 +215,8 @@
     }
 
     &__slot {
-      padding: 8px;
+      padding: 8px 0;
+      list-style: none;
 
       font-size: 12px;
       @include responsive(md) {
