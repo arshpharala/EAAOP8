@@ -446,15 +446,25 @@
   padding: 60px 20px 50px 40px;
   border: 1px solid #c59c6c;
   border-radius: 12px;
-  max-height: 290px;
   margin-bottom: 50px;
+  flex-direction: column;
+}
+@media (min-width: 33.75rem) {
+  .about-section .speaker-card {
+    flex-direction: row;
+    max-height: 290px;
+  }
 }
 .about-section .speaker-card__image {
   flex-shrink: 0;
 }
+@media (min-width: 33.75rem) {
+  .about-section .speaker-card__image img {
+    height: 180px;
+    width: 165px;
+  }
+}
 .about-section .speaker-card__image img {
-  height: 180px;
-  width: 165px;
   object-fit: cover;
   border-radius: 20px;
   display: block;
