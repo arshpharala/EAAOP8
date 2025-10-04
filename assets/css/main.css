@@ -2074,13 +2074,13 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-@media (min-width: 33.75rem) {
+@media (min-width: 45rem) {
   .accommodation-section__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 .accommodation-section__grid {
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .accommodation-card {
@@ -2096,19 +2096,26 @@
 .accommodation-card__detail {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 33.75rem) {
+  .accommodation-card__detail {
+    gap: 1rem;
+    flex-direction: row;
+  }
 }
 .accommodation-card__name {
   font-size: 20px;
 }
-@media (min-width: 60rem) {
-  .accommodation-card__name {
-    font-size: 26.03px;
-  }
-}
 @media (min-width: 45rem) {
   .accommodation-card__name {
     font-size: 24px;
+  }
+}
+@media (min-width: 60rem) {
+  .accommodation-card__name {
+    font-size: 26.03px;
   }
 }
 .accommodation-card__name {
