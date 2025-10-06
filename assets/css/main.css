@@ -1109,9 +1109,9 @@
   background: #fff;
   padding: 30px;
   border-radius: 8px;
-  height: 70%;
+  max-height: 70%;
   overflow-y: scroll;
-  width: 90%;
+  max-width: 90%;
   z-index: 1001;
   position: relative;
 }
@@ -1137,29 +1137,51 @@
   background-color: rgba(197, 156, 108, 0.7);
   transform: scale(1.1);
 }
+#speakerModal .modal-content .profile-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+}
+@media (min-width: 45rem) {
+  #speakerModal .modal-content .profile-card {
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10px;
+  }
+}
 #speakerModal .modal-content #modalSpeakerImage {
   text-align: center;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
 }
-#speakerModal .modal-content h2 {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+#speakerModal .modal-content #modalSpeakerImage img {
+  width: 220px;
+  height: 150px;
+  border-radius: 50%;
+  background: #ddd;
+  object-fit: contain;
+  object-position: top;
 }
 #speakerModal .modal-content h4 {
   margin-bottom: 15px;
   color: #666;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+}
+#speakerModal .modal-content .topic {
+  font-style: italic;
+  color: #c59c6c;
+  font-weight: 600;
 }
 #speakerModal .modal-content p {
   margin-bottom: 10px;
+  color: #444;
 }
 @media (min-width: 45rem) {
   #speakerModal .modal-content {
     width: 90%;
     padding: 20px;
-  }
-  #speakerModal .modal-content h2 {
-    font-size: 1.5rem;
   }
   #speakerModal .modal-content h4 {
     font-size: 1.2rem;
@@ -1200,7 +1222,7 @@
 }
 @media (min-width: 60rem) {
   #speakerModal .modal-content {
-    max-width: 50%;
+    max-width: 70%;
   }
 }
 
