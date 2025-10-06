@@ -1225,6 +1225,11 @@
     max-width: 70%;
   }
 }
+@media (min-width: 71.25rem) {
+  #speakerModal .modal-content {
+    max-width: 50%;
+  }
+}
 
 .program {
   margin-top: 50px;

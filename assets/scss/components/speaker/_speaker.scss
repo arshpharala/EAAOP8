@@ -336,5 +336,8 @@
     @include responsive(lg) {
       max-width: 70%;
     }
+     @include responsive(xl) {
+      max-width: 50%;
+    }
   }
 }
