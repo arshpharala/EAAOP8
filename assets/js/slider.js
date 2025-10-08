@@ -1,103 +1,79 @@
 const DEFAULT_IMAGE = "assets/images/user.png";
 
-// Attach a fallback handler to an <img>
-function setImageFallback(img) {
-  img.onerror = function () {
-    if (this.src !== DEFAULT_IMAGE) {
-      this.src = DEFAULT_IMAGE;
-    }
-  };
-}
 
-// Apply fallback to all committee__photo images
-function applyImageFallback(context = document) {
-  $(context)
-    .find(".committee__photo")
-    .each(function () {
-      setImageFallback(this);
-    });
-}
 
 // Initialize a reusable carousel
-function initCarousel(selector, nextBtn, prevBtn) {
-  const carousel = $(selector).owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false,
-    dots: false,
-    autoplay: false,
-    autoplayTimeout: 4000,
-    responsive: {
-      0: { items: 1 },
-      548: { items: 2 },
-      768: { items: 3 },
-      1024: { items: 4 },
-    },
-    onInitialized: function (event) {
-      // applyImageFallback(event.target); // apply only inside carousel
-    },
-    onRefreshed: function (event) {
-      // applyImageFallback(event.target);
-    },
-  });
+// function initCarousel(selector, nextBtn, prevBtn) {
+//   const carousel = $(selector).owlCarousel({
+//     loop: true,
+//     margin: 30,
+//     nav: false,
+//     dots: false,
+//     autoplay: false,
+//     autoplayTimeout: 4000,
+//     responsive: {
+//       0: { items: 1 },
+//       548: { items: 2 },
+//       768: { items: 3 },
+//       1024: { items: 4 },
+//     },
+//   });
 
-  // Custom nav buttons
-  if (nextBtn) $(nextBtn).click(() => carousel.trigger("next.owl.carousel"));
-  if (prevBtn) $(prevBtn).click(() => carousel.trigger("prev.owl.carousel"));
+//   // Custom nav buttons
+//   if (nextBtn) $(nextBtn).click(() => carousel.trigger("next.owl.carousel"));
+//   if (prevBtn) $(prevBtn).click(() => carousel.trigger("prev.owl.carousel"));
 
-  return carousel;
-}
+//   return carousel;
+// }
 
-$(document).ready(function () {
-  initCarousel(".committee-carousel", ".committee-next", ".committee-prev");
-  initCarousel(
-    ".int-committee-carousel",
-    ".int-committee-next",
-    ".int-committee-prev"
-  );
-  initCarousel(
-    ".confer-committee-carousel",
-    ".confer-committee-next",
-    ".confer-committee-prev"
-  );
+// $(document).ready(function () {
+//   initCarousel(".committee-carousel", ".committee-next", ".committee-prev");
+//   initCarousel(
+//     ".int-committee-carousel",
+//     ".int-committee-next",
+//     ".int-committee-prev"
+//   );
+//   initCarousel(
+//     ".confer-committee-carousel",
+//     ".confer-committee-next",
+//     ".confer-committee-prev"
+//   );
 
-  // Run fallback globally once in case images are outside carousels
-  // applyImageFallback();
-});
+// });
 
 $(document).ready(function () {
   // ---------- Generic OwlCarousel Initializer ----------
-  function initCarousel(selector, nextBtn, prevBtn, options = {}) {
-    const defaultOptions = {
-      loop: true,
-      margin: 30,
-      nav: false,
-      dots: false,
-      autoplay: false,
-      autoplayTimeout: 4000,
-      responsive: {
-        0: { items: 1 },
-        548: { items: 2 },
-        768: { items: 3 },
-        1024: { items: 4 },
-      },
-    };
+  // function initCarousel(selector, nextBtn, prevBtn, options = {}) {
+  //   const defaultOptions = {
+  //     loop: true,
+  //     margin: 30,
+  //     nav: false,
+  //     dots: false,
+  //     autoplay: false,
+  //     autoplayTimeout: 4000,
+  //     responsive: {
+  //       0: { items: 1 },
+  //       548: { items: 2 },
+  //       768: { items: 3 },
+  //       1024: { items: 4 },
+  //     },
+  //   };
 
-    const carousel = $(selector).owlCarousel({ ...defaultOptions, ...options });
+  //   const carousel = $(selector).owlCarousel({ ...defaultOptions, ...options });
 
-    if (nextBtn) $(nextBtn).click(() => carousel.trigger("next.owl.carousel"));
-    if (prevBtn) $(prevBtn).click(() => carousel.trigger("prev.owl.carousel"));
+  //   if (nextBtn) $(nextBtn).click(() => carousel.trigger("next.owl.carousel"));
+  //   if (prevBtn) $(prevBtn).click(() => carousel.trigger("prev.owl.carousel"));
 
-    return carousel;
-  }
+  //   return carousel;
+  // }
 
   // ---------- Committee Carousels ----------
-  initCarousel(".committee-carousel", ".committee-next", ".committee-prev");
-  initCarousel(
-    ".int-committee-carousel",
-    ".int-committee-next",
-    ".int-committee-prev"
-  );
+  // initCarousel(".committee-carousel", ".committee-next", ".committee-prev");
+  // initCarousel(
+  //   ".int-committee-carousel",
+  //   ".int-committee-next",
+  //   ".int-committee-prev"
+  // );
 
   // ---------- Generic Speaker Carousel Initializer ----------
   function initSpeakerCarousel({
@@ -158,11 +134,6 @@ $(document).ready(function () {
       }
     );
 
-    // owl.on("changed.owl.carousel", function (event) {
-    //   let realIndex = event.item.index - event.relatedTarget._clones.length / 2;
-    //   realIndex = (realIndex + data.length) % data.length;
-    //   updateDetails(realIndex);
-    // });
 
     if (nextBtn) {
       $(nextBtn).click(() => {
@@ -184,8 +155,11 @@ $(document).ready(function () {
 
     $(viewBioBtn).click(function () {
       const s = data[currentIndex];
+
+      const imgSrc = s.image ? s.image : DEFAULT_IMAGE;
+
       $("#modalSpeakerImage").html(
-        `<img src="${s.image}" alt="${s.name}" style="max-width:100%;height:250px;object-fit:cover">`
+        `<img src="${imgSrc}" alt="${s.name}" style="max-width:100%;height:250px;object-fit:cover">`
       );
       $("#modalSpeakerName").text(s.name);
       $("#modalSpeakerUniversity").text(s.university);

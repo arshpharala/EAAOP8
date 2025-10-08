@@ -13,6 +13,11 @@
 
   }
 
+  &__logo {
+    height: 60px;
+    width: auto;
+  }
+
   &__content {
     display: grid;
     gap: 2rem;
@@ -29,9 +34,7 @@
   &__title {
     padding-top: 0;
     line-height: 1;
-    @include responsive(lg) {
-      padding-top: 1rem;
-    }
+   
   }
 
   &__subtitle {

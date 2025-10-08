@@ -217,6 +217,10 @@
 .hero-section .power {
   font-size: clamp(12px, 2vw, 21px);
 }
+.hero-section__logo {
+  height: 60px;
+  width: auto;
+}
 .hero-section__content {
   display: grid;
   gap: 2rem;
@@ -233,11 +237,6 @@
 .hero-section__title {
   padding-top: 0;
   line-height: 1;
-}
-@media (min-width: 60rem) {
-  .hero-section__title {
-    padding-top: 1rem;
-  }
 }
 .hero-section__subtitle {
   font-size: clamp(16px, 2vw, 22.92px);
@@ -347,145 +346,97 @@
   border-top-right-radius: 40px;
 }
 
-.about-section {
+.about {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 @media (min-width: 60rem) {
-  .about-section {
+  .about {
     margin-top: 85px;
     margin-bottom: 95px;
   }
 }
-.about-section__content {
+.about__content {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr;
 }
 @media (min-width: 60rem) {
-  .about-section__content {
+  .about__content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.about-section__info {
-  gap: 50px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.about-section__left img {
-  width: 100%;
-  min-height: 395px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.about-section__left2__title {
-  font-weight: normal;
-  font-size: clamp(18px, 2vw, 31.25px);
-  margin-bottom: 35px;
-  line-height: 1.3;
-  margin-top: -8px;
-}
-.about-section__left2__desc {
-  font-weight: lighter;
-  color: #666;
-  max-width: 95%;
-}
-.about-section__right__title {
-  line-height: 0.8;
-  font-weight: lighter;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-@media (min-width: 33.75rem) {
-  .about-section__right__title {
-    font-size: 23px;
-  }
-}
-@media (min-width: 45rem) {
-  .about-section__right__title {
-    font-size: 26px;
-  }
-}
-@media (min-width: 60rem) {
-  .about-section__right__title {
-    font-size: 29.17px;
-  }
-}
-.about-section__right__sub-title {
-  padding-top: 0.4rem;
-  font-size: 20px;
-}
-@media (min-width: 33.75rem) {
-  .about-section__right__sub-title {
-    font-size: 23px;
-  }
-}
-@media (min-width: 45rem) {
-  .about-section__right__sub-title {
-    font-size: 26px;
-  }
-}
-@media (min-width: 60rem) {
-  .about-section__right__sub-title {
-    font-size: 29.17px;
-  }
-}
-.about-section__right__desc {
-  font-weight: lighter;
-  margin-top: -5px;
-  color: #666;
-}
-.about-section__right2 {
-  height: 100%;
-}
-.about-section .speaker-card {
-  display: flex;
-  align-items: start;
+.about__info {
   gap: 30px;
-  padding: 60px 20px 50px 40px;
-  border: 1px solid #c59c6c;
-  border-radius: 12px;
-  margin-bottom: 50px;
+  display: flex;
   flex-direction: column;
 }
-@media (min-width: 33.75rem) {
-  .about-section .speaker-card {
-    flex-direction: row;
-    max-height: 290px;
-  }
+.about__description {
+  font-weight: lighter;
+  color: #666;
+  height: auto;
 }
-.about-section .speaker-card__image {
-  flex-shrink: 0;
-}
-@media (min-width: 33.75rem) {
-  .about-section .speaker-card__image img {
-    height: 180px;
-    width: 165px;
-  }
-}
-.about-section .speaker-card__image img {
+.about__image img {
+  width: 100%;
+  min-height: 450px;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  display: block;
 }
-.about-section .speaker-card__content {
-  color: #000;
+.about__title {
+  font-weight: normal;
+  font-size: clamp(18px, 2vw, 20.83px);
+  margin-top: 25px;
+  line-height: 1.3;
 }
-.about-section .speaker-card__content .speaker-card__message {
+.about .speaker-content {
+  padding: 20px;
+  border: 1px solid #c59c6c;
+  border-radius: 12px;
+}
+@media (min-width: 33.75rem) {
+  .about .speaker-content {
+    min-height: 290px;
+  }
+}
+.about .speaker-content__message {
   font-size: clamp(16px, 2vw, 20.83px);
   font-weight: 700;
   line-height: 1.1;
   margin: 0 0 1.5rem 0;
 }
-.about-section .speaker-card__content .speaker-card__name {
-  font-size: clamp(16px, 2vw, 20.83px);
+.about .speaker-cards {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  justify-content: space-between;
+}
+.about .speaker-card__image {
+  flex-shrink: 0;
+}
+@media (min-width: 33.75rem) {
+  .about .speaker-card__image img {
+    height: 180px;
+    width: 165px;
+  }
+}
+.about .speaker-card__image img {
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+.about .speaker-card__content {
+  color: #000;
+  margin-top: 1rem;
+}
+.about .speaker-card__content .speaker-card__name {
+  font-size: clamp(12px, 2vw, 16px);
   line-height: 1.1;
   font-weight: 700;
   margin: 0;
 }
-.about-section .speaker-card__content .speaker-card__role {
-  font-size: clamp(16px, 2vw, 20.83px);
+.about .speaker-card__content .speaker-card__role {
+  font-size: clamp(12px, 2vw, 16px);
   font-weight: 400;
   color: #444;
   margin: 0;

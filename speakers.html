@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speakers - EAAOP-8</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      :root {
+        --gap-sm: 1rem;
+        --gap-lg: 2rem;
+        --card-shadow: rgba(0, 0, 0, 0.15);
+      }
+
+      .speaker-list {
+        display: grid;
+        gap: var(--gap-sm);
+        margin-top: 2rem;
+      }
+
+     
+
+      @media (min-width: 640px) {
+        .speaker-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 768px) {
+        .speaker-list {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 1024px) {
+        .speaker-list {
+          grid-template-columns: repeat(4, 1fr);
+          gap: var(--gap-lg);
+        }
+      }
+
+      .speaker-section {
+        margin: 3rem 0;
+      }
+
+      .speaker-card {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #fff;
+        padding: 10px;
+        text-align: left;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        width: 100%;
+      }
+
+      .speaker-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px var(--card-shadow);
+      }
+
+      .speaker-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 5px;
+      }
+
+      .speaker-card h4 {
+        margin: 10px 0 5px;
+        font-size: 16px;
+      }
+
+      .speaker-card p {
+        font-size: 14px;
+        color: #555;
+        margin: 2px 0;
+      }
+
+      /* Modal */
+      #speakerModal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        animation: fadeIn 0.2s;
+      }
+
+      .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 600px;
+        width: 90%;
+        position: relative;
+        animation: slideDown 0.3s;
+        text-align: center;
+      }
+
+      .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #333;
+      }
+
+      #modalSpeakerImage img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      #modalSpeakerName {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      #modalSpeakerUniversity,
+      #modalSpeakerTopic {
+        font-size: 16px;
+        color: #555;
+        margin: 5px 0;
+      }
+
+      #modalSpeakerBio {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-20px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= Header ================= -->
+    <header class="ku-header">
+      <div class="container ku-header__content">
+        <div class="ku-header__left">
+          <a href="#"
+            ><img
+              src="assets/images/ku-logo.png"
+              alt="Khalifa University Logo"
+              class="ku-header__logo"
+          /></a>
+        </div>
+
+        <nav class="ku-header__nav">
+          <ul class="ku-nav__list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#committee">COMMITTEES</a></li>
+            <li><a href="#speakers">SPEAKERS</a></li>
+            <li><a href="#program">PROGRAM</a></li>
+            <li><a href="#registration">REGISTRATION</a></li>
+          </ul>
+          <a href="mailto:eaaop8@ku.ac.ae" class="button-shape-contact"
+            >CONTACT US</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= Speaker Page ================= -->
+    <main class="container speaker-page" style="margin-top: 6rem">
+      <h1>Conference Speakers</h1>
+
+         <section id="plenary-speakers" class="speaker-section">
+        <h1 class="speakers__title">Plenary Speakers</h1>
+        <div class="speaker-list" id="plenaryList"></div>
+      </section>
+
+      <section id="keynote-speakers" class="speaker-section">
+        <h1 class="speakers__title">Keynote Speakers</h1>
+        <div class="speaker-list" id="keynoteList"></div>
+      </section>
+
+   
+
+      <section id="invited-speakers" class="speaker-section">
+        <h1 class="speakers__title">Invited Speakers</h1>
+        <div class="speaker-list" id="invitedList"></div>
+      </section>
+
+      <!-- Modal -->
+      <div id="speakerModal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+          <span id="closeModal">
+            <img src="assets/images/close.png" alt="close" />
+          </span>
+          <div class="profile-card">
+            <div id="modalSpeakerImage"></div>
+            <div class="profile-card__details">
+              <h1 id="modalSpeakerName"></h1>
+              <h4 id="modalSpeakerUniversity"></h4>
+              <p id="modalSpeakerTopic" class="topic"></p>
+              <p id="modalSpeakerBio"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="container footer__contents">
+        <!-- Left section -->
+        <div class="footer__left">
+          <a href="/">
+            <img
+              src="assets/images/logo2.png"
+              alt="Conference Logo"
+              class="footer__logo"
+            />
+          </a>
+          <div class="footer__email">
+            <img
+              src="assets/images/footer-mail.png"
+              alt="mail"
+              class="footer__email__icon"
+            />
+            <a href="mailto:eaaop8@ku.ac.ae"> eaaop8@ku.ac.ae </a>
+          </div>
+        </div>
+
+        <!-- right section  -->
+        <ul class="footer__lists">
+          <li><a href="#about">About</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#sponsorship">Sponsorship</a></li>
+          <li><a href="#committee">Committee</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="mailto:eaaop8@ku.ac.ae">Contact Us</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#call-for-abstract">Call for Abstract</a></li>
+        </ul>
+      </div>
+
+      <!-- Bottom copyright -->
+      <div class="footer__bottom">
+        <p>Copyright 2025 - Khalifa University | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        const defaultImg = "assets/images/user.png";
+        const files = [
+          {
+            url: "assets/data/keynote-speakers.json",
+            container: "#keynoteList",
+            category: "keynote",
+          },
+          {
+            url: "assets/data/plenary-speakers.json",
+            container: "#plenaryList",
+            category: "plenary",
+          },
+          {
+            url: "assets/data/invited-speakers.json",
+            container: "#invitedList",
+            category: "invited",
+          },
+        ];
+
+        let allSpeakers = [];
+
+        files.forEach((file) => {
+          $.getJSON(file.url, function (data) {
+            data.forEach((s) => {
+              if (!allSpeakers.some((sp) => sp.name === s.name)) {
+                allSpeakers.push({ ...s, category: file.category });
+              }
+            });
+            renderSpeakers(file.container, file.category);
+          }).fail(() => console.error("Failed to load:", file.url));
+        });
+
+        function renderSpeakers(container, category) {
+          const speakersToShow = allSpeakers.filter(
+            (s) => s.category === category
+          );
+          const html = speakersToShow
+            .map(
+              (s) => `
+      <div class="speaker-card" data-name="${s.name}">
+        <img src="${s.image || defaultImg}" alt="${
+                s.name
+              }" onerror="this.src='${defaultImg}'">
+        <h4>${s.name}</h4>
+        <p>${s.university || ""}</p>
+        <button class="view-bio-btn button-shape button-shape-primary" aria-label="View bio of ${
+          s.name
+        }">View Bio</button>
+      </div>
+    `
+            )
+            .join("");
+          $(container).html(html);
+
+          $(container)
+            .find(".view-bio-btn")
+            .click(function () {
+              const name = $(this).closest(".speaker-card").data("name");
+              const speaker = allSpeakers.find((sp) => sp.name === name);
+
+              $("#modalSpeakerImage").html(
+                `<img src="${
+                  speaker.image || defaultImg
+                }" onerror="this.src='${defaultImg}'">`
+              );
+              $("#modalSpeakerName").text(speaker.name);
+              $("#modalSpeakerUniversity").text(
+                speaker.university || "University not available"
+              );
+              $("#modalSpeakerTopic").text(
+                speaker.topic || "Topic not available"
+              );
+              $("#modalSpeakerBio").text(
+                speaker.bio || "Biography not available"
+              );
+
+              $("#speakerModal").fadeIn();
+            });
+        }
+
+        $(".close-modal").click(() => $("#speakerModal").fadeOut());
+        $("#speakerModal").click((e) => {
+          if (e.target === e.currentTarget) $(e.currentTarget).fadeOut();
+        });
+      });
+    </script>
+  </body>
+</html>
