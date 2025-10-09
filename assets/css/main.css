@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .ku-header {
-  background-color: #ffffff;
   margin-bottom: 1rem;
   position: fixed;
   top: 0;
@@ -9,6 +8,7 @@
   width: 100%;
 }
 .ku-header__content {
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,6 +146,7 @@
   background: #1947ba;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 .menu-model .mobile-menu .close-btn img {
@@ -2224,6 +2225,117 @@
   }
 }
 
+.banner {
+  min-height: 250px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner_title {
+  color: white;
+}
+.banner_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  object-fit: cover;
+  height: 250px;
+  opacity: 0.8;
+  z-index: -1;
+}
+@media (min-width: 45rem) {
+  .banner {
+    min-height: 400px;
+  }
+  .banner_image {
+    min-height: 400px;
+  }
+}
+
+.speaker-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+@media (min-width: 33.75rem) {
+  .speaker-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 45rem) {
+  .speaker-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 60rem) {
+  .speaker-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.speaker-section {
+  margin: 3rem 0;
+}
+
+.speaker-card-detail {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: left;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.speaker-card-detail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.speaker-card-detail img {
+  background: #ddd;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+}
+.speaker-card-detail h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+.speaker-card-detail p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+  margin: 0.4rem 0;
+}
+
+.view-bio-btn {
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .button-shape {
   display: inline-block;
   padding: 12px 19px;
