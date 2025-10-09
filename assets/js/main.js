@@ -38,6 +38,28 @@ $(document).ready(function () {
   $(window).on("resize", checkWindowWidth);
 });
 
+
+
+
+// Auto redirect anchor links to index.html if not on index page
+$(function () {
+  const isIndexPage =
+    location.pathname.endsWith("/") ||
+    location.pathname.endsWith("/index.html");
+
+  if (!isIndexPage) {
+    // Target nav links in header, footer, and mobile menu
+    const navSelector =
+      ".ku-header__nav a[href^='#'], .nav-menu a[href^='#'], .footer__lists a[href^='#']";
+
+    $(navSelector).each(function () {
+      const hash = $(this).attr("href");
+      $(this).attr("href", "index.html" + hash); 
+    });
+  }
+});
+
+
 // about secton
 $(document).ready(function () {
   $(".read-more").click(function () {
