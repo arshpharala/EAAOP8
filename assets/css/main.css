@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .ku-header {
   margin-bottom: 1rem;
@@ -1314,6 +1315,200 @@
   font-size: normal;
   color: #666;
   margin: 0;
+}
+.program .special-issues {
+  margin: 50px 0;
+}
+@media (min-width: 60rem) {
+  .program .special-issues {
+    margin: 125px 0;
+  }
+}
+.program .special-issues__title {
+  font-size: 12px;
+}
+@media (min-width: 45rem) {
+  .program .special-issues__title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 60rem) {
+  .program .special-issues__title {
+    font-size: 16.67px;
+  }
+}
+.program .special-issues__title {
+  font-weight: bold;
+  color: #c59c6c;
+  margin-bottom: 1.5rem;
+}
+.program .special-issues__details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 60rem) {
+  .program .special-issues__details {
+    grid-template-columns: 1fr 2fr;
+    gap: 96px;
+  }
+}
+.program .special-issues__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 45rem) {
+  .program .special-issues__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+.program .special-issues__column {
+  list-style: none;
+  margin: 0;
+}
+.program .special-issues__column li {
+  padding-left: 1.8rem;
+  position: relative;
+  margin-bottom: 14px;
+}
+@media (min-width: 45rem) {
+  .program .special-issues__column li {
+    margin-bottom: 24px;
+  }
+}
+.program .special-issues__column li {
+  font-size: 12px;
+}
+@media (min-width: 45rem) {
+  .program .special-issues__column li {
+    font-size: 14px;
+  }
+}
+@media (min-width: 60rem) {
+  .program .special-issues__column li {
+    font-size: 16.67px;
+  }
+}
+.program .special-issues__column li {
+  font-weight: 700;
+}
+.program .special-issues__column li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #c59c6c;
+  font-size: 1.8rem;
+  font-weight: bold;
+  top: -14px;
+}
+@media (min-width: 45rem) {
+  .program .special-issues__column li::before {
+    top: -0.6rem;
+  }
+}
+@media (min-width: 60rem) {
+  .program .special-issues__column li::before {
+    top: -0.5rem;
+  }
+}
+.program .tutorial-sessions {
+  margin: 0 0 50px 0;
+}
+@media (min-width: 60rem) {
+  .program .tutorial-sessions {
+    margin: 0 0 125px 0;
+  }
+}
+.program .tutorial-sessions__details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 45rem) {
+  .program .tutorial-sessions__details {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+.program .tutorial-sessions__image {
+  width: 100%;
+  min-height: 130px;
+  object-fit: cover;
+}
+.program .tutorial-sessions__title {
+  font-size: 12px;
+  margin-top: -0.5rem;
+}
+@media (min-width: 45rem) {
+  .program .tutorial-sessions__title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 60rem) {
+  .program .tutorial-sessions__title {
+    font-size: 16.67px;
+  }
+}
+.program .tutorial-sessions__title {
+  font-weight: bold;
+  color: #c59c6c;
+  margin-bottom: 1.5rem;
+}
+.program .tutorial-sessions__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0;
+}
+.program .tutorial-sessions__list li {
+  padding-left: 1.8rem;
+  position: relative;
+  margin-bottom: 14px;
+}
+@media (min-width: 45rem) {
+  .program .tutorial-sessions__list li {
+    margin-bottom: 24px;
+  }
+}
+.program .tutorial-sessions__list li {
+  font-size: 12px;
+}
+@media (min-width: 45rem) {
+  .program .tutorial-sessions__list li {
+    font-size: 14px;
+  }
+}
+@media (min-width: 60rem) {
+  .program .tutorial-sessions__list li {
+    font-size: 16.67px;
+  }
+}
+.program .tutorial-sessions__list li {
+  font-weight: 700;
+}
+.program .tutorial-sessions__list li span {
+  font-weight: normal;
+}
+.program .tutorial-sessions__list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  height: 0;
+  color: #c59c6c;
+  font-size: 1.8rem;
+  font-weight: bold;
+  top: -14px;
+}
+@media (min-width: 45rem) {
+  .program .tutorial-sessions__list li::before {
+    top: -0.6rem;
+  }
+}
+@media (min-width: 60rem) {
+  .program .tutorial-sessions__list li::before {
+    top: -0.5rem;
+  }
 }
 .program .schedule {
   margin: 4rem auto 0;
