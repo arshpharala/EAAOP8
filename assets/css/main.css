@@ -416,7 +416,7 @@
   display: flex;
   align-items: start;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .about .speaker-card__image {
   display: grid;
