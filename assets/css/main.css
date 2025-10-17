@@ -416,10 +416,11 @@
   display: flex;
   align-items: start;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .about .speaker-card__image {
-  flex-shrink: 0;
+  display: grid;
+  place-items: center;
 }
 @media (min-width: 33.75rem) {
   .about .speaker-card__image img {
@@ -445,10 +446,8 @@
   margin: 0;
 }
 .about .speaker-card__content .speaker-card__role {
-  font-size: clamp(12px, 2vw, 16px);
-  font-weight: 400;
-  color: #444;
-  margin: 0;
+  font-weight: 300;
+  color: #666;
 }
 
 .conference-section {
