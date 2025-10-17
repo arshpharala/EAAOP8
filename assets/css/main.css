@@ -805,9 +805,21 @@
   text-align: left;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.committee__img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  aspect-ratio: 1/1;
 }
 .committee__photo {
-  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.committee__photo:hover {
+  transform: scale(1.1);
 }
 .committee__name {
   font-size: 16px;
