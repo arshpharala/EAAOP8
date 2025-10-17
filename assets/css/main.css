@@ -541,6 +541,12 @@
 
 .card {
   background-color: #272727;
+}
+.card:hover {
+  transition: all 0.5s ease;
+  background-color: #c59c6c;
+}
+.card {
   color: #ffffff;
   padding: 1.5rem;
   text-align: left;

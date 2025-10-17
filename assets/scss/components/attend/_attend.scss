@@ -34,6 +34,11 @@
 .card {
   // background-color: rgba($black-color,0.7);
   background-color: #272727;
+  &:hover {
+    transition: $transition;
+
+    background-color: $primary-color;
+  }
 
   color: $white-color;
   padding: 1.5rem;
