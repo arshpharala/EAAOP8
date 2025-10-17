@@ -59,7 +59,7 @@ $(document).ready(function () {
 
 $(function () {
   const OFFSET = 100; // Adjust for header height
-  const SCROLL_DURATION = 600;
+  const SCROLL_DURATION = 0;
 
 
   // --- Smooth scroll handler (only for on-page anchors)
