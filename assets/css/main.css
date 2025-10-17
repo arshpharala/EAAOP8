@@ -446,10 +446,8 @@
   margin: 0;
 }
 .about .speaker-card__content .speaker-card__role {
-  font-size: clamp(12px, 2vw, 16px);
-  font-weight: 400;
-  color: #444;
-  margin: 0;
+  font-weight: 300;
+  color: #666;
 }
 
 .conference-section {
