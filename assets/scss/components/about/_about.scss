@@ -60,6 +60,7 @@
     }
 
     &__message {
+      text-align: center;
       font-size: clamp(16px, 2vw, 20.83px);
       font-weight: 700;
       line-height: 1.1;
@@ -93,8 +94,10 @@
     &__content {
       color: #000;
       margin-top: 1rem;
+      text-align: center;
 
       .speaker-card__name {
+      text-align: center;
         font-size: clamp(12px, 2vw, 16px);
         line-height: 1.1;
 

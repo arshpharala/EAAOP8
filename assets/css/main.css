@@ -403,6 +403,7 @@
   }
 }
 .about .speaker-content__message {
+  text-align: center;
   font-size: clamp(16px, 2vw, 20.83px);
   font-weight: 700;
   line-height: 1.1;
@@ -431,8 +432,10 @@
 .about .speaker-card__content {
   color: #000;
   margin-top: 1rem;
+  text-align: center;
 }
 .about .speaker-card__content .speaker-card__name {
+  text-align: center;
   font-size: clamp(12px, 2vw, 16px);
   line-height: 1.1;
   font-weight: 700;
@@ -1903,8 +1906,8 @@
   object-position: top;
 }
 .abstract-call .abstract-form__fields {
+  display: none;
   margin-top: 60px;
-  display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -2504,11 +2507,6 @@
   overflow: hidden;
   padding: 10px;
   text-align: left;
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
   width: 100%;
 }
 .speaker-card-detail:hover {

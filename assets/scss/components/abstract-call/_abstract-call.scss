@@ -109,8 +109,9 @@
     }
 
     &__fields {
+      display: none;
       margin-top: 60px;
-      display: flex;
+      // display: flex;
       flex-direction: column;
 
       gap: 1.5rem;

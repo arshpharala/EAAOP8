@@ -56,23 +56,67 @@ $(document).ready(function () {
 	});
 });
 
-// Auto redirect anchor links to index.html if not on index page
+
 $(function () {
-	const isIndexPage =
-		location.pathname.endsWith("/") ||
-		location.pathname.endsWith("/index.html");
+  const OFFSET = 100; // Adjust for header height
+  const SCROLL_DURATION = 600;
 
-	if (!isIndexPage) {
-		// Target nav links in header, footer, and mobile menu
-		const navSelector =
-			".ku-header__nav a[href^='#'], .nav-menu a[href^='#'], .footer__lists a[href^='#']";
 
-		$(navSelector).each(function () {
-			const hash = $(this).attr("href");
-			$(this).attr("href", "index.html" + hash);
-		});
-	}
+  // --- Smooth scroll handler (only for on-page anchors)
+  $(document).on("click", "a[href^='#']", function (e) {
+    const targetId = $(this).attr("href");
+    const target = $(targetId);
+
+    if (target.length) {
+      e.preventDefault();
+
+      const scrollTo = target.offset().top - OFFSET;
+
+      $("html, body").animate(
+        { scrollTop: scrollTo }
+      );
+    }
+  });
+
+
+  // --- Detect if current page is the index page
+  const isIndexPage =
+    location.pathname.endsWith("/") ||
+    location.pathname.endsWith("/index.html");
+
+  // --- Normalize anchor links if not on index page
+  if (!isIndexPage) {
+    const navSelector = [
+      ".ku-header__nav a[href^='#']",
+      ".nav-menu a[href^='#']",
+      ".footer__lists a[href^='#']"
+    ].join(", ");
+
+    $(navSelector).each(function () {
+      const hash = $(this).attr("href");
+      $(this).attr("href", "index.html" + hash);
+    });
+  }
+
+    // --- Smooth scroll after redirect (for index.html#section)
+  $(window).on("load", function () {
+    const hash = window.location.hash;
+    if (hash && $(hash).length) {
+      // Small delay ensures elements are rendered
+      setTimeout(() => {
+        $("html, body").animate(
+          { scrollTop: $(hash).offset().top - OFFSET },
+          SCROLL_DURATION,
+          "swing"
+        );
+      }, 200);
+    }
+  });
+
+  
 });
+
+
 
 // about secton
 $(document).ready(function () {
