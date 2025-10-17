@@ -50,6 +50,7 @@
 
   &__detail {
     display: flex;
+    align-items: start;
     justify-content: space-between;
     flex-direction: column;
     gap: 0.5rem;
@@ -71,5 +72,9 @@
 
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+    &__button {
+    min-width: 93.86px;
   }
 }
