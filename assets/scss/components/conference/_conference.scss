@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr;
     @include responsive(lg) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1.2fr 1fr;
       gap: 4rem;
     }
   }
@@ -35,10 +35,13 @@
       line-height: 1.5;
       margin-bottom: 0.4rem;
       text-transform: uppercase;
-      font-weight: lighter;
+      font-weight: 100;
       font-size: 12px;
-      @include responsive(lg) {
+      @include responsive(md) {
         font-size: 14px;
+      }
+      @include responsive(lg) {
+        font-size: 16.67px;
       }
       &::before {
         content: "";
