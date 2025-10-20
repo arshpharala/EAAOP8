@@ -30,6 +30,7 @@
     .footer__logo {
       @include white-filter;
       width: 300px;
+        height: auto;
       @include responsive(xl) {
         width: 350px;
         height: 100px;

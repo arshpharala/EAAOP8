@@ -2360,6 +2360,7 @@
 .footer__left .footer__logo {
   filter: brightness(0) saturate(100%) invert(100%) sepia(64%) saturate(7%) hue-rotate(175deg) brightness(115%) contrast(100%);
   width: 300px;
+  height: auto;
 }
 @media (min-width: 71.25rem) {
   .footer__left .footer__logo {
