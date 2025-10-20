@@ -344,6 +344,16 @@
     height: 44%;
   }
 }
+@media (min-width: 60rem) {
+  .hero-section__right .bg-image3 .bg-color {
+    height: 60%;
+  }
+}
+@media (min-width: 71.25rem) {
+  .hero-section__right .bg-image3 .bg-color {
+    height: 44%;
+  }
+}
 .hero-section__right .bg-image3 .bg-color {
   background-color: #c59c6c;
   z-index: 1;

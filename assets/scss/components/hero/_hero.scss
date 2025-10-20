@@ -136,6 +136,12 @@
         @include responsive(md) {
           height: 44%;
         }
+         @include responsive(lg) {
+          height: 60%;
+        }
+         @include responsive(xl) {
+          height: 44%;
+        }
         background-color: $primary-color;
         z-index: 1;
         border-top-left-radius: 40px;
