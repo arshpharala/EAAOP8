@@ -1763,9 +1763,9 @@
   text-align: left;
   font-size: 12px;
 }
-@media (min-width: 60rem) {
+@media (min-width: 33.75rem) {
   .registration-section .registration-table tbody td {
-    font-size: 17.92px;
+    font-size: 14px;
   }
 }
 @media (min-width: 45rem) {
@@ -1773,20 +1773,13 @@
     font-size: 16px;
   }
 }
-@media (min-width: 33.75rem) {
+@media (min-width: 60rem) {
   .registration-section .registration-table tbody td {
-    font-size: 14px;
+    font-size: 17.92px;
   }
 }
 .registration-section .note {
   text-align: start;
-}
-@media (min-width: 60rem) {
-  .registration-section .note {
-    font-size: 16.8px;
-  }
-}
-.registration-section .note {
   margin: 1rem 0;
   color: #fafafa;
 }
