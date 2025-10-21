@@ -130,53 +130,7 @@
       </div>
     </header> -->
 
-  <!-- Menu -->
-  <div
-    class="menu-model"
-    id="mobileMenu"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Mobile Navigation">
-    <aside class="mobile-menu" aria-label="Mobile menu">
-      <div>
-        <button class="close-btn" id="closeMenu" aria-label="Close menu">
-          <img
-            src="assets/images/close.png"
-            alt="Close Menu Icon"
-            class="close-icon" />
-        </button>
-      </div>
 
-      <div class="menu-content">
-        <ul class="nav-menu">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li>
-            <a href="committees.php">COMMITTEES</a>
-          </li>
-          <li>
-            <a href="speakers.php">SPEAKERS</a>
-          </li>
-          <li><a href="#program">PROGRAM</a></li>
-          <li>
-            <a href="#registration">registration</a>
-          </li>
-          <li><a href="#call-for-abstract">submit Abstract</a></li>
-          <li><a href="#special-issues">special issues</a></li>
-
-          <li><a href="#venue">venue</a></li>
-          <li>
-            <a href="#sponsorship">sponsors</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <a
-          href="mailto:eaaop8@ku.ac.ae"
-          class="button-shape contact-btn button-shape-primary">CONTACT US</a>
-      </div>
-    </aside>
-  </div>
 
   <!-- hero section  -->
   <section id="home" class="hero-section">

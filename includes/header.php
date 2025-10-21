@@ -58,3 +58,51 @@
         </div>
       </div>
     </header>
+
+
+    <div
+      class="menu-model"
+      id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Navigation">
+      <aside class="mobile-menu" aria-label="Mobile menu">
+        <div>
+          <button class="close-btn" id="closeMenu" aria-label="Close menu">
+            <img
+              src="assets/images/close.png"
+              alt="Close Menu Icon"
+              class="close-icon" />
+          </button>
+        </div>
+
+        <div class="menu-content">
+          <ul class="nav-menu">
+            <li><a href="<?php echo url(); ?>">HOME</a></li>
+            <li><a href="<?php echo url('#about'); ?>">ABOUT</a></li>
+            <li>
+              <a href="<?php echo url('committees.php'); ?>">COMMITTEES</a>
+            </li>
+            <li>
+              <a href="<?php echo url('speakers.php'); ?>">SPEAKERS</a>
+            </li>
+            <li><a href="<?php echo url('#program'); ?>">PROGRAM</a></li>
+            <li>
+              <a href="<?php echo url('#registration'); ?>">registration</a>
+            </li>
+            <li><a href="<?php echo url('#call-for-abstract'); ?>">submit Abstract</a></li>
+            <li><a href="<?php echo url('#special-issues'); ?>">special issues</a></li>
+
+            <li><a href="<?php echo url('#venue'); ?>">venue</a></li>
+            <li>
+              <a href="<?php echo url('#sponsorship'); ?>">sponsors</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a
+            href="mailto:eaaop8@ku.ac.ae"
+            class="button-shape contact-btn button-shape-primary">CONTACT US</a>
+        </div>
+      </aside>
+    </div>
