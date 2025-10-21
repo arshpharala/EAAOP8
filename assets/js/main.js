@@ -67,7 +67,14 @@ $(document).ready(function () {
 
   $(window).on("scroll", function () {
     var navBottom = $nav.outerHeight();
-    var logoTop = $hero_logo[0].getBoundingClientRect().top;
+
+    if ($hero_logo.length) {
+      var logoTop = $hero_logo[0].getBoundingClientRect().top;
+    
+    } else {
+      var logoTop = 0;
+    }
+
 
     // When navbar touches hero logo (scroll down)
     if (logoTop <= navBottom + 20) {
@@ -105,7 +112,7 @@ $(function () {
   // --- Detect if current page is the index page
   const isIndexPage =
     location.pathname.endsWith("/") ||
-    location.pathname.endsWith("/index.html");
+    location.pathname.endsWith("/index.php");
 
   // --- Normalize anchor links if not on index page
   if (!isIndexPage) {
@@ -117,7 +124,7 @@ $(function () {
 
     $(navSelector).each(function () {
       const hash = $(this).attr("href");
-      $(this).attr("href", "index.html" + hash);
+      $(this).attr("href", "index" + hash);
     });
   }
 
