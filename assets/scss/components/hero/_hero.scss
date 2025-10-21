@@ -2,7 +2,7 @@
 @use "../../variables" as *;
 
 .hero-section {
-  margin-top: 50px;
+  margin-top: 20px;
 
   @include responsive(lg) {
     margin-top: 60px;
