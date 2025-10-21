@@ -132,10 +132,13 @@
     transform: translate(-50%, -50%);
     background: #fff;
     border-radius: 8px;
-    padding: 40px;
     max-height: 70%;
+    padding: 20px;
+
+    width: 100%;
     overflow-y: scroll;
     max-width: 90%;
+
     z-index: 1001;
 
     #closeModal {
@@ -168,9 +171,9 @@
       grid-template-columns: 1fr;
 
       align-items: center;
-      text-align: left;
       gap: 1.5rem;
       padding-bottom: 1rem;
+      text-align: left;
 
       @include responsive(md) {
         grid-template-columns: 0.5fr 2fr;
@@ -235,6 +238,8 @@
     }
 
     @include responsive(sm) {
+      padding: 40px;
+
       h2 {
         font-size: 1.2rem;
       }
@@ -259,10 +264,11 @@
     @include responsive(lg) {
       max-width: 70%;
     }
-      @include responsive(xl) {
+    @include responsive(xl) {
       max-width: 60%;
     }
-      @include responsive(2xl) {
+
+     @include responsive(2xl) {
       max-width: 50%;
     }
   }
