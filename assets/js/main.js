@@ -110,23 +110,23 @@ $(function () {
   });
 
   // --- Detect if current page is the index page
-  const isIndexPage =
-    location.pathname.endsWith("/") ||
-    location.pathname.endsWith("/index.php");
+  // const isIndexPage =
+  //   location.pathname.endsWith("/") ||
+  //   location.pathname.endsWith("/index.php");
 
-  // --- Normalize anchor links if not on index page
-  if (!isIndexPage) {
-    const navSelector = [
-      ".ku-header__nav a[href^='#']",
-      ".nav-menu a[href^='#']",
-      ".footer__lists a[href^='#']",
-    ].join(", ");
+  // // --- Normalize anchor links if not on index page
+  // if (!isIndexPage) {
+  //   const navSelector = [
+  //     ".ku-header__nav a[href^='#']",
+  //     ".nav-menu a[href^='#']",
+  //     ".footer__lists a[href^='#']",
+  //   ].join(", ");
 
-    $(navSelector).each(function () {
-      const hash = $(this).attr("href");
-      $(this).attr("href", "index" + hash);
-    });
-  }
+  //   $(navSelector).each(function () {
+  //     const hash = $(this).attr("href");
+  //     $(this).attr("href", "index" + hash);
+  //   });
+  // }
 
   // --- Smooth scroll after redirect (for index.html#section)
   $(window).on("load", function () {
