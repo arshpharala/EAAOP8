@@ -136,7 +136,7 @@
     padding: 20px;
 
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-width: 90%;
 
     z-index: 1001;
@@ -187,8 +187,8 @@
 
       img {
         width: auto;
-        max-width: 180px; // make it smaller
-        min-height: 180px; // adjust min-height
+        max-width: 140px; // make it smaller
+        min-height: 140px; // adjust min-height
         aspect-ratio: 1 / 1; // keep it square
         border-radius: 50%; // circular
         background: #ddd;

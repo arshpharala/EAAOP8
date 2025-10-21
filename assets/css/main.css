@@ -2464,7 +2464,7 @@
   max-height: 70%;
   padding: 20px;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-width: 90%;
   z-index: 1001;
 }
@@ -2510,8 +2510,8 @@
 }
 #speakerModal .modal-content #modalSpeakerImage img {
   width: auto;
-  max-width: 180px;
-  min-height: 180px;
+  max-width: 140px;
+  min-height: 140px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: #ddd;
