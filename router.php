@@ -30,6 +30,6 @@ if (file_exists($file)) {
   return true;
 } else {
   http_response_code(404);
-  echo "404 Not Found";
+  echo "<h1>404 - Page Not Found</h1><p>Sorry, the page you are looking for does not exist.</p><p><a href='/'>Return to homepage</a></p>";
   return true;
 }

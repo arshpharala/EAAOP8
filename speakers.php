@@ -36,10 +36,10 @@
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li>
-            <a href="committees.html">COMMITTEEs</a>
+            <a href="committees.php">COMMITTEES</a>
           </li>
           <li>
-            <a href="speakers.html">SPEAKERS</a>
+            <a href="speakers.php">SPEAKERS</a>
           </li>
           <li><a href="#program">PROGRAM</a></li>
           <li>

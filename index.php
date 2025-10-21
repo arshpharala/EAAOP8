@@ -60,7 +60,7 @@
                     >
                   </li>
                   <li>
-                    <a href="speakers.html" class="ku-nav__link">SPEAKERS</a>
+                    <a href="speakers.php" class="ku-nav__link">SPEAKERS</a>
                   </li>
                   <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
                   <li>
@@ -152,10 +152,10 @@
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li>
-            <a href="committees.html">COMMITTEEs</a>
+            <a href="committees.php">COMMITTEES</a>
           </li>
           <li>
-            <a href="speakers.html">SPEAKERS</a>
+            <a href="speakers.php">SPEAKERS</a>
           </li>
           <li><a href="#program">PROGRAM</a></li>
           <li>
