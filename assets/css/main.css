@@ -236,6 +236,7 @@
 .hero-section__logo {
   height: 100px;
   width: auto;
+  object-fit: contain;
   background-color: #ffffff;
 }
 .hero-section__content {
