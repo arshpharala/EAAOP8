@@ -22,10 +22,10 @@
                 <ul class="ku-nav__list">
                   <li><a href="<?php echo url(); ?>" class="ku-nav__link">HOME</a></li>
                   <li>
-                    <a href="<?php echo url('committees'); ?>" class="ku-nav__link">COMMITTEEs</a>
+                    <a href="<?php echo url('committees.php'); ?>" class="ku-nav__link">COMMITTEEs</a>
                   </li>
                   <li>
-                    <a href="<?php echo url('speakers'); ?>" class="ku-nav__link">SPEAKERS</a>
+                    <a href="<?php echo url('speakers.php'); ?>" class="ku-nav__link">SPEAKERS</a>
                   </li>
                   <li><a href="<?php echo url('#program'); ?>" class="ku-nav__link">PROGRAM</a></li>
                   <li>
