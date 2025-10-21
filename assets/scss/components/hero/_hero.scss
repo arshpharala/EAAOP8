@@ -2,7 +2,11 @@
 @use "../../variables" as *;
 
 .hero-section {
-  margin-top: 60px;
+  margin-top: 50px;
+
+  @include responsive(lg) {
+    margin-top: 60px;
+  }
 
   min-height: 557px;
   padding-top: 5rem;
@@ -13,15 +17,11 @@
     font-size: clamp(12px, 2vw, 21px);
   }
 
-
-
   &__logo {
     height: 100px;
     width: auto;
     background-color: $white-color;
   }
-
-
 
   &__content {
     display: grid;

@@ -217,7 +217,14 @@
 }
 
 .hero-section {
-  margin-top: 60px;
+  margin-top: 50px;
+}
+@media (min-width: 60rem) {
+  .hero-section {
+    margin-top: 60px;
+  }
+}
+.hero-section {
   min-height: 557px;
   padding-top: 5rem;
   display: grid;
