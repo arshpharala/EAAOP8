@@ -1105,146 +1105,6 @@
   }
 }
 
-#speakerModal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 99999;
-}
-#speakerModal .modal-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  max-height: 70%;
-  overflow-y: scroll;
-  max-width: 90%;
-  z-index: 1001;
-  position: relative;
-}
-#speakerModal .modal-content #closeModal {
-  cursor: pointer;
-  background-color: #c59c6c;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-#speakerModal .modal-content #closeModal img {
-  width: 15px;
-  height: 15px;
-}
-#speakerModal .modal-content #closeModal:hover {
-  background-color: rgba(197, 156, 108, 0.7);
-  transform: scale(1.1);
-}
-#speakerModal .modal-content .profile-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  text-align: left;
-  gap: 15px;
-}
-@media (min-width: 45rem) {
-  #speakerModal .modal-content .profile-card {
-    margin-top: 4rem;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 10px;
-  }
-}
-#speakerModal .modal-content #modalSpeakerImage {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-#speakerModal .modal-content #modalSpeakerImage img {
-  width: 220px;
-  height: 150px;
-  border-radius: 50%;
-  background: #ddd;
-  object-fit: contain;
-  object-position: top;
-}
-#speakerModal .modal-content h4 {
-  margin-bottom: 15px;
-  color: #666;
-  font-size: 0.75rem;
-}
-#speakerModal .modal-content .topic {
-  font-style: italic;
-  color: #c59c6c;
-  font-weight: 600;
-}
-#speakerModal .modal-content p {
-  margin-bottom: 10px;
-  color: #444;
-}
-@media (min-width: 45rem) {
-  #speakerModal .modal-content {
-    width: 90%;
-    padding: 20px;
-  }
-  #speakerModal .modal-content h4 {
-    font-size: 1.2rem;
-  }
-  #speakerModal .modal-content p {
-    font-size: 0.9rem;
-  }
-  #speakerModal .modal-content #closeModal {
-    width: 25px;
-    height: 25px;
-  }
-  #speakerModal .modal-content #closeModal img {
-    width: 12px;
-    height: 12px;
-  }
-}
-@media (min-width: 33.75rem) {
-  #speakerModal .modal-content {
-    padding: 15px;
-  }
-  #speakerModal .modal-content h2 {
-    font-size: 1.2rem;
-  }
-  #speakerModal .modal-content h4 {
-    font-size: 1rem;
-  }
-  #speakerModal .modal-content p {
-    font-size: 0.85rem;
-  }
-  #speakerModal .modal-content #closeModal {
-    width: 20px;
-    height: 20px;
-  }
-  #speakerModal .modal-content #closeModal img {
-    width: 10px;
-    height: 10px;
-  }
-}
-@media (min-width: 60rem) {
-  #speakerModal .modal-content {
-    max-width: 70%;
-  }
-}
-@media (min-width: 71.25rem) {
-  #speakerModal .modal-content {
-    max-width: 50%;
-  }
-}
-
 .program {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2584,6 +2444,148 @@
     transform: translateY(0);
   }
 }
+#speakerModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+#speakerModal .modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  max-height: 70%;
+  overflow-y: scroll;
+  max-width: 90%;
+  z-index: 1001;
+}
+#speakerModal .modal-content #closeModal {
+  cursor: pointer;
+  background-color: #c59c6c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#speakerModal .modal-content #closeModal img {
+  width: 15px;
+  height: 15px;
+}
+#speakerModal .modal-content #closeModal:hover {
+  background-color: rgba(197, 156, 108, 0.7);
+  transform: scale(1.1);
+}
+#speakerModal .modal-content .profile-card__header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 45rem) {
+  #speakerModal .modal-content .profile-card__header {
+    grid-template-columns: 0.5fr 2fr;
+  }
+}
+#speakerModal .modal-content #modalSpeakerImage {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+#speakerModal .modal-content #modalSpeakerImage img {
+  width: auto;
+  max-width: 180px;
+  min-height: 180px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #ddd;
+  object-fit: cover;
+  object-position: top;
+  display: inline-block;
+}
+#speakerModal .modal-content h4 {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.75rem;
+}
+#speakerModal .modal-content .topic {
+  font-style: italic;
+  color: #c59c6c;
+  font-weight: 600;
+}
+#speakerModal .modal-content p {
+  margin-bottom: 10px;
+  color: #444;
+}
+@media (min-width: 45rem) {
+  #speakerModal .modal-content {
+    width: 90%;
+  }
+  #speakerModal .modal-content h4 {
+    font-size: 1.2rem;
+  }
+  #speakerModal .modal-content p {
+    font-size: 0.9rem;
+  }
+  #speakerModal .modal-content #closeModal {
+    width: 25px;
+    height: 25px;
+  }
+  #speakerModal .modal-content #closeModal img {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (min-width: 33.75rem) {
+  #speakerModal .modal-content h2 {
+    font-size: 1.2rem;
+  }
+  #speakerModal .modal-content h4 {
+    font-size: 1rem;
+  }
+  #speakerModal .modal-content p {
+    font-size: 0.85rem;
+  }
+  #speakerModal .modal-content #closeModal {
+    width: 20px;
+    height: 20px;
+  }
+  #speakerModal .modal-content #closeModal img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (min-width: 60rem) {
+  #speakerModal .modal-content {
+    max-width: 70%;
+  }
+}
+@media (min-width: 71.25rem) {
+  #speakerModal .modal-content {
+    max-width: 60%;
+  }
+}
+@media (min-width: 82.5rem) {
+  #speakerModal .modal-content {
+    max-width: 50%;
+  }
+}
+
 .button-shape {
   display: inline-block;
   padding: 12px 19px;

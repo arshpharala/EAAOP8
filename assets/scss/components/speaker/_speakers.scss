@@ -1,8 +1,6 @@
 @use "../../mixins" as *;
 @use "../../variables" as *;
 
-
-
 .banner {
   min-height: 250px;
   display: grid;
@@ -38,7 +36,7 @@
   gap: 1rem;
   margin-top: 2rem;
 
-   @include responsive(sm) {
+  @include responsive(sm) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -113,5 +111,159 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+// Modal Styles
+#speakerModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    max-height: 70%;
+    overflow-y: scroll;
+    max-width: 90%;
+    z-index: 1001;
+
+    #closeModal {
+      cursor: pointer;
+      background-color: $primary-color;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      transition: background-color 0.3s, transform 0.2s;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+
+      &:hover {
+        background-color: rgba($color: $primary-color, $alpha: 0.7);
+        transform: scale(1.1);
+      }
+    }
+
+    .profile-card__header {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      align-items: center;
+      text-align: left;
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+
+      @include responsive(md) {
+        grid-template-columns: 0.5fr 2fr;
+      }
+    }
+
+    #modalSpeakerImage {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: auto;
+        max-width: 180px; // make it smaller
+        min-height: 180px; // adjust min-height
+        aspect-ratio: 1 / 1; // keep it square
+        border-radius: 50%; // circular
+        background: #ddd;
+        object-fit: cover;
+        object-position: top;
+        display: inline-block; // center nicely
+      }
+    }
+
+    h4 {
+      margin-bottom: 15px;
+      color: $gray-light-color;
+      font-size: 0.75rem;
+    }
+
+    .topic {
+      font-style: italic;
+      color: $primary-color;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    // Responsive adjustments
+    @include responsive(md) {
+      width: 90%;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+
+      #closeModal {
+        width: 25px;
+        height: 25px;
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    @include responsive(sm) {
+      h2 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.85rem;
+      }
+
+      #closeModal {
+        width: 20px;
+        height: 20px;
+
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    @include responsive(lg) {
+      max-width: 70%;
+    }
+      @include responsive(xl) {
+      max-width: 60%;
+    }
+      @include responsive(2xl) {
+      max-width: 50%;
+    }
   }
 }

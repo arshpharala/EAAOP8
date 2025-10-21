@@ -45,10 +45,16 @@
         <!-- Modal Content -->
         <div class="modal-content">
           <div class="profile-card">
-            <div id="modalSpeakerImage" class="speaker_image"></div>
-            <div class="profile-card__details">
-              <h1 id="modalSpeakerName"></h1>
+            <div class="profile-card__header">
+              <div id="modalSpeakerImage" class="speaker_image"></div>
+              <div>
+                  <h1 id="modalSpeakerName"></h1>
               <h4 id="modalSpeakerUniversity"></h4>
+              </div>
+            
+            </div>
+            <div class="profile-card__details">
+
               <p id="modalSpeakerTopic" class="topic"></p>
               <p id="modalSpeakerBio" style="white-space: pre-line"></p>
             </div>
