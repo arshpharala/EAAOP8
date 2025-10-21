@@ -21,19 +21,22 @@
   &__left {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
+
+    @include responsive(md) {
+      gap: 16px;
+    }
   }
 
   &__logo {
     object-fit: contain;
-    display: block;
-    height: 20px;
+    height: 30px;
     @include responsive(md) {
-      height: 30px;
+      height: 40px;
     }
 
     @include responsive(xl) {
-      height: 40px;
+      height: 50px;
     }
   }
 
@@ -156,7 +159,7 @@
       place-items: center;
       width: 2rem;
       height: 2rem;
-      background: $secondary-color;
+      background: $white-color;
       border-radius: 6px;
       border: none;
       cursor: pointer;
@@ -166,6 +169,7 @@
       img {
         width: 0.9rem;
         height: 0.9rem;
+        @include black-filter;
       }
 
       &:hover {
@@ -214,17 +218,17 @@
       width: 100%;
       margin-top: 3rem;
       text-align: center;
-      background-color: $secondary-color;
+      background-color: $white-color;
+      color: $black-color;
+      font-weight: 600;
 
       a {
         display: inline-block;
 
         width: 100%;
         padding: 12px 0;
-        font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
-        color: $white-color;
         transition: background 0.3s ease;
 
         &:hover,

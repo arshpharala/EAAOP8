@@ -15,71 +15,187 @@
     <!-- Owl Carousel CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
     <!-- Our custom SCSS (compiled to CSS) -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <!--  header SECTION  -->
-    <header class="ku-header">
-      <div class="container ku-header__content">
-        <div class="ku-header__left">
-          <div>
-            <a href="index.html">
+    <header id="navbar" class="ku-header">
+      <div class="container">
+        <div class="ku-header__content">
+          <div class="ku-header__left">
+              <a href="index.html">
+                <img
+                  src="assets/images/ku-logo.png"
+                  alt="Khalifa University Logo"
+                  class="ku-header__logo"
+                />
+              </a>
               <img
-                src="assets/images/ku-logo.png"
+                src="assets/images/logo2.png"
                 alt="Khalifa University Logo"
-                class="ku-header__logo" />
-            </a>
+                class="ku-header__logo"
+                id="header_logo"
+              />
           </div>
-        </div>
 
-        <div class="ku-header__navs">
-          <nav class="ku-header__nav">
-            <div>
-              <ul class="ku-nav__list">
-                <li><a href="#home" class="ku-nav__link">HOME</a></li>
-                <li>
-                  <a href="committees.html" class="ku-nav__link">COMMITTEEs</a>
-                </li>
-                <li>
-                  <a href="speakers.html" class="ku-nav__link">SPEAKERS</a>
-                </li>
-                <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
-                <li>
-                  <a href="#registration" class="ku-nav__link">registration</a>
-                </li>
-              </ul>
-              <ul class="ku-nav__list" style="margin-top: 0.3rem">
-                <li><a href="#call-for-abstract">submit Abstract</a></li>
-                <li><a href="#special-issues">special issues</a></li>
+          <div class="ku-header__navs">
+            <nav class="ku-header__nav">
+              <div>
+                <ul class="ku-nav__list">
+                  <li><a href="#home" class="ku-nav__link">HOME</a></li>
+                  <li>
+                    <a href="committees.html" class="ku-nav__link"
+                      >COMMITTEEs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="speakers.html" class="ku-nav__link">SPEAKERS</a>
+                  </li>
+                  <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
+                  <li>
+                    <a href="#registration" class="ku-nav__link"
+                      >registration</a
+                    >
+                  </li>
+                </ul>
+                <ul class="ku-nav__list" style="margin-top: 0.3rem">
+                  <li><a href="#call-for-abstract">submit Abstract</a></li>
+                  <li><a href="#special-issues">special issues</a></li>
 
-                <li><a href="#venue" class="ku-nav__link">venue</a></li>
-                <li>
-                  <a href="#sponsorship" class="ku-nav__link">sponsors</a>
-                </li>
-              </ul>
-            </div>
+                  <li><a href="#venue" class="ku-nav__link">venue</a></li>
+                  <li>
+                    <a href="#sponsorship" class="ku-nav__link">sponsors</a>
+                  </li>
+                </ul>
+              </div>
 
-            <button>
-              <a href="mailto:eaaop8@ku.ac.ae"
-                class="button-shape-contact">CONTACT US</a>
+              <button>
+                <a href="mailto:eaaop8@ku.ac.ae" class="button-shape-contact"
+                  >CONTACT US</a
+                >
+              </button>
+            </nav>
+
+            <button
+              class="ku-header__menu-toggle"
+              id="menuToggle"
+              aria-label="Menu"
+            >
+              <span></span><span></span><span></span>
             </button>
-          </nav>
-
-          <button
-            class="ku-header__menu-toggle"
-            id="menuToggle"
-            aria-label="Menu">
-            <span></span><span></span><span></span>
-          </button>
+          </div>
         </div>
       </div>
     </header>
+
+    <!-- <header id="navbar" class="ku-header">
+      <div class="container">
+        <div class="ku-header__content">
+          <div class="ku-header__left">
+            <div>
+              <a href="index.html">
+                <img
+                  src="assets/images/ku-logo.png"
+                  alt="Khalifa University Logo"
+                  class="ku-header__logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="ku-header__navs">
+            <img
+              src="assets/images/logo2.png"
+              alt="Khalifa University Logo"
+              class="ku-header__logo"
+            />
+            <nav class="ku-header__nav">
+              <div>
+                <ul class="ku-nav__list">
+                  <li><a href="#home" class="ku-nav__link">HOME</a></li>
+                  <li>
+                    <a href="committees.html" class="ku-nav__link"
+                      >COMMITTEEs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="speakers.html" class="ku-nav__link">SPEAKERS</a>
+                  </li>
+                  <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
+                  <li>
+                    <a href="#registration" class="ku-nav__link"
+                      >registration</a
+                    >
+                  </li>
+                </ul>
+                <ul class="ku-nav__list" style="margin-top: 0.3rem">
+                  <li><a href="#call-for-abstract">submit Abstract</a></li>
+                  <li><a href="#special-issues">special issues</a></li>
+
+                  <li><a href="#venue" class="ku-nav__link">venue</a></li>
+                  <li>
+                    <a href="#sponsorship" class="ku-nav__link">sponsors</a>
+                  </li>
+                </ul>
+              </div>
+
+              <button>
+                <a href="mailto:eaaop8@ku.ac.ae" class="button-shape-contact"
+                  >CONTACT US</a
+                >
+              </button>
+            </nav>
+
+            <button
+              class="ku-header__menu-toggle"
+              id="menuToggle"
+              aria-label="Menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="ku-header__nav2">
+          <div>
+            <ul class="ku-nav__list">
+              <li><a href="#home" class="ku-nav__link">HOME</a></li>
+              <li>
+                <a href="committees.html" class="ku-nav__link">COMMITTEEs</a>
+              </li>
+              <li>
+                <a href="speakers.html" class="ku-nav__link">SPEAKERS</a>
+              </li>
+              <li><a href="#program" class="ku-nav__link">PROGRAM</a></li>
+              <li>
+                <a href="#registration" class="ku-nav__link">registration</a>
+              </li>
+              <li><a href="#call-for-abstract">submit Abstract</a></li>
+              <li><a href="#special-issues">special issues</a></li>
+
+              <li><a href="#venue" class="ku-nav__link">venue</a></li>
+              <li>
+                <a href="#sponsorship" class="ku-nav__link">sponsors</a>
+              </li>
+            </ul>
+          </div>
+
+          <button>
+            <a href="mailto:eaaop8@ku.ac.ae" class="button-shape-contact"
+              >CONTACT US</a
+            >
+          </button>
+        </nav>
+      </div>
+    </header> -->
 
     <!-- Menu -->
     <div
@@ -87,14 +203,16 @@
       id="mobileMenu"
       role="dialog"
       aria-modal="true"
-      aria-label="Mobile Navigation">
+      aria-label="Mobile Navigation"
+    >
       <aside class="mobile-menu" aria-label="Mobile menu">
         <div>
           <button class="close-btn" id="closeMenu" aria-label="Close menu">
             <img
               src="assets/images/close.png"
               alt="Close Menu Icon"
-              class="close-icon" />
+              class="close-icon"
+            />
           </button>
         </div>
 
@@ -124,7 +242,9 @@
         <div>
           <a
             href="mailto:eaaop8@ku.ac.ae"
-            class="button-shape contact-btn button-shape-primary">CONTACT US</a>
+            class="button-shape contact-btn button-shape-primary"
+            >CONTACT US</a
+          >
         </div>
       </aside>
     </div>
@@ -134,14 +254,15 @@
       <div class="container hero-section__content">
         <div
           class="hero-section__left animate-on-scroll"
-          data-animate="fade-right">
-          <div>
-            <a href="#">
-              <img
-                src="assets/images/EAAOP8-LOGO.png"
-                alt="Khalifa University Logo"
-                class="hero-section__logo" />
-            </a>
+          data-animate="fade-right"
+        >
+          <div class="hero-section__logo-section">
+            <img
+              id="hero_logo"
+              src="assets/images/EAAOP8-LOGO.png"
+              alt="Khalifa University Logo"
+              class="hero-section__logo"
+            />
           </div>
           <h1 class="hero-section__title">
             8<sup class="power">th</sup> International Conference on
@@ -153,31 +274,35 @@
           <div>
             <button>
               <a href="#registration" class="button-shape button-shape-primary">
-                register now
+                registration
               </a>
             </button>
           </div>
         </div>
         <div
           class="hero-section__right animate-on-scroll"
-          data-animate="fade-left">
+          data-animate="fade-left"
+        >
           <div class="bg-image">
             <img
               src="assets/images/hero1.png"
               alt="hero"
-              class="bg-image__hero-img bg-image__hero-img1" />
+              class="bg-image__hero-img bg-image__hero-img1"
+            />
           </div>
           <div class="bg-image bg-image2">
             <img
               src="assets/images/hero2.png"
               alt="hero"
-              class="bg-image__hero-img bg-image2__hero-img2" />
+              class="bg-image__hero-img bg-image2__hero-img2"
+            />
           </div>
           <div class="bg-image bg-image3">
             <img
               src="assets/images/hero3.png"
               alt="hero"
-              class="bg-image__hero-img bg-image__hero-img3" />
+              class="bg-image__hero-img bg-image__hero-img3"
+            />
             <div class="bg-color"></div>
           </div>
         </div>
@@ -190,7 +315,8 @@
         <div class="about__info">
           <p
             class="about__description animate-on-scroll"
-            data-animate="fade-up">
+            data-animate="fade-up"
+          >
             On behalf of the Organizing Committee, it is our great pleasure to
             welcome you to the 8th International Conference on Environmental
             Applications of Advanced Oxidation Processes (EAAOP-8), which will
@@ -200,19 +326,13 @@
           <div class="about__image animate-on-scroll" data-animate="fade-right">
             <img src="assets/images/about.png" alt="about" />
           </div>
-          <p
-            class="about__description about__bold animate-on-scroll"
-            data-animate="fade-up">
-            The conference will be followed by the International PhD School of
-            Advanced Oxidation Processes taking place on
-            <strong>5th-6th April 2027</strong>
-          </p>
         </div>
 
         <div class="about__info">
           <p
             class="about__description animate-on-scroll"
-            data-animate="fade-up">
+            data-animate="fade-up"
+          >
             The conference is organised by Khalifa University and stands as a
             relevant event and network opportunity for sharing knowledge and
             expertise among scientists, academia, environmental professionals
@@ -235,9 +355,19 @@
             among all the stakeholders.
           </p>
 
+          <p
+            class="about__description about__bold animate-on-scroll"
+            data-animate="fade-up"
+          >
+            The conference will be followed by the International PhD School of
+            Advanced Oxidation Processes taking place on
+            <strong>5th-6th April 2027</strong>
+          </p>
+
           <div
             class="speaker-content animate-on-scroll"
-            data-animate="fade-left">
+            data-animate="fade-left"
+          >
             <p class="speaker-content__message">
               Looking forward to meeting you in Abu Dhabi
             </p>
@@ -247,7 +377,8 @@
                   <img
                     src="assets/images/member-1.png"
                     alt="Portrait of Giovanni Palmisano"
-                    loading="lazy" />
+                    loading="lazy"
+                  />
                 </div>
                 <figcaption class="speaker-card__content">
                   <h3 class="speaker-card__name">
@@ -261,7 +392,8 @@
                   <img
                     src="assets/images/member-2.png"
                     alt="Portrait of Lianxi Zheng"
-                    loading="lazy" />
+                    loading="lazy"
+                  />
                 </div>
                 <figcaption class="speaker-card__content">
                   <h3 class="speaker-card__name">
@@ -279,8 +411,9 @@
               href="#registration"
               target="_blank"
               class="button-shape button-shape-black animate-on-scroll"
-              data-animate="fade-up">
-              register now
+              data-animate="fade-up"
+            >
+              registration
             </a>
           </div>
         </div>
@@ -292,12 +425,14 @@
       <div class="container">
         <h1
           class="conference-section__title animate-on-scroll"
-          data-animate="fade-right">
+          data-animate="fade-right"
+        >
           Conference Themes
         </h1>
         <div
           class="conference-section__grid animate-on-scroll"
-          data-animate="fade-up">
+          data-animate="fade-up"
+        >
           <ul class="conference-section__list">
             <li>Novel catalytic materials for environmental applications</li>
             <li>In situ and operando measurements</li>
@@ -333,7 +468,8 @@
       <div class="container">
         <h1
           class="who-should-attend__title animate-on-scroll"
-          data-animate="fade-up">
+          data-animate="fade-up"
+        >
           Who Should Attend
         </h1>
         <div class="who-should-attend__cards">
@@ -351,7 +487,8 @@
             <div class="card__icon">
               <img
                 src="assets/images/industry.png"
-                alt="Industry Professionals" />
+                alt="Industry Professionals"
+              />
             </div>
             <p class="card__text">
               Industry professionals working in sectors such as water treatment,
@@ -363,7 +500,8 @@
             <div class="card__icon">
               <img
                 src="assets/images/environment.png"
-                alt="Utility Representatives" />
+                alt="Utility Representatives"
+              />
             </div>
             <p class="card__text">
               Environmental utility company representatives, particularly those
@@ -375,7 +513,8 @@
             <div class="card__icon">
               <img
                 src="assets/images/consultant.png"
-                alt="Consultants and Practitioners" />
+                alt="Consultants and Practitioners"
+              />
             </div>
             <p class="card__text">
               Independent consultants and practitioners involved in
@@ -392,15 +531,18 @@
       <div class="container important-dates__content">
         <div
           class="important-dates__grid__left animate-on-scroll"
-          data-animate="fade-right">
+          data-animate="fade-right"
+        >
           <img
             src="assets/images/important.png"
             alt="important-dates"
-            class="important-dates__grid__left__img" />
+            class="important-dates__grid__left__img"
+          />
         </div>
         <div
           class="important-dates__grid__right animate-on-scroll"
-          data-animate="fade-left">
+          data-animate="fade-left"
+        >
           <h1 class="important-dates__title">Important Dates</h1>
           <ul class="important-dates__list">
             <li class="important-dates__item">
@@ -423,9 +565,10 @@
               </div>
               <div class="event">
                 <span class="event__year">2026</span>
-                <span class="event__title">Communication of Abstract Acceptance
-                  (Oral/Flash
-                  Oral/Poster)</span>
+                <span class="event__title"
+                  >Communication of Abstract Acceptance (Oral/Flash
+                  Oral/Poster)</span
+                >
               </div>
             </li>
 
@@ -447,8 +590,9 @@
               </div>
               <div class="event">
                 <span class="event__year">2026</span>
-                <span class="event__title">Early Bird Registration
-                  Deadline</span>
+                <span class="event__title"
+                  >Early Bird Registration Deadline</span
+                >
               </div>
             </li>
 
@@ -474,17 +618,20 @@
           <!-- Left: Header -->
           <div
             class="program__header animate-on-scroll"
-            data-animate="fade-right">
+            data-animate="fade-right"
+          >
             <h1 class="program__title">Preliminary Program</h1>
           </div>
 
           <!-- Right: Banner -->
           <div
             class="program__banner animate-on-scroll"
-            data-animate="fade-left">
+            data-animate="fade-left"
+          >
             <img
               src="assets/images/program-banner.png"
-              alt="Scientific Program" />
+              alt="Scientific Program"
+            />
           </div>
         </div>
 
@@ -492,14 +639,16 @@
         <div class="program__presentations">
           <h3
             class="program__presentations__title animate-on-scroll"
-            data-animate="fade-right">
+            data-animate="fade-right"
+          >
             Types of presentation
           </h3>
           <div class="program__grid animate-on-scroll" data-animate="fade-up">
             <div class="program__item">
               <img
                 src="assets/images/plenary-lecture.png"
-                alt="Plenary lecture" />
+                alt="Plenary lecture"
+              />
               <div>
                 <h4>Plenary lecture</h4>
                 <p>40 min (+ 5 min Q/A)</p>
@@ -509,7 +658,8 @@
             <div class="program__item">
               <img
                 src="assets/images/keynote-lecture.png"
-                alt="Keynote lecture" />
+                alt="Keynote lecture"
+              />
               <div>
                 <h4>Keynote lecture</h4>
                 <p>20 min (+ 5 min Q/A)</p>
@@ -519,7 +669,8 @@
             <div class="program__item">
               <img
                 src="assets/images/invited-presentation.png"
-                alt="Invited presentation" />
+                alt="Invited presentation"
+              />
               <div>
                 <h4>Invited presentation</h4>
                 <p>16 min (+4 min Q/A)</p>
@@ -529,7 +680,8 @@
             <div class="program__item">
               <img
                 src="assets/images/oral-presentation.png"
-                alt="Oral presentation" />
+                alt="Oral presentation"
+              />
               <div>
                 <h4>Oral presentation</h4>
                 <p>12 min (+3 min Q/A)</p>
@@ -539,7 +691,8 @@
             <div class="program__item">
               <img
                 src="assets/images/flash-presentation.png"
-                alt="Flash presentation" />
+                alt="Flash presentation"
+              />
               <div>
                 <h4>Flash presentation</h4>
                 <p>5 min</p>
@@ -560,21 +713,24 @@
         <section id="special-issues" class="special-issues">
           <h3
             class="special-issues__title animate-on-scroll"
-            data-animate="fade-right">
+            data-animate="fade-right"
+          >
             Special Issues
           </h3>
 
           <div class="special-issues__details">
             <p
               class="special-issues__text animate-on-scroll"
-              data-animate="fade-right">
+              data-animate="fade-right"
+            >
               The organizing committee is submitting the request to have
               dedicated special issues in the following journals:
             </p>
 
             <div
               class="special-issues__list animate-on-scroll"
-              data-animate="fade-left">
+              data-animate="fade-left"
+            >
               <ul class="special-issues__column">
                 <li>Chemical Engineering Journal</li>
                 <li>Catalysis Today</li>
@@ -596,11 +752,13 @@
               alt="insititute "
               loading="lazy"
               class="tutorial-sessions__image animate-on-scroll"
-              data-animate="fade-right" />
+              data-animate="fade-right"
+            />
 
             <div
               class="tutorial-sessions__content animate-on-scroll"
-              data-animate="fade-left">
+              data-animate="fade-left"
+            >
               <h3 class="tutorial-sessions__title">
                 Tutorial and Special Sessions
               </h3>
@@ -622,26 +780,30 @@
             <div
               class="schedule__tabs animate-on-scroll"
               data-animate="fade-up"
-              role="tablist">
+              role="tablist"
+            >
               <button
                 role="tab"
                 aria-selected="true"
                 class="schedule__tab schedule__tab--active"
-                data-date="2027-03-31">
+                data-date="2027-03-31"
+              >
                 31st March 2027
               </button>
               <button
                 role="tab"
                 aria-selected="false"
                 class="schedule__tab"
-                data-date="2027-04-01">
+                data-date="2027-04-01"
+              >
                 1st April 2027
               </button>
               <button
                 role="tab"
                 aria-selected="false"
                 class="schedule__tab"
-                data-date="2027-04-02">
+                data-date="2027-04-02"
+              >
                 2nd April 2027
               </button>
             </div>
@@ -652,10 +814,12 @@
             <!-- Room Selector -->
             <div
               class="schedule__rooms animate-on-scroll"
-              data-animate="fade-right">
+              data-animate="fade-right"
+            >
               <button
                 class="schedule__room-btn schedule__room-btn--active"
-                data-room="auditorium">
+                data-room="auditorium"
+              >
                 Auditorium <br />
                 <span>C00068-C01066</span>
               </button>
@@ -672,14 +836,16 @@
             <!-- Room Schedules -->
             <div
               class="schedule__content animate-on-scroll"
-              data-animate="fade-up">
+              data-animate="fade-up"
+            >
               <!--  Content for 31st March -->
               <section>
                 <!-- Auditorium -->
                 <div
                   class="schedule__room-content schedule__room-content--active"
                   data-date="2027-03-31"
-                  data-room="auditorium">
+                  data-room="auditorium"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">
                       08:30 – 09:00 | Opening Ceremony
@@ -688,14 +854,16 @@
                     <li class="schedule__slot">09:45 – 10:30 | KN1, IS1</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">10:50 – 12:30 | OP1-6, FP1-2</li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP7-12</li>
                     <li class="schedule__slot">
@@ -716,27 +884,31 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-03-31"
-                  data-room="b00055">
+                  data-room="b00055"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:45 – 10:30 | KN2, IS2</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP20-25, FP6-7
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP26-31</li>
                     <li class="schedule__slot">
                       15:00 – 16:00 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                       and Poster Presentations
                       <span class="schedule__location">(Spine Area)</span>
                     </li>
@@ -745,8 +917,9 @@
                     </li>
                     <li class="schedule__slot">
                       18:00 – 19:00 | Welcome Reception
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -755,27 +928,31 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-03-31"
-                  data-room="b00107">
+                  data-room="b00107"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:45 – 10:30 | IP1, OP39-40</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP41-46, FP11-12
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP47-52</li>
                     <li class="schedule__slot">
                       15:00 – 16:00 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                       and Poster Presentations
                       <span class="schedule__location">(Spine Area)</span>
                     </li>
@@ -784,8 +961,9 @@
                     </li>
                     <li class="schedule__slot">
                       18:00 – 19:00 | Welcome reception
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -798,28 +976,32 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-04-01"
-                  data-room="auditorium">
+                  data-room="auditorium"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:00 – 09:45 | PL2</li>
                     <li class="schedule__slot">09:45 – 10:30 | KN3, IS3</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP60-65, FP16-17
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP66-71</li>
                     <li class="schedule__slot">
                       15:00 – 15:20 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       15:20 – 17:00 | Round table – Meet the Editors
@@ -837,27 +1019,31 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-04-01"
-                  data-room="b00055">
+                  data-room="b00055"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:45 – 10:30 | KN4, IS4</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP72-77, FP18-19
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP78-83</li>
                     <li class="schedule__slot">
                       15:00 – 15:20 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       17:00 – 19:30 | Abu Dhabi bus tour
@@ -871,27 +1057,31 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-04-01"
-                  data-room="b00107">
+                  data-room="b00107"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:45 – 10:30 | IP2, OP84-85</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP86-91, FP20-21
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP92-97</li>
                     <li class="schedule__slot">
                       15:00 – 15:20 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       17:00 – 19:30 | Abu Dhabi bus tour
@@ -909,22 +1099,25 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-04-02"
-                  data-room="auditorium">
+                  data-room="auditorium"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:00 – 09:45 | PL3</li>
                     <li class="schedule__slot">09:45 – 10:30 | KN5, IS5</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP98-103, FP22-23
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP104-109</li>
                     <li class="schedule__slot">
@@ -944,21 +1137,24 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-04-02"
-                  data-room="b00055">
+                  data-room="b00055"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">09:45 – 10:30 | KN6, IS6</li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP117-122, FP27-28
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP123-128</li>
                     <li class="schedule__slot">
@@ -975,23 +1171,26 @@
                 <div
                   class="schedule__room-content"
                   data-date="2027-04-02"
-                  data-room="b00107">
+                  data-room="b00107"
+                >
                   <ul class="schedule__list">
                     <li class="schedule__slot">
                       09:45 – 10:30 | IP3, OP137-138
                     </li>
                     <li class="schedule__slot">
                       10:30 – 10:50 | Coffee Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">
                       10:50 – 12:30 | OP139-144, FP29-30
                     </li>
                     <li class="schedule__slot">
                       12:30 – 13:30 | Lunch Break
-                      <span class="schedule__location">(Multi-Purpose Hall
-                        D00073)</span>
+                      <span class="schedule__location"
+                        >(Multi-Purpose Hall D00073)</span
+                      >
                     </li>
                     <li class="schedule__slot">13:30 – 15:00 | OP145-150</li>
                     <li class="schedule__slot">
@@ -1020,7 +1219,8 @@
 
         <table
           class="registration-table animate-on-scroll"
-          data-animate="fade-up">
+          data-animate="fade-up"
+        >
           <thead>
             <tr>
               <th>Type</th>
@@ -1070,25 +1270,10 @@
 
         <div
           class="registration-buttons animate-on-scroll"
-          data-animate="fade-up">
-          <a href="https://edas.info/newPaper.php?c=34445"  target="_blank">
-            <button class="btn button-shape button-shape-dark">
-              submit Abstract
-              <!-- <span>
-             <img
-                src="assets/images/arrow-down.png"
-                alt="arrow-down"
-                class="btn__img"
-              />
-            </span> -->
-            </button>
-          </a>
-
+          data-animate="fade-up"
+        >
           <a href="#">
-            <button
-              class="button-shape button-shape-dark">
-              Register Now
-            </button>
+            <button class="button-shape button-shape-dark">Register Now</button>
           </a>
         </div>
       </div>
@@ -1100,7 +1285,8 @@
         <div class="abstract-call__content">
           <div
             class="abstract-content animate-on-scroll"
-            data-animate="fade-right">
+            data-animate="fade-right"
+          >
             <h1 class="abstract-title">ABSTRACT SUBMISSION</h1>
             <p class="abstract-description">
               The Scientific Program will include poster, oral and flash oral
@@ -1117,10 +1303,12 @@
 
           <div
             class="abstract-image animate-on-scroll"
-            data-animate="fade-left">
+            data-animate="fade-left"
+          >
             <img
               src="assets/images/person-with-laptop.png"
-              alt="Person writing near laptop" />
+              alt="Person writing near laptop"
+            />
           </div>
         </div>
 
@@ -1128,7 +1316,8 @@
           <!-- Instructions -->
           <section
             class="abstract-form__note animate-on-scroll"
-            data-animate="fade-up">
+            data-animate="fade-up"
+          >
             <h2 class="abstract-form__title">
               Before Abstract Submission, please take into account the
               following:
@@ -1138,49 +1327,62 @@
                 <li>
                   <img
                     src="assets/images/abstract-language.png"
-                    alt="Language icon" />
-                  <span style="line-height: 1.2"><strong>Abstract language
-                      <br /></strong> English</span>
+                    alt="Language icon"
+                  />
+                  <span style="line-height: 1.2"
+                    ><strong>Abstract language <br /></strong> English</span
+                  >
                 </li>
                 <li>
                   <img
                     src="assets/images/abstract-pages.png"
-                    alt="Pages icon" />
-                  <span style="line-height: 1.1"><strong>Abstract must be two
-                      pages maximum</strong></span>
+                    alt="Pages icon"
+                  />
+                  <span style="line-height: 1.1"
+                    ><strong>Abstract must be two pages maximum</strong></span
+                  >
                 </li>
               </ul>
-              <p style="max-width: 85%">
+              <p style="max-width: 85%; font-weight: 700">
                 Authors must use the abstract template (<a
                   href="assets\docs\EAAOP-8-Abstract-Template.docx"
                   target="_blank"
-                  style="text-decoration: underline">download</a>) and strictly
-                follow the instructions reported in the template
-                file.
-                <span style="font-weight: 600">ONLY WORD DOCUMENTS WILL BE
-                  ACCEPTED.</span>
+                  style="text-decoration: underline"
+                  >download</a
+                >) and strictly follow the instructions reported in the template
+                file. ONLY WORD DOCUMENTS WILL BE ACCEPTED.
               </p>
               <p>
                 Name the abstract as
-                <span
-                  style="font-weight: 600">"EAAOP-8_abstract_author surname"</span>
+                <span style="font-weight: 600"
+                  >"EAAOP-8_abstract_author surname"</span
+                >
                 or, if the author submits more than one abstract, also number it
                 <br />
-                <span
-                  style="font-weight: 600">"EAAOP-8_abstract_author surname_1"</span>
+                <span style="font-weight: 600"
+                  >"EAAOP-8_abstract_author surname_1"</span
+                >
               </p>
               <p>
                 Abstracts not complying with the template <br />
-                <span style="font-weight: 600">WILL BE SENT BACK FOR
-                  CORRECTION.</span>
+                <span style="font-weight: 600"
+                  >WILL BE SENT BACK FOR CORRECTION.</span
+                >
               </p>
             </div>
           </section>
 
+          <a href="https://edas.info/newPaper.php?c=34445" target="_blank">
+            <button class="btn button-shape button-shape-primary">
+              submit Abstract
+            </button>
+          </a>
+
           <!-- Form Fields -->
-          <form
+          <!-- <form
             class="abstract-form__fields animate-on-scroll"
-            data-animate="fade-up">
+            data-animate="fade-up"
+          >
             <fieldset class="abstract-form__row">
               <div class="abstract-form__field">
                 <input
@@ -1188,7 +1390,8 @@
                   id="first-name"
                   name="first-name"
                   placeholder="First Name"
-                  required />
+                  required
+                />
               </div>
               <div class="abstract-form__field">
                 <input
@@ -1196,7 +1399,8 @@
                   id="last-name"
                   name="last-name"
                   placeholder="Last Name"
-                  required />
+                  required
+                />
               </div>
             </fieldset>
 
@@ -1207,14 +1411,16 @@
                   id="email"
                   name="email"
                   placeholder="Email"
-                  required />
+                  required
+                />
               </div>
               <div class="abstract-form__field">
                 <input
                   type="text"
                   id="department"
                   name="department"
-                  placeholder="Department" />
+                  placeholder="Department"
+                />
               </div>
             </fieldset>
 
@@ -1227,7 +1433,8 @@
                   id="authors"
                   name="authors"
                   placeholder="Author(s)"
-                  required />
+                  required
+                />
               </div>
               <div class="abstract-form__field">
                 <input
@@ -1235,7 +1442,8 @@
                   id="affiliations"
                   name="affiliations"
                   placeholder="Affiliation(s)"
-                  required />
+                  required
+                />
               </div>
             </fieldset>
 
@@ -1246,14 +1454,16 @@
                   id="title"
                   name="title"
                   placeholder="Title of your Paper"
-                  required />
+                  required
+                />
               </div>
               <div class="abstract-form__field">
                 <input
                   type="text"
                   id="length"
                   name="length"
-                  placeholder="Abstract Length" />
+                  placeholder="Abstract Length"
+                />
               </div>
             </fieldset>
 
@@ -1264,7 +1474,8 @@
                   id="full-abstract"
                   name="full-abstract"
                   rows="6"
-                  required></textarea>
+                  required
+                ></textarea>
               </div>
             </fieldset>
 
@@ -1273,7 +1484,7 @@
                 Submit Abstract
               </button>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </section>
@@ -1291,7 +1502,8 @@
               src="assets/images/elsevier.png"
               class="sponsor-logos__img"
               alt="Elsevier"
-              class="sponsor-logo" />
+              class="sponsor-logo"
+            />
           </a>
 
           <a href="https://www.ku.ac.ae/rich" target="_blank">
@@ -1299,14 +1511,16 @@
               src="assets/images/rich.png"
               class="sponsor-logos__img"
               alt="Rich"
-              class="sponsor-logo" />
+              class="sponsor-logo"
+            />
           </a>
           <a href="https://www.ku.ac.ae/cmat" target="_blank">
             <img
               src="assets/images/cmat.png"
               class="sponsor-logos__img"
               alt="Cmat"
-              class="sponsor-logo" />
+              class="sponsor-logo"
+            />
           </a>
         </div>
       </div>
@@ -1319,7 +1533,8 @@
           <img
             src="assets/images/abu-dhabi.png"
             alt="Abu Dhabi skyline"
-            class="info-card__image" />
+            class="info-card__image"
+          />
 
           <div class="info-card__content">
             <h1 class="info-card__title">About Abu Dhabi</h1>
@@ -1349,7 +1564,7 @@
                 <a
                   class="button-shape button-shape-primary"
                   href="#registration"
-                  >
+                >
                   Register Now
                 </a>
               </div>
@@ -1361,7 +1576,8 @@
           <img
             src="assets/images/khalifa-university.png"
             alt="Khalifa University campus"
-            class="info-card__image" />
+            class="info-card__image"
+          />
 
           <div class="info-card__content">
             <h1 class="info-card__title">About KU</h1>
@@ -1391,7 +1607,7 @@
                 <a
                   class="button-shape button-shape-primary"
                   href="#registration"
-                  >
+                >
                   Register Now
                 </a>
               </div>
@@ -1419,7 +1635,8 @@
           <img
             src="assets/images/travel.png"
             alt="Traveler pulling luggage"
-            class="travel-section__image" />
+            class="travel-section__image"
+          />
         </div>
       </div>
     </section>
@@ -1428,7 +1645,8 @@
     <section
       id="venue"
       class="venue-section animate-on-scroll"
-      data-animate="fade-right">
+      data-animate="fade-right"
+    >
       <div class="container venue-section__contents">
         <div class="venue-section__content">
           <div class="venue-section__content__info">
@@ -1445,7 +1663,8 @@
             style="border: 0"
             allowfullscreen
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -1456,13 +1675,15 @@
         <div class="accommodation-section__header">
           <h1
             class="accommodation-section__title animate-on-scroll"
-            data-animate="fade-right">
+            data-animate="fade-right"
+          >
             Recommended <br />
             Accommodation
           </h1>
           <p
             class="accommodation-section__subtitle animate-on-scroll"
-            data-animate="fade-left">
+            data-animate="fade-left"
+          >
             The following accommodations are a walkable distance from the
             conference venue
           </p>
@@ -1473,19 +1694,23 @@
             <a
               href=" https://maps.app.goo.gl/CN4Y4sEcciy6AxC8A"
               target="_blank"
-              class="accommodation-card">
+              class="accommodation-card"
+            >
               <img
                 src="assets/images/dusit-thani.png"
                 alt="Dusit Thani Abu Dhabi"
-                class="accommodation-card__image" />
+                class="accommodation-card__image"
+              />
               <div class="accommodation-card__detail">
                 <h3 class="accommodation-card__name">Dusit Thani Abu Dhabi</h3>
 
                 <a
                   href=" https://maps.app.goo.gl/CN4Y4sEcciy6AxC8A"
-                  target="_blank">
+                  target="_blank"
+                >
                   <button
-                    class="button-shape button-shape-primary accommodation-card__button">
+                    class="button-shape button-shape-primary accommodation-card__button"
+                  >
                     view map
                   </button>
                 </a>
@@ -1497,11 +1722,13 @@
             <a
               href="https://maps.app.goo.gl/rKsbjYrTbXdVRKGY6"
               target="_blank"
-              class="accommodation-card">
+              class="accommodation-card"
+            >
               <img
                 src="assets/images/al-jazeera-hotel.png"
                 alt="Al Jazeera Club Hotel Abu Dhabi"
-                class="accommodation-card__image" />
+                class="accommodation-card__image"
+              />
 
               <div class="accommodation-card__detail">
                 <h3 class="accommodation-card__name">
@@ -1509,9 +1736,11 @@
                 </h3>
                 <a
                   href="https://maps.app.goo.gl/rKsbjYrTbXdVRKGY6"
-                  target="_blank">
+                  target="_blank"
+                >
                   <button
-                    class="button-shape button-shape-primary accommodation-card__button">
+                    class="button-shape button-shape-primary accommodation-card__button"
+                  >
                     view map
                   </button>
                 </a>
@@ -1522,19 +1751,23 @@
             <a
               href="https://www.google.com/maps/place/Al+Nakheel+Hotel+Apartments+Abu+Dhabi/@24.4770776,54.3663919,17z/data=!4m10!3m9!1s0x3e5e663faa62719d:0xf47f623f36653c19!5m3!1s2025-10-05!4m1!1i2!8m2!3d24.4770728!4d54.3712628!16s%2Fg%2F1tfj1nfm?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
-              class="accommodation-card">
+              class="accommodation-card"
+            >
               <img
                 src="assets/images/al-nakheel-hotel.jpg"
                 alt="Al Jazeera Club Hotel Abu Dhabi"
-                class="accommodation-card__image" />
+                class="accommodation-card__image"
+              />
 
               <div class="accommodation-card__detail">
                 <h3 class="accommodation-card__name">Al Nakheel Hotel</h3>
                 <a
                   href="https://www.google.com/maps/place/Al+Nakheel+Hotel+Apartments+Abu+Dhabi/@24.4770776,54.3663919,17z/data=!4m10!3m9!1s0x3e5e663faa62719d:0xf47f623f36653c19!5m3!1s2025-10-05!4m1!1i2!8m2!3d24.4770728!4d54.3712628!16s%2Fg%2F1tfj1nfm?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank">
+                  target="_blank"
+                >
                   <button
-                    class="button-shape button-shape-primary accommodation-card__button">
+                    class="button-shape button-shape-primary accommodation-card__button"
+                  >
                     view map
                   </button>
                 </a>
@@ -1554,13 +1787,15 @@
             <img
               src="assets/images/logo2.png"
               alt="Conference Logo"
-              class="footer__logo" />
+              class="footer__logo"
+            />
           </a>
           <div class="footer__email">
             <img
               src="assets/images/footer-mail.png"
               alt="mail"
-              class="footer__email__icon" />
+              class="footer__email__icon"
+            />
             <a href="mailto:eaaop8@ku.ac.ae"> eaaop8@ku.ac.ae </a>
           </div>
         </div>
@@ -1584,10 +1819,8 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>

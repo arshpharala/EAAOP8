@@ -2,23 +2,26 @@
 @use "../../variables" as *;
 
 .hero-section {
-    margin-top: 50px;
+  margin-top: 60px;
 
   min-height: 557px;
   padding-top: 5rem;
   display: grid;
   place-items: end;
 
-
-  .power{
-      font-size: clamp(12px, 2vw, 21px);
-
+  .power {
+    font-size: clamp(12px, 2vw, 21px);
   }
+
+
 
   &__logo {
     height: 100px;
     width: auto;
+    background-color: $white-color;
   }
+
+
 
   &__content {
     display: grid;
@@ -36,7 +39,6 @@
   &__title {
     padding-top: 0;
     line-height: 1;
-   
   }
 
   &__subtitle {
@@ -136,10 +138,10 @@
         @include responsive(md) {
           height: 44%;
         }
-         @include responsive(lg) {
+        @include responsive(lg) {
           height: 60%;
         }
-         @include responsive(xl) {
+        @include responsive(xl) {
           height: 44%;
         }
         background-color: $primary-color;

@@ -54,7 +54,11 @@
   }
 
   .abstract-form {
-    margin-top: 2rem;
+
+    &__note{
+    margin: 2rem 0;
+
+    }
 
     &__title {
       font-size: 12px;
