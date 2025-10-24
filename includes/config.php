@@ -15,7 +15,7 @@ if ($isLocalhost) {
   }
 } else {
   // Production URL
-  define('BASE_URL', '/');
+  define('BASE_URL', 'https://eaaop8.com/');
 }
 
 // Function to get full URL
