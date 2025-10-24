@@ -57,7 +57,6 @@ p {
   max-width: 1140px;
 }
 
-
 #hero_logo,
 #header_logo {
   opacity: 0;
@@ -70,8 +69,6 @@ p {
   opacity: 1;
   visibility: visible;
 }
-
-
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -159,19 +156,28 @@ button {
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(0);
+  // transition: opacity 1.2s ease-out, transform 1.2s ease-out;
   transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 
   &[data-animate="fade-up"] {
     transform: translateY(80px);
+    // transform: translateY(80px) scale(0.7);
+    // transform: perspective(800px) rotateX(-90deg);
   }
   &[data-animate="fade-down"] {
     transform: translateY(-80px);
+    // transform: translateY(-80px) scale(0.7);
+    //  transform: perspective(800px) rotateX(90deg);
   }
   &[data-animate="fade-left"] {
     transform: translateX(80px);
+    // transform: translateX(80px) scale(0.7);
+    //  transform: perspective(800px) rotateY(90deg);
   }
   &[data-animate="fade-right"] {
     transform: translateX(-80px);
+    // transform: translateX(-80px) scale(0.7)
+    // transform: perspective(800px) rotateY(-90deg);
   }
 
   &.in-view {
