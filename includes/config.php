@@ -15,7 +15,7 @@ if ($isLocalhost) {
   }
 } else {
   // Production URL
-  define('BASE_URL', '/preview/999tra79c1a4e9b999qqqq/');
+  define('BASE_URL', '/');
 }
 
 // Function to get full URL
