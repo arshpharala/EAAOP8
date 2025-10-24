@@ -90,59 +90,64 @@ $(document).ready(function () {
 });
 
 
-
 $(function () {
   const OFFSET = 100; // Adjust for header height
-  const SCROLL_DURATION = 0;
+  const SCROLL_DURATION = 0; // Smooth scroll duration in ms
 
-  // --- Smooth scroll handler (only for on-page anchors)
+  /**
+   * Smoothly scrolls to the target element with an offset
+   * @param {string} targetId - The hash ID to scroll to (e.g., #section)
+   */
+  function smoothScrollTo(targetId) {
+    const target = $(targetId);
+    if (target.length) {
+      $("html, body").stop().animate(
+        { scrollTop: target.offset().top - OFFSET },
+        SCROLL_DURATION,
+        "swing"
+      );
+    }
+  }
+
+  // --- Smooth scroll for in-page links only
   $(document).on("click", "a[href^='#']", function (e) {
     const targetId = $(this).attr("href");
-    const target = $(targetId);
 
-    if (target.length) {
+    // Prevent default for valid internal links only
+    if (targetId.length > 1 && $(targetId).length) {
       e.preventDefault();
+      smoothScrollTo(targetId);
 
-      const scrollTo = target.offset().top - OFFSET;
-
-      $("html, body").animate({ scrollTop: scrollTo });
+      // Update URL hash without jumping
+      history.replaceState(null, null, targetId);
     }
   });
 
-  // --- Detect if current page is the index page
-  // const isIndexPage =
-  //   location.pathname.endsWith("/") ||
-  //   location.pathname.endsWith("/index.php");
-
-  // // --- Normalize anchor links if not on index page
-  // if (!isIndexPage) {
-  //   const navSelector = [
-  //     ".ku-header__nav a[href^='#']",
-  //     ".nav-menu a[href^='#']",
-  //     ".footer__lists a[href^='#']",
-  //   ].join(", ");
-
-  //   $(navSelector).each(function () {
-  //     const hash = $(this).attr("href");
-  //     $(this).attr("href", "index" + hash);
-  //   });
-  // }
-
-  // --- Smooth scroll after redirect (for index.html#section)
+  // --- Smooth scroll after redirect (e.g. index.php#section)
   $(window).on("load", function () {
     const hash = window.location.hash;
     if (hash && $(hash).length) {
-      // Small delay ensures elements are rendered
-      setTimeout(() => {
-        $("html, body").animate(
-          { scrollTop: $(hash).offset().top - OFFSET },
-          SCROLL_DURATION,
-          "swing"
-        );
-      }, 200);
+      setTimeout(() => smoothScrollTo(hash), 300);
+    }
+  });
+
+  // --- Handle anchor links with full URLs (cross-page)
+  $(document).on("click", "a[href*='#']", function (e) {
+    const url = new URL(this.href);
+    const currentUrl = window.location.href.split("#")[0];
+
+    // If the base URL matches current page, perform smooth scroll
+    if (url.origin + url.pathname === currentUrl && url.hash) {
+      e.preventDefault();
+      smoothScrollTo(url.hash);
+      history.replaceState(null, null, url.hash);
     }
   });
 });
+
+
+
+
 
 // about secton
 $(document).ready(function () {
