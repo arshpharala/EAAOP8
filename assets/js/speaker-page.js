@@ -45,15 +45,28 @@ $(function () {
         }
         return `
       <div class="speaker-card-detail" style="  min-height: 380px; 
+      
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   justify-content: space-between;" data-name="${s.name}">
+
+
         <img src="${s.image || defaultImg}" alt="${
           s.name
         }" onerror="this.src='${defaultImg}'">
-        <h4>${s.name}</h4>
-        <p>${s.university || ""}</p>
+         
+      
+        <div style="min-height: 180px;
+
+        "> <h4>${s.name}</h4>
+         <p>${s.university || ""}</p>
+        <p style="color:#c59c6c;
+         ">${s.topic || ""}</p>
+      
+        </div>
+       
+        
         <button class="view-bio-btn button-shape button-shape-primary" aria-label="View bio of ${
           s.name
         }">View Bio</button>
@@ -78,12 +91,17 @@ $(function () {
         $("#modalSpeakerUniversity").text(
           speaker.university || "University not available"
         );
-        $("#modalSpeakerTopic").text(speaker.topic || "Topic not available");
         $("#modalSpeakerBio").text(speaker.bio || "Biography not available");
 
         $("#speakerModal").fadeIn();
       });
   }
+
+    // Close modal on clicking the close button
+  $("#closeModal").click(() => {
+    $("#speakerModal").fadeOut();
+  });
+
 
   $(".close-modal").click(() => $("#speakerModal").fadeOut());
   $("#speakerModal").click((e) => {

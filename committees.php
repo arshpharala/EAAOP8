@@ -19,7 +19,7 @@
   <main class="speaker-page">
     <div class="banner">
       <h1 class="banner_title animate-on-scroll" data-animate="fade-right">
-        Conference Committee
+        Conference Committees
       </h1>
       <img
         src="assets/images/about.png"

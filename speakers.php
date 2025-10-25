@@ -44,6 +44,9 @@
       <div id="speakerModal">
         <!-- Modal Content -->
         <div class="modal-content">
+          <span id="closeModal">
+          <img src="assets/images/close.png" alt="close" />
+        </span>
           <div class="profile-card">
             <div class="profile-card__header">
               <div id="modalSpeakerImage" class="speaker_image"></div>
@@ -55,7 +58,6 @@
             </div>
             <div class="profile-card__details">
 
-              <p id="modalSpeakerTopic" class="topic"></p>
               <p id="modalSpeakerBio" style="white-space: pre-line"></p>
             </div>
           </div>

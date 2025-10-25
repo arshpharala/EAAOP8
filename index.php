@@ -1313,13 +1313,13 @@
               </p>
             </div>
 
-            <div>
+            <!-- <div>
               <a
                 class="button-shape button-shape-primary"
                 href="#registration">
                 Register Now
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1354,13 +1354,13 @@
                 school graduates all the way to top-ranked.
               </p>
             </div>
-            <div>
+            <!-- <div>
               <a
                 class="button-shape button-shape-primary"
                 href="#registration">
                 Register Now
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
