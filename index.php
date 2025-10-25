@@ -165,19 +165,19 @@
         data-animate="fade-left">
         <div class="bg-image">
           <img
-            src="assets/images/hero1.png"
+            src="assets/images/hero1.jpg"
             alt="hero"
             class="bg-image__hero-img bg-image__hero-img1" />
         </div>
         <div class="bg-image bg-image2">
           <img
-            src="assets/images/hero2.png"
+            src="assets/images/hero2.jpeg"
             alt="hero"
             class="bg-image__hero-img bg-image2__hero-img2" />
         </div>
         <div class="bg-image bg-image3">
           <img
-            src="assets/images/hero3.png"
+            src="assets/images/hero3.jpeg"
             alt="hero"
             class="bg-image__hero-img bg-image__hero-img3" />
           <div class="bg-color"></div>
@@ -200,7 +200,7 @@
           April 2027.
         </p>
         <div class="about__image animate-on-scroll" data-animate="fade-right">
-          <img src="assets/images/about.png" alt="about" />
+          <img src="assets/images/about.jpg" alt="about" />
         </div>
       </div>
 
@@ -397,7 +397,7 @@
         class="important-dates__grid__left animate-on-scroll"
         data-animate="fade-right">
         <img
-          src="assets/images/important.png"
+          src="assets/images/important.jpeg"
           alt="important-dates"
           class="important-dates__grid__left__img" />
       </div>
@@ -484,7 +484,7 @@
           class="program__banner animate-on-scroll"
           data-animate="fade-left">
           <img
-            src="assets/images/program-banner.png"
+            src="assets/images/program-banner.jpeg"
             alt="Scientific Program" />
         </div>
       </div>
@@ -593,7 +593,7 @@
       <section class="tutorial-sessions">
         <div class="tutorial-sessions__details">
           <img
-            src="assets/images/insititute-1.png"
+            src="assets/images/insititute-1.jpeg"
             alt="insititute "
             loading="lazy"
             class="tutorial-sessions__image animate-on-scroll"

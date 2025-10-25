@@ -330,7 +330,7 @@
   object-fit: cover;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  object-position: top;
+  object-position: center;
   width: 100%;
 }
 .hero-section__right .bg-image__hero-img1 {
@@ -440,6 +440,7 @@
 .about__image img {
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 20px;
 }
 .about__title {
@@ -650,6 +651,7 @@
 .important-dates img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .important-dates__title {
   color: #c59c6c;
@@ -1188,8 +1190,9 @@
 }
 .program__banner img {
   width: 100%;
-  height: 100%;
+  height: 160px;
   object-fit: cover;
+  object-position: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .program__presentations__title {
@@ -1375,7 +1378,8 @@
 }
 .program .tutorial-sessions__image {
   width: 100%;
-  min-height: 130px;
+  height: 130px;
+  object-position: center;
   object-fit: cover;
 }
 .program .tutorial-sessions__title {
