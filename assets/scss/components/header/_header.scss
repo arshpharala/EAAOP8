@@ -46,6 +46,9 @@
     @include responsive(md) {
       height: 50px;
     }
+     @include responsive(xl) {
+      height: 65px;
+    }
   }
 
   // &__logo {

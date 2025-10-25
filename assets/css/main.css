@@ -47,6 +47,11 @@
     height: 50px;
   }
 }
+@media (min-width: 71.25rem) {
+  .ku-header__logo {
+    height: 65px;
+  }
+}
 .ku-header__navs {
   display: flex;
   align-items: center;
