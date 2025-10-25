@@ -7,7 +7,7 @@
               <img
                 src="assets/images/ku-logo.png"
                 alt="Khalifa University Logo"
-                class="ku-header__logo" />
+                class="ku-header__logo1" />
             </a>
             <img
               src="assets/images/logo2.png"
@@ -60,6 +60,7 @@
     </header>
 
 
+    <!-- mobile menu model  -->
     <div
       class="menu-model"
       id="mobileMenu"

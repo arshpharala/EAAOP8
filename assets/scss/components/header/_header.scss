@@ -28,17 +28,41 @@
     }
   }
 
-  &__logo {
+   &__logo1 {
     object-fit: contain;
     height: 30px;
     @include responsive(md) {
-      height: 40px;
-    }
-
-    @include responsive(xl) {
       height: 50px;
     }
   }
+
+
+  &__logo {
+    object-fit: contain;
+    height: 30px;
+    scale: 1.2;
+    margin-left: 1rem;
+
+    @include responsive(md) {
+      height: 50px;
+    }
+  }
+
+  // &__logo {
+  //   object-fit: contain;
+  //   height: 30px;
+    
+  //    @include responsive(sm) {
+  //     height: 50px;
+  //   }
+  //   @include responsive(md) {
+  //     height: 60px;
+  //   }
+
+  //   @include responsive(xl) {
+  //     height: 70px;
+  //   }
+  // }
 
   &__navs {
     display: flex;
@@ -106,7 +130,7 @@
     }
     span {
       display: block;
-      width: 28px;
+      width: 20px;
       height: 3px;
       background: $black-color;
       transition: $transition;
