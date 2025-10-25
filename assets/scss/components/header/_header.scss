@@ -28,33 +28,38 @@
     }
   }
 
-   &__logo1 {
+  &__logo1 {
     object-fit: contain;
     height: 30px;
+    @include responsive(sm) {
+      height: 40px;
+    }
     @include responsive(md) {
-      height: 50px;
+      height: 40px;
     }
   }
 
-
   &__logo {
     object-fit: contain;
-    height: 30px;
+    height: 32px;
     scale: 1.2;
     margin-left: 1rem;
-
+    @include responsive(sm) {
+      height: 40px;
+    }
     @include responsive(md) {
       height: 50px;
     }
-     @include responsive(xl) {
-      height: 65px;
+
+    @include responsive(xl) {
+      height: 55px;
     }
   }
 
   // &__logo {
   //   object-fit: contain;
   //   height: 30px;
-    
+
   //    @include responsive(sm) {
   //     height: 50px;
   //   }

@@ -31,16 +31,26 @@
   object-fit: contain;
   height: 30px;
 }
+@media (min-width: 33.75rem) {
+  .ku-header__logo1 {
+    height: 40px;
+  }
+}
 @media (min-width: 45rem) {
   .ku-header__logo1 {
-    height: 50px;
+    height: 40px;
   }
 }
 .ku-header__logo {
   object-fit: contain;
-  height: 30px;
+  height: 32px;
   scale: 1.2;
   margin-left: 1rem;
+}
+@media (min-width: 33.75rem) {
+  .ku-header__logo {
+    height: 40px;
+  }
 }
 @media (min-width: 45rem) {
   .ku-header__logo {
@@ -49,7 +59,7 @@
 }
 @media (min-width: 71.25rem) {
   .ku-header__logo {
-    height: 65px;
+    height: 55px;
   }
 }
 .ku-header__navs {
