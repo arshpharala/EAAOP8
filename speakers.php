@@ -7,7 +7,7 @@
   <title>Speakers - EAAOP-8</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <!-- Favicon for standard browsers -->
-  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="assets/images/favicon.png?v=3" type="image/x-icon" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <div class="banner">
       <h1 class="banner_title animate-on-scroll" data-animate="fade-up">Conference Speakers</h1>
       <img
-        src="assets/images/speaker.png"
+        src="assets/images/speaker.png?v=3"
         alt="Speakers Banner"
         class="banner_image" />
     </div>
@@ -45,16 +45,16 @@
         <!-- Modal Content -->
         <div class="modal-content">
           <span id="closeModal">
-          <img src="assets/images/close.png" alt="close" />
-        </span>
+            <img src="assets/images/close.png?v=3" alt="close" />
+          </span>
           <div class="profile-card">
             <div class="profile-card__header">
               <div id="modalSpeakerImage" class="speaker_image"></div>
               <div>
-                  <h1 id="modalSpeakerName"></h1>
-              <h4 id="modalSpeakerUniversity"></h4>
+                <h1 id="modalSpeakerName"></h1>
+                <h4 id="modalSpeakerUniversity"></h4>
               </div>
-            
+
             </div>
             <div class="profile-card__details">
 

@@ -11,7 +11,7 @@
   </title>
 
   <!-- Favicon for standard browsers -->
-  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="assets/images/favicon.png?v=3" type="image/x-icon" />
 
   <!-- Owl Carousel CSS -->
   <link
@@ -36,7 +36,7 @@
             <div>
               <a href="index.html">
                 <img
-                  src="assets/images/ku-logo.png"
+                  src="assets/images/ku-logo.png?v=3"
                   alt="Khalifa University Logo"
                   class="ku-header__logo"
                 />
@@ -46,7 +46,7 @@
 
           <div class="ku-header__navs">
             <img
-              src="assets/images/logo2.png"
+              src="assets/images/logo2.png?v=3"
               alt="Khalifa University Logo"
               class="ku-header__logo"
             />
@@ -141,7 +141,7 @@
         <div class="hero-section__logo-section">
           <img
             id="hero_logo"
-            src="assets/images/EAAOP8-LOGO.png"
+            src="assets/images/EAAOP8-LOGO.png?v=3"
             alt="Khalifa University Logo"
             class="hero-section__logo" />
         </div>
@@ -165,19 +165,19 @@
         data-animate="fade-left">
         <div class="bg-image">
           <img
-            src="assets/images/hero1.png"
+            src="assets/images/hero1.png?v=3"
             alt="hero"
             class="bg-image__hero-img bg-image__hero-img1" />
         </div>
         <div class="bg-image bg-image2">
           <img
-            src="assets/images/hero2.png"
+            src="assets/images/hero2.png?v=3"
             alt="hero"
             class="bg-image__hero-img bg-image2__hero-img2" />
         </div>
         <div class="bg-image bg-image3">
           <img
-            src="assets/images/hero3.png"
+            src="assets/images/hero3.png?v=3"
             alt="hero"
             class="bg-image__hero-img bg-image__hero-img3" />
           <div class="bg-color"></div>
@@ -200,7 +200,7 @@
           April 2027.
         </p>
         <div class="about__image animate-on-scroll" data-animate="fade-right">
-          <img src="assets/images/about.png" alt="about" />
+          <img src="assets/images/about.png?v=3" alt="about" />
         </div>
       </div>
 
@@ -248,7 +248,7 @@
             <figure class="speaker-card" aria-label="Event Speaker">
               <div class="speaker-card__image">
                 <img
-                  src="assets/images/member-1.png"
+                  src="assets/images/member-1.png?v=3"
                   alt="Portrait of Giovanni Palmisano"
                   loading="lazy" />
               </div>
@@ -262,7 +262,7 @@
             <figure class="speaker-card" aria-label="Event Speaker">
               <div class="speaker-card__image">
                 <img
-                  src="assets/images/member-2.png"
+                  src="assets/images/member-2.png?v=3"
                   alt="Portrait of Lianxi Zheng"
                   loading="lazy" />
               </div>
@@ -342,7 +342,7 @@
       <div class="who-should-attend__cards">
         <div class="card animate-on-scroll" data-animate="fade-up">
           <div class="card__icon">
-            <img src="assets/images/academic.png" alt="Academic Scholars" />
+            <img src="assets/images/academic.png?v=3" alt="Academic Scholars" />
           </div>
           <p class="card__text">
             Academic scholars and graduate students from universities and
@@ -353,7 +353,7 @@
         <div class="card animate-on-scroll" data-animate="fade-up">
           <div class="card__icon">
             <img
-              src="assets/images/industry.png"
+              src="assets/images/industry.png?v=3"
               alt="Industry Professionals" />
           </div>
           <p class="card__text">
@@ -365,7 +365,7 @@
         <div class="card animate-on-scroll" data-animate="fade-up">
           <div class="card__icon">
             <img
-              src="assets/images/environment.png"
+              src="assets/images/environment.png?v=3"
               alt="Utility Representatives" />
           </div>
           <p class="card__text">
@@ -377,7 +377,7 @@
         <div class="card animate-on-scroll" data-animate="fade-up">
           <div class="card__icon">
             <img
-              src="assets/images/consultant.png"
+              src="assets/images/consultant.png?v=3"
               alt="Consultants and Practitioners" />
           </div>
           <p class="card__text">
@@ -397,7 +397,7 @@
         class="important-dates__grid__left animate-on-scroll"
         data-animate="fade-right">
         <img
-          src="assets/images/important.png"
+          src="assets/images/important.png?v=3"
           alt="important-dates"
           class="important-dates__grid__left__img" />
       </div>
@@ -484,7 +484,7 @@
           class="program__banner animate-on-scroll"
           data-animate="fade-left">
           <img
-            src="assets/images/program-banner.png"
+            src="assets/images/program-banner.png?v=3"
             alt="Scientific Program" />
         </div>
       </div>
@@ -499,7 +499,7 @@
         <div class="program__grid animate-on-scroll" data-animate="fade-up">
           <div class="program__item">
             <img
-              src="assets/images/plenary-lecture.png"
+              src="assets/images/plenary-lecture.png?v=3"
               alt="Plenary lecture" />
             <div>
               <h4>Plenary lecture</h4>
@@ -509,7 +509,7 @@
 
           <div class="program__item">
             <img
-              src="assets/images/keynote-lecture.png"
+              src="assets/images/keynote-lecture.png?v=3"
               alt="Keynote lecture" />
             <div>
               <h4>Keynote lecture</h4>
@@ -519,7 +519,7 @@
 
           <div class="program__item">
             <img
-              src="assets/images/invited-presentation.png"
+              src="assets/images/invited-presentation.png?v=3"
               alt="Invited presentation" />
             <div>
               <h4>Invited presentation</h4>
@@ -529,7 +529,7 @@
 
           <div class="program__item">
             <img
-              src="assets/images/oral-presentation.png"
+              src="assets/images/oral-presentation.png?v=3"
               alt="Oral presentation" />
             <div>
               <h4>Oral presentation</h4>
@@ -539,7 +539,7 @@
 
           <div class="program__item">
             <img
-              src="assets/images/flash-presentation.png"
+              src="assets/images/flash-presentation.png?v=3"
               alt="Flash presentation" />
             <div>
               <h4>Flash presentation</h4>
@@ -548,7 +548,7 @@
           </div>
 
           <div class="program__item">
-            <img src="assets/images/poster.png" alt="Poster presentation" />
+            <img src="assets/images/poster.png?v=3" alt="Poster presentation" />
             <div>
               <h4>Poster size</h4>
               <p>A0</p>
@@ -593,7 +593,7 @@
       <section class="tutorial-sessions">
         <div class="tutorial-sessions__details">
           <img
-            src="assets/images/insititute-1.png"
+            src="assets/images/insititute-1.png?v=3"
             alt="insititute "
             loading="lazy"
             class="tutorial-sessions__image animate-on-scroll"
@@ -1079,7 +1079,7 @@
           class="abstract-image animate-on-scroll"
           data-animate="fade-left">
           <img
-            src="assets/images/person-with-laptop.png"
+            src="assets/images/person-with-laptop.png?v=3"
             alt="Person writing near laptop" />
         </div>
       </div>
@@ -1097,13 +1097,13 @@
             <ul>
               <li>
                 <img
-                  src="assets/images/abstract-language.png"
+                  src="assets/images/abstract-language.png?v=3"
                   alt="Language icon" />
                 <span style="line-height: 1.2"><strong>Abstract language <br /></strong> English</span>
               </li>
               <li>
                 <img
-                  src="assets/images/abstract-pages.png"
+                  src="assets/images/abstract-pages.png?v=3"
                   alt="Pages icon" />
                 <span style="line-height: 1.1"><strong>Abstract must be two pages maximum</strong></span>
               </li>
@@ -1256,7 +1256,7 @@
       <div class="sponsor-logos animate-on-scroll" data-animate="fade-up">
         <a href="https://www.elsevier.com/" target="_blank">
           <img
-            src="assets/images/elsevier.png"
+            src="assets/images/elsevier.png?v=3"
             class="sponsor-logos__img"
             alt="Elsevier"
             class="sponsor-logo" />
@@ -1264,14 +1264,14 @@
 
         <a href="https://www.ku.ac.ae/rich" target="_blank">
           <img
-            src="assets/images/rich.png"
+            src="assets/images/rich.png?v=3"
             class="sponsor-logos__img"
             alt="Rich"
             class="sponsor-logo" />
         </a>
         <a href="https://www.ku.ac.ae/cmat" target="_blank">
           <img
-            src="assets/images/cmat.png"
+            src="assets/images/cmat.png?v=3"
             class="sponsor-logos__img"
             alt="Cmat"
             class="sponsor-logo" />
@@ -1285,7 +1285,7 @@
     <div class="container info-section__content">
       <div class="info-card animate-on-scroll" data-animate="fade-right">
         <img
-          src="assets/images/abu-dhabi.png"
+          src="assets/images/abu-dhabi.png?v=3"
           alt="Abu Dhabi skyline"
           class="info-card__image" />
 
@@ -1326,7 +1326,7 @@
 
       <div class="info-card animate-on-scroll" data-animate="fade-left">
         <img
-          src="assets/images/khalifa-university.png"
+          src="assets/images/khalifa-university.png?v=3"
           alt="Khalifa University campus"
           class="info-card__image" />
 
@@ -1383,7 +1383,7 @@
       <div class="travel-section__image-wrapper">
         <div class="travel-section__image-wrapper__bg-overlay"></div>
         <img
-          src="assets/images/travel.png"
+          src="assets/images/travel.png?v=3"
           alt="Traveler pulling luggage"
           class="travel-section__image" />
       </div>
@@ -1441,7 +1441,7 @@
             target="_blank"
             class="accommodation-card">
             <img
-              src="assets/images/dusit-thani.png"
+              src="assets/images/dusit-thani.png?v=3"
               alt="Dusit Thani Abu Dhabi"
               class="accommodation-card__image" />
             <div class="accommodation-card__detail">
@@ -1465,7 +1465,7 @@
             target="_blank"
             class="accommodation-card">
             <img
-              src="assets/images/al-jazeera-hotel.png"
+              src="assets/images/al-jazeera-hotel.png?v=3"
               alt="Al Jazeera Club Hotel Abu Dhabi"
               class="accommodation-card__image" />
 
@@ -1490,7 +1490,7 @@
             target="_blank"
             class="accommodation-card">
             <img
-              src="assets/images/al-nakheel-hotel.png"
+              src="assets/images/al-nakheel-hotel.png?v=3"
               alt="Al Jazeera Club Hotel Abu Dhabi"
               class="accommodation-card__image" />
 

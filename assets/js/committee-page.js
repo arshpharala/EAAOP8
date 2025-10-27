@@ -1,5 +1,5 @@
 $(function () {
-  const defaultImg = "assets/images/user.png";
+  const defaultImg = "assets/images/user.png?v=3";
   const files = [
     {
       url: "assets/data/organizing-committee.json",
