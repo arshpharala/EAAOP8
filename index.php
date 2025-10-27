@@ -165,19 +165,19 @@
         data-animate="fade-left">
         <div class="bg-image">
           <img
-            src="assets/images/hero1.jpg"
+            src="assets/images/hero1.png"
             alt="hero"
             class="bg-image__hero-img bg-image__hero-img1" />
         </div>
         <div class="bg-image bg-image2">
           <img
-            src="assets/images/hero2.jpeg"
+            src="assets/images/hero2.png"
             alt="hero"
             class="bg-image__hero-img bg-image2__hero-img2" />
         </div>
         <div class="bg-image bg-image3">
           <img
-            src="assets/images/hero3.jpeg"
+            src="assets/images/hero3.png"
             alt="hero"
             class="bg-image__hero-img bg-image__hero-img3" />
           <div class="bg-color"></div>
@@ -200,7 +200,7 @@
           April 2027.
         </p>
         <div class="about__image animate-on-scroll" data-animate="fade-right">
-          <img src="assets/images/about.jpg" alt="about" />
+          <img src="assets/images/about.png" alt="about" />
         </div>
       </div>
 
@@ -397,7 +397,7 @@
         class="important-dates__grid__left animate-on-scroll"
         data-animate="fade-right">
         <img
-          src="assets/images/important.jpeg"
+          src="assets/images/important.png"
           alt="important-dates"
           class="important-dates__grid__left__img" />
       </div>
@@ -484,7 +484,7 @@
           class="program__banner animate-on-scroll"
           data-animate="fade-left">
           <img
-            src="assets/images/program-banner.jpeg"
+            src="assets/images/program-banner.png"
             alt="Scientific Program" />
         </div>
       </div>
@@ -593,7 +593,7 @@
       <section class="tutorial-sessions">
         <div class="tutorial-sessions__details">
           <img
-            src="assets/images/insititute-1.jpeg"
+            src="assets/images/insititute-1.png"
             alt="insititute "
             loading="lazy"
             class="tutorial-sessions__image animate-on-scroll"
@@ -1490,7 +1490,7 @@
             target="_blank"
             class="accommodation-card">
             <img
-              src="assets/images/al-nakheel-hotel.jpg"
+              src="assets/images/al-nakheel-hotel.png"
               alt="Al Jazeera Club Hotel Abu Dhabi"
               class="accommodation-card__image" />
 

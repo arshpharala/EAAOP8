@@ -20,7 +20,7 @@
     <div class="banner">
       <h1 class="banner_title animate-on-scroll" data-animate="fade-up">Conference Speakers</h1>
       <img
-        src="assets/images/speaker.jpg"
+        src="assets/images/speaker.png"
         alt="Speakers Banner"
         class="banner_image" />
     </div>
