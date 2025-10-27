@@ -5,12 +5,12 @@
           <div class="ku-header__left">
             <a href="<?php echo url(); ?>">
               <img
-                src="assets/images/ku-logo.png"
+                src="assets/images/ku-logo.png?v=3"
                 alt="Khalifa University Logo"
                 class="ku-header__logo1" />
             </a>
             <img
-              src="assets/images/logo2.png"
+              src="assets/images/logo2.png?v=3"
               alt="Khalifa University Logo"
               class="ku-header__logo"
               id="header_logo" />
@@ -71,7 +71,7 @@
         <div>
           <button class="close-btn" id="closeMenu" aria-label="Close menu">
             <img
-              src="assets/images/close.png"
+              src="assets/images/close.png?v=3"
               alt="Close Menu Icon"
               class="close-icon" />
           </button>

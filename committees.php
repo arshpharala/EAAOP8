@@ -7,7 +7,7 @@
   <title>Committees - EAAOP-8</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <!-- Favicon for standard browsers -->
-  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="assets/images/favicon.png?v=3" type="image/x-icon" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         Conference Committees
       </h1>
       <img
-        src="assets/images/committee.png"
+        src="assets/images/committee.png?v=3"
         alt="Speakers Banner"
         class="banner_image" />
     </div>

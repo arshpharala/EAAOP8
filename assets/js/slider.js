@@ -1,6 +1,4 @@
-const DEFAULT_IMAGE = "assets/images/user.png";
-
-
+const DEFAULT_IMAGE = "assets/images/user.png?v=3";
 
 // Initialize a reusable carousel
 // function initCarousel(selector, nextBtn, prevBtn) {
@@ -133,7 +131,6 @@ $(document).ready(function () {
         updateDetails($(this).data("index"));
       }
     );
-
 
     if (nextBtn) {
       $(nextBtn).click(() => {

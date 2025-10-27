@@ -4,13 +4,13 @@
       <div class="footer__left">
         <a href="<?php echo url(); ?>">
           <img
-            src="assets/images/logo2.png"
+            src="assets/images/logo2.png?v=3"
             alt="Conference Logo"
             class="footer__logo" />
         </a>
         <div class="footer__email">
           <img
-            src="assets/images/footer-mail.png"
+            src="assets/images/footer-mail.png?v=3"
             alt="mail"
             class="footer__email__icon" />
           <a href="mailto:eaaop8@ku.ac.ae"> eaaop8@ku.ac.ae </a>

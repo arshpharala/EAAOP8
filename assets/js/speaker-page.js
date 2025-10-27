@@ -1,5 +1,5 @@
 $(function () {
-  const defaultImg = "assets/images/user.png";
+  const defaultImg = "assets/images/user.png?v=3";
   const files = [
     {
       url: "assets/data/keynote-speakers.json",
@@ -97,11 +97,10 @@ $(function () {
       });
   }
 
-    // Close modal on clicking the close button
+  // Close modal on clicking the close button
   $("#closeModal").click(() => {
     $("#speakerModal").fadeOut();
   });
-
 
   $(".close-modal").click(() => $("#speakerModal").fadeOut());
   $("#speakerModal").click((e) => {
