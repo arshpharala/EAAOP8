@@ -22,7 +22,7 @@
         Conference Committees
       </h1>
       <img
-        src="assets/images/about.png"
+        src="assets/images/committee.png"
         alt="Speakers Banner"
         class="banner_image" />
     </div>
