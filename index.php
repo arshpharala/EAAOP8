@@ -1368,7 +1368,7 @@
   </section>
 
   <!-- travel-section -->
-  <section class="travel-section animate-on-scroll" data-animate="fade-left">
+  <!-- <section class="travel-section animate-on-scroll" data-animate="fade-left">
     <div class="container travel-section__contents">
       <div class="travel-section__content">
         <h1 class="travel-section__title">Visa & Travel</h1>
@@ -1388,7 +1388,7 @@
           class="travel-section__image" />
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- venue-section -->
   <section
@@ -1484,7 +1484,7 @@
             </div>
           </a>
         </div>
-        <div class="animate-on-scroll" data-animate="fade-up">
+        <!-- <div class="animate-on-scroll" data-animate="fade-up">
           <a
             href="https://www.google.com/maps/place/Al+Nakheel+Hotel+Apartments+Abu+Dhabi/@24.4770776,54.3663919,17z/data=!4m10!3m9!1s0x3e5e663faa62719d:0xf47f623f36653c19!5m3!1s2025-10-05!4m1!1i2!8m2!3d24.4770728!4d54.3712628!16s%2Fg%2F1tfj1nfm?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
@@ -1506,7 +1506,7 @@
               </a>
             </div>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
