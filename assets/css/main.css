@@ -1956,10 +1956,9 @@
 .sponsors-section .sponsor-logos {
   margin: 0 auto;
 }
-.sponsors-section .sponsor-logos .sponsor-logo {
-  max-width: 120px;
-  height: auto;
-  object-fit: contain;
+.sponsors-section .sponsor-logos img {
+  width: 125px;
+  height: 125px;
 }
 
 .info-section {

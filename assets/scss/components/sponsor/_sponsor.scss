@@ -18,16 +18,15 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
-    @include responsive(lg){
-    max-width: 70%;
-
+    @include responsive(lg) {
+      max-width: 70%;
     }
     margin: 0 auto;
 
-    .sponsor-logo {
-      max-width: 120px;
-      height: auto;
-      object-fit: contain;
+    img {
+      width: 125px;
+      height: 125px;
+      // object-fit: contain;
     }
   }
 }
