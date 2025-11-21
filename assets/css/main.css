@@ -1957,9 +1957,8 @@
   margin: 0 auto;
 }
 .sponsors-section .sponsor-logos img {
-  max-width: 120px;
-  height: auto;
-  object-fit: contain;
+  width: 125px;
+  height: 125px;
 }
 
 .info-section {
