@@ -1956,11 +1956,7 @@
 .sponsors-section .sponsor-logos {
   margin: 0 auto;
 }
-.sponsors-section .sponsor-logos a {
-  width: 125px;
-  height: 125px;
-}
-.sponsors-section .sponsor-logos__img {
+.sponsors-section .sponsor-logos img {
   width: 125px;
   height: 125px;
 }
