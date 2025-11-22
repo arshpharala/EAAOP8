@@ -1258,23 +1258,20 @@
           <img
             src="assets/images/elsevier.png?v=3"
             class="sponsor-logos__img"
-            alt="Elsevier"
-            class="sponsor-logo" />
+            alt="Elsevier" />
         </a>
 
         <a href="https://www.ku.ac.ae/rich" target="_blank">
           <img
             src="assets/images/rich.png?v=3"
             class="sponsor-logos__img"
-            alt="Rich"
-            class="sponsor-logo" />
+            alt="Rich" />
         </a>
         <a href="https://www.ku.ac.ae/cmat" target="_blank">
           <img
             src="assets/images/cmat.png?v=3"
             class="sponsor-logos__img"
-            alt="Cmat"
-            class="sponsor-logo" />
+            alt="Cmat" />
         </a>
       </div>
     </div>
